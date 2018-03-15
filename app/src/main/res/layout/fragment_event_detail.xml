@@ -1,0 +1,137 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/eventDetailMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/offWhite"
+    tools:context=".events.EventDetail">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_8sdp">
+
+
+        <FrameLayout
+            android:id="@+id/topLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp">
+
+            <ImageView
+                android:id="@+id/eventImg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_marginEnd="@dimen/_19sdp"
+                android:layout_marginRight="@dimen/_19sdp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/transfusion2" />
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/eventDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:background="@color/light_brown"
+                android:padding="@dimen/_16sdp"
+                android:text="test"
+                android:textColor="@color/offWhite"
+                android:textSize="@dimen/_18sdp" />
+        </FrameLayout>
+
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/eventName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/topLayout"
+            android:layout_marginEnd="@dimen/_19sdp"
+            android:layout_marginRight="@dimen/_19sdp"
+            android:layout_marginTop="@dimen/_9sdp"
+            android:text="event title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp" />
+
+
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/eventTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/eventName"
+            android:layout_marginLeft="@dimen/_9sdp"
+            android:layout_marginStart="@dimen/_9sdp"
+            android:layout_marginTop="@dimen/_9sdp"
+            android:drawableLeft="@drawable/ic_access_alarm"
+            android:drawablePadding="@dimen/_1sdp"
+            android:drawableStart="@drawable/ic_access_alarm"
+            android:text="test duration duration"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+
+
+        <LinearLayout
+            android:id="@+id/eventDetailLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/eventTime"
+            android:layout_marginEnd="@dimen/_9sdp"
+            android:layout_marginStart="@dimen/_9sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:orientation="vertical">
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/eventOrgName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/black" />
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/eventLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:drawableLeft="@drawable/location"
+                android:drawablePadding="@dimen/_2sdp"
+                android:drawableStart="@drawable/location"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/black" />
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/eventContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:drawableLeft="@drawable/location"
+                android:drawablePadding="@dimen/_2sdp"
+                android:drawableStart="@drawable/phone_call"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/eventBriefText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/eventDetailLayout"
+            android:text="@string/event_brief"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20sdp" />
+
+        <TextView
+            android:id="@+id/eventBrief"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/eventBriefText"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_13sdp"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+</ScrollView>

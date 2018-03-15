@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_grey">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/ToolbarColoredBackArrow"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:theme="@style/ToolbarColoredBackArrow"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:title="@string/profile"
+            app:titleTextColor="@color/offWhite" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+
+            <RelativeLayout
+                android:id="@+id/topLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_140sdp"
+                android:background="@color/colorPrimary"
+                android:gravity="start">
+
+
+                <yackeen.com.daleel.circleimage.CircleImageView
+                    android:id="@+id/profilePic"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_centerInParent="true"
+                    app:civ_border_color="@color/light_gray"
+                    app:civ_border_overlay="true"
+                    app:civ_border_width="@dimen/_2sdp" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profilePic"
+                    android:layout_centerHorizontal="true"
+                    android:padding="@dimen/_3sdp"
+                    android:text="User title"
+                    android:textColor="@color/offWhite"
+                    android:textSize="@dimen/_15sdp" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/topLayout"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:gravity="start"
+                android:orientation="horizontal"
+                android:weightSum="12">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@color/black" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@id/topLayout"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:padding="@dimen/_1sdp"
+                    android:text="@string/personal_data"
+                    android:textColor="@color/black" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="3"
+                    android:background="@color/black" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/editProfile"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_weight="5"
+                    android:background="@drawable/tabs"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:paddingBottom="@dimen/_2sdp"
+                    android:paddingLeft="@dimen/_8sdp"
+                    android:paddingRight="@dimen/_8sdp"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:text="@string/edit_profile"
+                    android:textColor="@color/bage"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/emailText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/layout"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/email"
+                android:textColor="@color/black" />
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout"
+                android:layout_toEndOf="@id/emailText"
+                android:layout_toRightOf="@id/emailText"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/email"
+                android:textColor="@color/black" />
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/phoneText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/emailText"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/phoneNumber"
+                android:textColor="@color/black" />
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/userPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/emailText"
+                android:layout_toEndOf="@id/phoneText"
+                android:layout_toRightOf="@id/phoneText"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/phoneNumber"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <include
+        layout="@layout/profile_followed_lists"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+</android.support.design.widget.CoordinatorLayout>

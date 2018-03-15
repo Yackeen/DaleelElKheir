@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "727774892995",
+    "firebase_url": "https://ahead-1343.firebaseio.com",
+    "project_id": "ahead-1343",
+    "storage_bucket": "ahead-1343.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:727774892995:android:5537710a66251e39",
+        "android_client_info": {
+          "package_name": "yackeen.com.daleel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "727774892995-tit2v5jjfc4idgprva9d4tfk7al2aafl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "yackeen.com.daleel",
+            "certificate_hash": "3a81bd7eec3c91a8fa52691ddfc326d8fcbdf8d5"
+          }
+        },
+        {
+          "client_id": "727774892995-b5j9pgk84qro9ojv5hlcd4hj9im1d9ge.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "727774892995-7ue90t4al6b5limn6iakot8eikq3itd1.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "727774892995-vnf542a62uf6b6qdm75oa8hd10urtjct.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwGeMSV7VDObL3gA2whZnhNJt2wm6HGow"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "727774892995-b5j9pgk84qro9ojv5hlcd4hj9im1d9ge.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

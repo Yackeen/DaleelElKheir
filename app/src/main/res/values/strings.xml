@@ -1,0 +1,134 @@
+<resources>
+    <string name="app_name">Daleel ElKheir</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="facebook_app_id">330476670775666</string>
+    <string name="fb_login_protocol_scheme">fb330476670775666</string>
+
+
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="blod_bank">Blood bank</string>
+    <string name="contact_us">Contact us</string>
+    <string name="logout">Log out</string>
+    <string name="urgent_cases">Urgent cases</string>
+    <string name="more">More</string>
+    <string name="dontation_for">Donation for</string>
+    <string name="needed_cash">Needed cash</string>
+    <string name="urgent">Urgent</string>
+    <string name="region">Region:</string>
+    <string name="department">Department:</string>
+    <string name="organization">Organization:</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email"> email</string>
+    <string name="prompt_password"> password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="sign_in">Sign in</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="recent_cases">Recent cases</string>
+    <string name="category">Category: </string>
+    <string name="collected">Collected: </string>
+    <string name="needed">Needed: </string>
+    <string name="forget_password">Forget password?</string>
+    <string name="sign_with">Sign with</string>
+    <string name="new_account">New account</string>
+    <string name="sign_out">Sign out</string>
+    <string name="welcome">Welcome</string>
+    <string name="userName">user title</string>
+    <string name="phoneNumber">Phone number</string>
+    <string name="confirmPassword">confirm password</string>
+    <string name="signUp">Sign up</string>
+    <string name="address">Address: </string>
+    <string name="folowed_orgs">Followed Oragnizations</string>
+    <string name="all_orgs">All organizations</string>
+    <string name="blood_banks_help">Blood banks help</string>
+    <string name="all_cases">All cases</string>
+    <string name="events">Events</string>
+    <string name="organizations">Organizations</string>
+    <string name="about_daleel">About Daleel Elkheir</string>
+    <string name="about_daleel_bref">Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</string>
+    <string name="our_vision">Our vision</string>
+    <string name="our_vision_bref">Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</string>
+    <string name="search">Search</string>
+    <string name="filter">Filter</string>
+    <string name="comp_social_resp">Companies social responsibilities</string>
+    <string name="news_feed">Newsfeed</string>
+    <string name="about">About</string>
+    <string name="blood_banks">Blood banks</string>
+    <string name="check_internet">Check Internet connection</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="case_date">Case Date :</string>
+    <string name="current">Current :</string>
+    <string name="description">Description : </string>
+    <string name="casee">Case</string>
+    <string name="profile">Profile</string>
+    <string name="personal_data">Personal Data</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="email">Email</string>
+    <string name="favourite_categories">Favourite Categories</string>
+    <string name="contacts">Contacts</string>
+    <string name="event_brief">Event Brief</string>
+    <string name="duration">Time </string>
+    <string name="sort_by">Sort By</string>
+    <string name="sort">Sort</string>
+    <string name="chooseCat">All Category</string>
+    <string name="choose_org">All Organization</string>
+    <string name="choose_place">All Place</string>
+    <string name="language">Language</string>
+    <string name="notification">Notification</string>
+    <string name="home">Home</string>
+    <string name="chat">Chat</string>
+    <string name="save">Save</string>
+    <string name="sendToUs">Send to us</string>
+    <string name="message">The message</string>
+    <string name="send">Send</string>
+    <string name="no_followed_org">No followed Organization</string>
+    <string name="nocases">No cases found.</string>
+    <string name="no_events">No events found.</string>
+    <string name="no_organization">No organization found.</string>
+    <string name="followed_cases">Followed cases</string>
+    <string name="add_to_favourite">Add to favourite.</string>
+    <string name="add_category">Add category</string>
+    <string name="cat_added">Category added.</string>
+    <string name="add">Add</string>
+    <string name="category_removed">Category removed.</string>
+    <string name="inquiry">Inquiry</string>
+    <string name="volunteer">Volunteer</string>
+    <string name="volunteer_in">Volunteer in</string>
+    <string name="validate_inputs">Validate inputs</string>
+    <string name="passIsSmall">Password should be more than 4 characters.</string>
+    <string name="passNotSimilar">Password not similar.</string>
+    <string name="search_hint">Search For..</string>
+    <string name="searchCases">Search for cases.</string>
+    <string name="searchOrgs">Search for organizations.</string>
+    <string name="searchEvents">Search for events</string>
+    <string name="all_events">All events.</string>
+    <string name="please_login">Please login.</string>
+    <string name="login">Login</string>
+    <string name="cancel">Cancel</string>
+    <string name="contact_hint">How can we help you?</string>
+    <string name="please_login_first">You need to login first, to add this case as favourite case.</string>
+    <string name="code">Code</string>
+    <string name="reset">Reset</string>
+    <string name="english">English</string>
+    <string name="arabic">Arabic</string>
+    <string name="or">Or</string>
+    <string name="pressBackAgain">press back again to exit</string>
+    <string name="noDataFound">No messages found</string>
+    <string name="typeHere">type message</string>
+
+</resources>

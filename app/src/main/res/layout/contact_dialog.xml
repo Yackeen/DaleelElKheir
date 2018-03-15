@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="#00000000"
+    android:focusable="true"
+    android:scaleType="fitStart"
+    tools:ignore="UnusedAttribute">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_8sdp">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp">
+
+            <ProgressBar
+                android:id="@+id/progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="parent"
+                app:layout_constraintRight_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/contactPhoneNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:drawableLeft="@drawable/smartphone"
+                android:drawablePadding="@dimen/_2sdp"
+                android:drawableStart="@drawable/smartphone"
+                android:padding="@dimen/_3sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/contactFacebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:drawableLeft="@drawable/facebook_logo"
+                android:drawablePadding="@dimen/_2sdp"
+                android:drawableStart="@drawable/facebook_logo"
+                android:padding="@dimen/_3sdp"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@id/contactPhoneNum"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/contactEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:drawableLeft="@drawable/email_drawable"
+                android:drawablePadding="@dimen/_2sdp"
+                android:drawableStart="@drawable/email_drawable"
+                android:padding="@dimen/_3sdp"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/contactPhoneNum" />
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/contactLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:drawableLeft="@drawable/location"
+                android:drawablePadding="@dimen/_2sdp"
+                android:drawableStart="@drawable/location"
+                android:padding="@dimen/_3sdp"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/contactEmail" />
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/contactSendText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:padding="@dimen/_3sdp"
+                android:text="@string/sendToUs"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_17sdp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/contactLocation" />
+
+            <EditText
+                android:id="@+id/contactUserEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                app:layout_constraintTop_toBottomOf="@id/contactSendText" />
+
+            <EditText
+                android:id="@+id/contactUserPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:hint="@string/phoneNumber"
+                android:inputType="phone"
+                app:layout_constraintTop_toBottomOf="@id/contactUserEmail" />
+
+            <Spinner
+                android:id="@+id/contactUserCategory"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_33sdp"
+                android:layout_margin="@dimen/_10sdp"
+                app:layout_constraintTop_toBottomOf="@id/contactUserPhone" />
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/contactMesgText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_4sdp"
+                android:padding="@dimen/_4sdp"
+                android:text="@string/message"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp"
+                app:layout_constraintTop_toBottomOf="@id/contactUserCategory" />
+
+            <EditText
+                android:id="@+id/contactMessage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_margin="@dimen/_4sdp"
+                android:hint="@string/message"
+                android:inputType="textMultiLine"
+                android:padding="@dimen/_4sdp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@id/contactMesgText" />
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/sendContactRequest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                android:background="@drawable/curvy_sign_bg"
+                android:paddingBottom="@dimen/_8sdp"
+                android:paddingLeft="@dimen/_55sdp"
+                android:paddingRight="@dimen/_55sdp"
+                android:paddingTop="@dimen/_8sdp"
+                android:scrollbars="vertical"
+                android:text="@string/send"
+                android:textSize="@dimen/_15sdp"
+                app:layout_constraintEnd_toStartOf="parent"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/contactMessage" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+</ScrollView>

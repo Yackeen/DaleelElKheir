@@ -1,0 +1,4 @@
+#Thu Mar 15 14:22:10 EET 2018
+base.0=D\:\\BFCI\\codes\\android\\_android_studio_projects\\DaleelElKheir\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\24
+path.0=classes.dex
+renamed.0=classes.dex

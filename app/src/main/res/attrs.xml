@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable title="CircleIndicator">
+        <attr format="dimension" title="ci_width" />
+        <attr format="dimension" title="ci_height" />
+        <attr format="dimension" title="ci_margin" />
+        <attr format="reference" title="ci_animator" />
+        <attr format="reference" title="ci_animator_reverse" />
+        <attr format="reference" title="ci_drawable" />
+        <attr format="reference" title="ci_drawable_unselected" />
+
+        <attr format="enum" title="ci_orientation">
+            <!-- Defines an horizontal widget. -->
+            <enum title="horizontal" value="0" />
+            <!-- Defines a vertical widget. -->
+            <enum title="vertical" value="1" />
+        </attr>
+
+        <attr title="ci_gravity">
+            <!-- Push object to the top of its container, not changing its size. -->
+            <flag title="top" value="0x30" />
+            <!-- Push object to the bottom of its container, not changing its size. -->
+            <flag title="bottom" value="0x50" />
+            <!-- Push object to the left of its container, not changing its size. -->
+            <flag title="left" value="0x03" />
+            <!-- Push object to the right of its container, not changing its size. -->
+            <flag title="right" value="0x05" />
+            <!-- Place object in the vertical center of its container, not changing its size. -->
+            <flag title="center_vertical" value="0x10" />
+            <!-- Grow the vertical size of the object if needed so it completely fills its container. -->
+            <flag title="fill_vertical" value="0x70" />
+            <!-- Place object in the horizontal center of its container, not changing its size. -->
+            <flag title="center_horizontal" value="0x01" />
+            <!-- Grow the horizontal size of the object if needed so it completely fills its container. -->
+            <flag title="fill_horizontal" value="0x07" />
+            <!-- Place the object in the center of its container in both the vertical and horizontal axis, not changing its size. -->
+            <flag title="center" value="0x11" />
+            <!-- Grow the horizontal and vertical size of the object if needed so it completely fills its container. -->
+            <flag title="fill" value="0x77" />
+            <!-- Additional option that can be set to have the top and/or bottom edges of
+            the child clipped to its container's bounds.
+            The clip will be based on the vertical gravity: a top gravity will clip the bottom
+            edge, a bottom gravity will clip the top edge, and neither will clip both edges. -->
+            <flag title="clip_vertical" value="0x80" />
+            <!-- Additional option that can be set to have the left and/or right edges of
+            the child clipped to its container's bounds.
+            The clip will be based on the horizontal gravity: a left gravity will clip the right
+            edge, a right gravity will clip the left edge, and neither will clip both edges. -->
+            <flag title="clip_horizontal" value="0x08" />
+            <!-- Push object to the beginning of its container, not changing its size. -->
+            <flag title="start" value="0x00800003" />
+            <!-- Push object to the end of its container, not changing its size. -->
+            <flag title="end" value="0x00800005" />
+        </attr>
+
+    </declare-styleable>
+
+
+</resources>

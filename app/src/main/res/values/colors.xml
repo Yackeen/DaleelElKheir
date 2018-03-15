@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#227C7A</color>
+    <color name="colorPrimaryDark">#1D6B66</color>
+    <color name="colorAccent">#757575</color>
+
+    <color name="loginBack">#197079</color>
+    <color name="blue">#808cda</color>
+    <color name="offWhite">#FAFAFA</color>
+    <color name="white">#ffffff</color>
+    <color name="offWhiteDark">#f2f2f2</color>
+    <color name="bage">#e35d58</color>
+    <color name="bage_light">#ecb5b3</color>
+    <color name="light_brown">#c97c18</color>
+    <color name="black">#000000</color>
+    <!--FAFAFA-->
+    <color name="dark_grey">#757575</color>
+    <color name="light_gray">#BDBDBD</color>
+
+    <color name="back_grey">#ece9e9</color>
+</resources>
