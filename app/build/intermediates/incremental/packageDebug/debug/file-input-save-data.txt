@@ -1,19 +1,19 @@
 #Internal package file, do not edit.
-#Thu Mar 15 16:52:26 EET 2018
-1.base=D\:\\BFCI\\codes\\android\\_android_studio_projects\\DaleelElKheir\\app\\build\\intermediates\\assets\\debug
-2.path=font/Cocon® Next Arabic-Bold.otf
+#Mon Mar 26 21:18:00 EET 2018
+1.base=/home/amr/AndroidStudioProjects/YSolutionsApps/Fawzy-DaleelElKheir/app/build/intermediates/assets/debug
+2.path=font/CoconÂ® Next Arabic-Bold.otf
 0.baseType=DIRECTORY
 3.baseType=DIRECTORY
-2.base=D\:\\BFCI\\codes\\android\\_android_studio_projects\\DaleelElKheir\\app\\build\\intermediates\\assets\\debug
+2.base=/home/amr/AndroidStudioProjects/YSolutionsApps/Fawzy-DaleelElKheir/app/build/intermediates/assets/debug
 3.set=DEX
 2.set=ASSET
 1.baseType=DIRECTORY
 3.path=classes.dex
 count=4
 1.set=ASSET
-0.path=font/CoconRegular.otf
-3.base=D\:\\BFCI\\codes\\android\\_android_studio_projects\\DaleelElKheir\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\37
+0.path=font/CoconÂ® Next Arabic-Light.otf
+3.base=/home/amr/AndroidStudioProjects/YSolutionsApps/Fawzy-DaleelElKheir/app/build/intermediates/transforms/dexMerger/debug/19
 0.set=ASSET
-0.base=D\:\\BFCI\\codes\\android\\_android_studio_projects\\DaleelElKheir\\app\\build\\intermediates\\assets\\debug
+0.base=/home/amr/AndroidStudioProjects/YSolutionsApps/Fawzy-DaleelElKheir/app/build/intermediates/assets/debug
 2.baseType=DIRECTORY
-1.path=font/Cocon® Next Arabic-Light.otf
+1.path=font/CoconRegular.otf

@@ -22,6 +22,7 @@ import android.widget.SearchView;
 import android.widget.TextView;
 
 import com.android.volley.Request;
+import com.google.firebase.crash.FirebaseCrash;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -71,6 +72,9 @@ public class OrganizationsFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_organizations, container, false);
+
+        FirebaseCrash.log("Here comes the exception!");
+        FirebaseCrash.report(new Exception("oops!"));
 
         viewPager = view.findViewById(R.id.viewPager);
         indicator = view.findViewById(R.id.indicator);

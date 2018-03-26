@@ -34,6 +34,7 @@ import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.bumptech.glide.Glide;
+import com.google.firebase.crash.FirebaseCrash;
 import com.google.firebase.messaging.FirebaseMessaging;
 
 import org.json.JSONArray;
@@ -101,6 +102,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        FirebaseCrash.log("Here comes the exception!");
+        FirebaseCrash.report(new Exception("oops!"));
 
         manager = new PrefManager(this);
         bottomNav = findViewById(R.id.bottomNav);

@@ -14,6 +14,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.google.firebase.crash.FirebaseCrash;
 
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 import yackeen.com.daleel.R;
@@ -30,7 +31,9 @@ public class ProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
-        //
+        FirebaseCrash.log("Here comes the exception!");
+        FirebaseCrash.report(new Exception("oops!"));
+
         Toolbar toolbar = findViewById(R.id.toolbar);
 //        getActionBar().setDisplayHomeAsUpEnabled(true);
         TextView userName = findViewById(R.id.userName);

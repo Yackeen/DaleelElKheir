@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\BFCI\\codes\\android\\_android_studio_projects\\DaleelElKheir\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ky\\values-ky.xml",
+            "outputFile": "/home/amr/AndroidStudioProjects/YSolutionsApps/Fawzy-DaleelElKheir/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ky/values-ky.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\ffacc9f9ad8d142a972d89211b1f4b68\\res\\values-ky\\values-ky.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "38",
-                        "startColumns": "4",
-                        "startOffsets": "4603",
-                        "endColumns": "100",
-                        "endOffsets": "4699"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.4.2.aar\\d3c70652b649904c0065065cc987df3b\\res\\values-ky\\values.xml",
+                    "source": "/home/amr/.gradle/caches/transforms-1/files-1.1/play-services-base-11.4.2.aar/5f4e32d93528e700beaf92416749f5e9/res/values-ky/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -38,24 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\a7c5c7278c7c477cd1fc9fb6ea230d2b\\res\\values-ky\\values-ky.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,209,304,423,507,614,731,809,888,969,1079,1186,1284,1390,1497,1598,1759,1862",
-                        "endColumns": "103,94,118,83,106,116,77,78,80,109,106,97,105,106,100,160,102,80",
-                        "endOffsets": "204,299,418,502,609,726,804,883,964,1074,1181,1279,1385,1492,1593,1754,1857,1938"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,37",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,209,304,423,507,614,731,809,888,969,1079,1186,1284,1390,1497,1598,1759,4522",
-                        "endColumns": "103,94,118,83,106,116,77,78,80,109,106,97,105,106,100,160,102,80",
-                        "endOffsets": "204,299,418,502,609,726,804,883,964,1074,1181,1279,1385,1492,1593,1754,1857,4598"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-11.4.2.aar\\2a56bb3ddfed8b09361f1fcfe6869949\\res\\values-ky\\values.xml",
+                    "source": "/home/amr/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.4.2.aar/5d36ea8b1f1cf9a23d37110ecb32cca5/res/values-ky/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -72,7 +38,41 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\firebase-messaging-11.4.2.aar\\07771794dcdafdd8d5e240077e1dd860\\res\\values-ky\\values.xml",
+                    "source": "/home/amr/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/ccc2529d6ed64a2f47ee75b523fef5d0/res/values-ky/values-ky.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,209,304,423,507,614,731,809,888,969,1079,1186,1284,1390,1497,1598,1759,1862",
+                        "endColumns": "103,94,118,83,106,116,77,78,80,109,106,97,105,106,100,160,102,80",
+                        "endOffsets": "204,299,418,502,609,726,804,883,964,1074,1181,1279,1385,1492,1593,1754,1857,1938"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,37",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,209,304,423,507,614,731,809,888,969,1079,1186,1284,1390,1497,1598,1759,4522",
+                        "endColumns": "103,94,118,83,106,116,77,78,80,109,106,97,105,106,100,160,102,80",
+                        "endOffsets": "204,299,418,502,609,726,804,883,964,1074,1181,1279,1385,1492,1593,1754,1857,4598"
+                    }
+                },
+                {
+                    "source": "/home/amr/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/7e50ae287656b560b53241b74be26ca0/res/values-ky/values-ky.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "38",
+                        "startColumns": "4",
+                        "startOffsets": "4603",
+                        "endColumns": "100",
+                        "endOffsets": "4699"
+                    }
+                },
+                {
+                    "source": "/home/amr/.gradle/caches/transforms-1/files-1.1/firebase-messaging-11.4.2.aar/ed14773b9a22b0a08aaec724cded6a8f/res/values-ky/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",

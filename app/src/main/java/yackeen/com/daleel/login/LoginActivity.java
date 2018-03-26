@@ -39,6 +39,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignInResult;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.SignInButton;
 import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.firebase.crash.FirebaseCrash;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -97,6 +98,10 @@ public class LoginActivity extends AppCompatActivity implements OnClickListener,
             LoginManager.getInstance().logOut();
 
         setContentView(R.layout.activity_login);
+
+        FirebaseCrash.log("Here comes the exception!");
+        FirebaseCrash.report(new Exception("oops!"));
+
         setViews();
 
         manager = new PrefManager(this);

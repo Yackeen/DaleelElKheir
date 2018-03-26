@@ -117,7 +117,7 @@
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name=".chat.ChattingActivity"></activity>
+        <activity android:name=".chat.ChattingActivity" />
     </application>
 
 </manifest>

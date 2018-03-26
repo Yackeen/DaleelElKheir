@@ -1,15 +1,15 @@
 #Internal package file, do not edit.
-#Wed Mar 14 16:01:59 EET 2018
-1.base=D\:\\BFCI\\codes\\android\\_android_studio_projects\\DaleelElKheir\\app\\build\\intermediates\\assets\\debug
-2.path=font/Cocon® Next Arabic-Bold.otf
+#Mon Mar 26 21:08:51 EET 2018
+1.base=/home/amr/AndroidStudioProjects/YSolutionsApps/Fawzy-DaleelElKheir/app/build/intermediates/assets/debug
+2.path=font/CoconÂ® Next Arabic-Bold.otf
 0.baseType=DIRECTORY
-2.base=D\:\\BFCI\\codes\\android\\_android_studio_projects\\DaleelElKheir\\app\\build\\intermediates\\assets\\debug
+2.base=/home/amr/AndroidStudioProjects/YSolutionsApps/Fawzy-DaleelElKheir/app/build/intermediates/assets/debug
 2.set=ASSET
 1.baseType=DIRECTORY
 count=3
 1.set=ASSET
-0.path=font/CoconRegular.otf
+0.path=font/CoconÂ® Next Arabic-Light.otf
 0.set=ASSET
-0.base=D\:\\BFCI\\codes\\android\\_android_studio_projects\\DaleelElKheir\\app\\build\\intermediates\\assets\\debug
+0.base=/home/amr/AndroidStudioProjects/YSolutionsApps/Fawzy-DaleelElKheir/app/build/intermediates/assets/debug
 2.baseType=DIRECTORY
-1.path=font/Cocon® Next Arabic-Light.otf
+1.path=font/CoconRegular.otf

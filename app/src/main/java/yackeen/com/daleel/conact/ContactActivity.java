@@ -13,6 +13,8 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 
+import com.google.firebase.crash.FirebaseCrash;
+
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 import yackeen.com.daleel.R;
 
@@ -38,6 +40,9 @@ public class ContactActivity extends AppCompatActivity implements OnDialogStopLi
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_conact);
+
+        FirebaseCrash.log("Here comes the exception!");
+        FirebaseCrash.report(new Exception("oops!"));
 
         toolbar = findViewById(R.id.toolbar);
         email = findViewById(R.id.email);

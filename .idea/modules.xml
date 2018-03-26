@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/DaleelElKheir.iml" filepath="$PROJECT_DIR$/DaleelElKheir.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Fawzy-DaleelElKheir.iml" filepath="$PROJECT_DIR$/Fawzy-DaleelElKheir.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/signalr-client-sdk/signalr-client-sdk.iml" filepath="$PROJECT_DIR$/signalr-client-sdk/signalr-client-sdk.iml" />
     </modules>
