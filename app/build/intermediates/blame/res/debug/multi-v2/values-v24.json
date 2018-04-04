@@ -4,7 +4,17 @@
             "outputFile": "/home/amr/AndroidStudioProjects/YSolutionsApps/Fawzy-DaleelElKheir/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "/home/amr/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/f361c01c96b44de619cbd7d920694be4/res/values-v24/values-v24.xml",
+                    "source": "/home/amr/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/f42ed9d7242adb63b473445bc903db3b/res/values-v24/values-v24.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,212",
+                        "endColumns": "156,134",
+                        "endOffsets": "207,342"
+                    }
+                },
+                {
+                    "source": "/home/amr/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/f11f56ebbacae98b453de61fd06d5e28/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -18,16 +28,6 @@
                         "startOffsets": "347,413,474,540",
                         "endColumns": "65,60,65,66",
                         "endOffsets": "408,469,535,602"
-                    }
-                },
-                {
-                    "source": "/home/amr/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/ccc2529d6ed64a2f47ee75b523fef5d0/res/values-v24/values-v24.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,212",
-                        "endColumns": "156,134",
-                        "endOffsets": "207,342"
                     }
                 }
             ]

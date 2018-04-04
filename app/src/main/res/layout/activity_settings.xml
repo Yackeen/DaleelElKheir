@@ -25,16 +25,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="@dimen/_8sdp"
-        android:showText="true"
+        android:showText="false"
         android:text="@string/language"
         android:textOff="@string/arabic"
         android:textOn="@string/english"
         android:theme="@style/SwitchTheme"
         app:layout_constraintEnd_toStartOf="parent"
         app:layout_constraintStart_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/toolbar"
-
-        />
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
 
     <Switch
         android:id="@+id/setNotification"
@@ -45,7 +43,5 @@
         android:theme="@style/SwitchTheme"
         app:layout_constraintEnd_toStartOf="parent"
         app:layout_constraintStart_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/setLang"
-
-        />
+        app:layout_constraintTop_toBottomOf="@id/setLang" />
 </android.support.constraint.ConstraintLayout>

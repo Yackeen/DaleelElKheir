@@ -28,6 +28,7 @@ import java.util.HashMap;
 
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 import yackeen.com.daleel.R;
+import yackeen.com.daleel.chat.ChattingActivity;
 import yackeen.com.daleel.connection.FetchData;
 import yackeen.com.daleel.connection.VolleyCallBack;
 import yackeen.com.daleel.login.LoginActivity;
@@ -72,7 +73,6 @@ public class DetailActivity extends AppCompatActivity implements View.OnClickLis
         //Share case
         share.setOnClickListener(this);
 
-
         try {
             String currentCash = getIntent().getExtras().getString("currentAmount");
             String requiredCash = getIntent().getExtras().getString("requiredAmount");
@@ -98,7 +98,35 @@ public class DetailActivity extends AppCompatActivity implements View.OnClickLis
         }
         progressBar.setProgress((int) val);
 
+        if (manager.isLoggedIn()) {
+            HashMap<String, String> params = new HashMap<>();
+            HashMap<String, String> headers = new HashMap<>();
+            params.put("UserID", user.getId());
+            params.put("CaseID", getIntent().getExtras().getString("caseId"));
+            headers.put("SecurityToken", user.getToken());
+            FetchData fetchData = new FetchData(DetailActivity.this, TAG, progress, ADD_CASE,
+                    Request.Method.POST, params, headers);
+            fetchData.getData(new VolleyCallBack() {
+                @Override
+                public void onSuccess(JSONObject jsonObject) {
+                    Log.d(TAG, "onSuccess: " + jsonObject);
+                    try {
+                        boolean isSuccess = jsonObject.getBoolean("IsSuccess");
+                        if (isSuccess) {
+                            String res = jsonObject.getString("Response");
+                            if (res.equalsIgnoreCase("you joined this Case before"))
+                                addCase.setImageResource(android.R.drawable.ic_menu_send);
 
+//                            Toast.makeText(DetailActivity.this, res, Toast.LENGTH_SHORT).show();
+                        }
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                }
+            });
+        } else {
+            dialog.show();
+        }
     }
 
     private void addCase(final User user) {
@@ -140,8 +168,19 @@ public class DetailActivity extends AppCompatActivity implements View.OnClickLis
                             try {
                                 boolean isSuccess = jsonObject.getBoolean("IsSuccess");
                                 if (isSuccess) {
-                                    Toast.makeText(DetailActivity.this,
-                                            jsonObject.getString("Response"), Toast.LENGTH_SHORT).show();
+                                    String res = jsonObject.getString("Response");
+                                    if (res.equalsIgnoreCase("you joined this Case before")) {
+                                        addCase.setImageResource(android.R.drawable.ic_menu_send);
+                                    }
+
+                                    int v = Integer.parseInt(getIntent().getExtras().getString("caseId"));
+
+                                    Intent intent = new Intent(DetailActivity.this, ChattingActivity.class);
+                                    intent.putExtra("CaseID", v);
+                                    intent.putExtra("CaseName", getIntent().getExtras().getString("caseName"));
+                                    startActivity(intent);
+
+                                    Toast.makeText(DetailActivity.this, res, Toast.LENGTH_SHORT).show();
                                 }
                             } catch (JSONException e) {
                                 e.printStackTrace();
@@ -149,7 +188,6 @@ public class DetailActivity extends AppCompatActivity implements View.OnClickLis
                         }
                     });
                 } else {
-
                     dialog.show();
                 }
             }
@@ -181,7 +219,6 @@ public class DetailActivity extends AppCompatActivity implements View.OnClickLis
             case R.id.shareCase:
                 share();
                 break;
-
         }
     }
 

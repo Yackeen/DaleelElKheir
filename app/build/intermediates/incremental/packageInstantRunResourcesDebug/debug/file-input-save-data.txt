@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Mar 26 21:08:51 EET 2018
+#Wed Apr 04 15:11:33 EET 2018
 1.base=/home/amr/AndroidStudioProjects/YSolutionsApps/Fawzy-DaleelElKheir/app/build/intermediates/assets/debug
 2.path=font/Cocon® Next Arabic-Bold.otf
 0.baseType=DIRECTORY

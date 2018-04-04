@@ -4,7 +4,7 @@
             "outputFile": "/home/amr/AndroidStudioProjects/YSolutionsApps/Fawzy-DaleelElKheir/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rCA/values-en-rCA.xml",
             "map": [
                 {
-                    "source": "/home/amr/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/ccc2529d6ed64a2f47ee75b523fef5d0/res/values-en-rCA/values-en-rCA.xml",
+                    "source": "/home/amr/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/f42ed9d7242adb63b473445bc903db3b/res/values-en-rCA/values-en-rCA.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

@@ -4,7 +4,7 @@
             "outputFile": "/home/amr/AndroidStudioProjects/YSolutionsApps/Fawzy-DaleelElKheir/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v26/values-v26.xml",
             "map": [
                 {
-                    "source": "/home/amr/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/ccc2529d6ed64a2f47ee75b523fef5d0/res/values-v26/values-v26.xml",
+                    "source": "/home/amr/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/f42ed9d7242adb63b473445bc903db3b/res/values-v26/values-v26.xml",
                     "from": {
                         "startLines": "2,3,4,8,12,16",
                         "startColumns": "4,4,4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/home/amr/.gradle/caches/transforms-1/files-1.1/design-27.0.2.aar/ec868d4b04900ead57355a2851d9878d/res/values-v26/values-v26.xml",
+                    "source": "/home/amr/.gradle/caches/transforms-1/files-1.1/design-27.0.2.aar/d5bcc9e6bc906d5f90384116384a0a37/res/values-v26/values-v26.xml",
                     "from": {
                         "startLines": "2,6",
                         "startColumns": "4,4",
