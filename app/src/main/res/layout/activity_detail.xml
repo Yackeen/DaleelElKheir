@@ -244,12 +244,33 @@
                     android:textColor="@color/black" />
 
                 <me.grantland.widget.AutofitTextView
-                    android:id="@+id/descriptionText"
+                    android:id="@+id/codeText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/placeText"
                     android:layout_marginLeft="@dimen/_7sdp"
-                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:text="@string/case_code"
+                    android:textColor="@color/black" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/placeText"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_toRightOf="@id/codeText"
+                    android:text="888888888888"
+                    android:textColor="@color/black" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/descriptionText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/codeText"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
                     android:text="@string/description"
                     android:textColor="@color/black" />
 
@@ -257,9 +278,9 @@
                     android:id="@+id/description"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/placeText"
+                    android:layout_below="@id/codeText"
                     android:layout_marginLeft="@dimen/_7sdp"
-                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
                     android:layout_toRightOf="@id/descriptionText"
                     android:text="desctiption description"
                     android:textColor="@color/black" />

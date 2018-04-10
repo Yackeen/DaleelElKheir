@@ -175,6 +175,7 @@ public class NewsFeedFragment extends Fragment implements View.OnClickListener {
                             model.setCurrentAmount(object.getString("CurrentAmount"));
                             model.setDescription(object.getString("Description"));
                             model.setSharedLink(object.getString("SharedURL"));
+                            model.setCaseCode(object.getString("CaseCode"));
                             data.add(model);
                         }
 
@@ -232,6 +233,7 @@ public class NewsFeedFragment extends Fragment implements View.OnClickListener {
                             model.setCurrentAmount(object.getString("CurrentAmount"));
                             model.setDescription(object.getString("Description"));
                             model.setSharedLink(object.getString("SharedURL"));
+                            model.setCaseCode(object.getString("CaseCode"));
                             data.add(model);
                         }
                         recyclerView.setLayoutManager(new GridLayoutManager(getActivity(), 2));

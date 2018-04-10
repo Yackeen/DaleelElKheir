@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/amr/AndroidStudioProjects/YSolutionsApps/Fawzy-DaleelElKheir/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
+            "outputFile": "/home/amr/AndroidStudioProjects/YSolutionsApps/DaleelElKheir/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
             "map": [
                 {
                     "source": "/home/amr/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.0.2.aar/84c32ac11eb01bb38469b8ab4dbfd617/res/values-v23/values-v23.xml",

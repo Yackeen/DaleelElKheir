@@ -7,7 +7,7 @@ package yackeen.com.daleel.allcases.model;
 public class CaseModel {
 
     private String id, name, image, dueDate, organization, city, governorate, category, caseType,
-            caseStatue, requiredAmount, currentAmount, description, sharedLink;
+            caseStatue, requiredAmount, currentAmount, description, sharedLink, CaseCode;
     private String urgentCase;
 
     public CaseModel() {
@@ -16,7 +16,7 @@ public class CaseModel {
     public CaseModel(String id, String name, String image, String dueDate,
                      String organization, String city, String governorate, String category, String caseType,
                      String caseStatue, String requiredAmount, String currentAmount, String description, String urgentCase,
-                     String sharedLink) {
+                     String sharedLink, String CaseCode) {
         this.id = id;
         this.name = name;
         this.image = image;
@@ -32,8 +32,16 @@ public class CaseModel {
         this.urgentCase = urgentCase;
         this.description = description;
         this.sharedLink = sharedLink;
+        this.CaseCode = CaseCode;
     }
 
+    public String getCaseCode() {
+        return CaseCode;
+    }
+
+    public void setCaseCode(String caseCode) {
+        CaseCode = caseCode;
+    }
 
     public String getSharedLink() {
         return sharedLink;

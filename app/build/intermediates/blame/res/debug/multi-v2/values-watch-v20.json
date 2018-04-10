@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/amr/AndroidStudioProjects/YSolutionsApps/Fawzy-DaleelElKheir/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v20/values-watch-v20.xml",
+            "outputFile": "/home/amr/AndroidStudioProjects/YSolutionsApps/DaleelElKheir/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
                     "source": "/home/amr/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.4.2.aar/ef9a40f307068924f0ee9e182c54eb90/res/values-watch-v20/values.xml",

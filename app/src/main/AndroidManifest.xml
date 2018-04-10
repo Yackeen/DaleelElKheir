@@ -62,11 +62,6 @@
                 android:value=".home.MainActivity" />
         </activity>
 
-        <!-- facebook integration -->
-        <meta-data
-            android:name="com.facebook.sdk.ApplicationId"
-            android:value="@string/facebook_app_id" />
-
         <activity
             android:name=".login.LoginActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
@@ -119,5 +114,9 @@
 
         <activity android:name=".chat.ChattingActivity" />
     </application>
+
+    <meta-data
+        android:name="com.facebook.sdk.ApplicationId"
+        android:value="@string/facebook_app_id" />
 
 </manifest>

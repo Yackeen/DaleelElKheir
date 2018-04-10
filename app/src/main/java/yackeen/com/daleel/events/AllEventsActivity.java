@@ -97,6 +97,7 @@ public class AllEventsActivity extends AppCompatActivity {
                             model.setEndDate(object.getString("EndDate"));
                             model.setMobile(object.getString("Mobile"));
                             model.setTime(object.getString("StartDate"));
+                            model.setLink(object.getString("Link"));
                             if (getIntent().getExtras().getString("searchText") != null) {
                                 if (!isContain(object.getString("Title"),
                                         getIntent().getExtras().getString("searchText")))

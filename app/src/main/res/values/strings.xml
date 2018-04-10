@@ -6,9 +6,7 @@
 
     <string name="action_settings">Settings</string>
 
-    <string name="facebook_app_id">330476670775666</string>
-    <string name="fb_login_protocol_scheme">fb330476670775666</string>
-
+    <string name="facebook_app_id">201126457154099</string>
 
     <string name="title_activity_splash">SplashActivity</string>
     <string name="blod_bank">Blood bank</string>
@@ -126,9 +124,11 @@
     <string name="reset">Reset</string>
     <string name="english">English</string>
     <string name="arabic">Arabic</string>
-    <string name="or">Or</string>
+    <string name="or">Or login with</string>
     <string name="pressBackAgain">press back again to exit</string>
     <string name="noDataFound">No messages found</string>
     <string name="typeHere">type message</string>
+    <string name="case_code">Case Code:</string>
+    <string name="event_link">Event Link :</string>
 
 </resources>

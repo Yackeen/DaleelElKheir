@@ -118,8 +118,10 @@
     <string name="reset">إعادة ضبط</string>
     <string name="english">الأنجليزية</string>
     <string name="arabic">العربية</string>
-    <string name="or">أو</string>
+    <string name="or">أو سجل من خلال</string>
     <string name="pressBackAgain">إضغط رجوع مرة اخرى للخروج</string>
     <string name="noDataFound">لا يوجد رسائل</string>
     <string name="typeHere">الرسالة</string>
+    <string name="case_code">الكود :</string>
+    <string name="event_link">لينك الحدث :</string>
 </resources>

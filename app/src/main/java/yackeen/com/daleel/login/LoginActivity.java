@@ -8,38 +8,30 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.Request;
-import com.facebook.AccessToken;
-import com.facebook.CallbackManager;
-import com.facebook.FacebookCallback;
-import com.facebook.FacebookException;
 import com.facebook.FacebookSdk;
-import com.facebook.GraphRequest;
-import com.facebook.GraphResponse;
-import com.facebook.internal.CallbackManagerImpl;
-import com.facebook.login.LoginManager;
-import com.facebook.login.LoginResult;
-import com.facebook.login.widget.LoginButton;
+import com.facebook.Profile;
 import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
-import com.google.android.gms.auth.api.signin.GoogleSignInResult;
-import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.SignInButton;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.firebase.crash.FirebaseCrash;
+import com.mukeshsolanki.sociallogin.facebook.FacebookHelper;
+import com.mukeshsolanki.sociallogin.facebook.FacebookListener;
+import com.mukeshsolanki.sociallogin.google.GoogleHelper;
+import com.mukeshsolanki.sociallogin.google.GoogleListener;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -67,36 +59,24 @@ import static yackeen.com.daleel.constants.Constants.USER_PROFILE;
 /**
  * A login screen that offers login via email/password.
  */
-public class LoginActivity extends AppCompatActivity implements OnClickListener, GoogleApiClient.OnConnectionFailedListener {
+public class LoginActivity extends AppCompatActivity implements OnClickListener, FacebookListener, GoogleListener {
 
-    private static final String TAG = "fawzy.LoginActivity";
-    private static final int RC_SIGN_IN = 70;
+    private static final String TAG = "LoginActivity";
     private static int CURRENT_USER = NORMAL_USER;
-    CallbackManager callbackManager;
+    Button signUpWithFace, signUpWithGoogle;
+    FacebookHelper facebookHelper;
+    GoogleHelper googleHelper;
     private EditText mEmailView, mPasswordView;
     private View mLoginFormView;
     private ProgressBar mProgressView;
     private TextView newAccount, login, forgetPass;
-    private LoginButton signUpWithFace;
-    private SignInButton signUpWithGoogle;
-    private GoogleApiClient mGoogleApiClient;
     private PrefManager manager;
-
     private boolean isFaceBookUser = false;
     private boolean isGoogleUser = false;
-
-    public boolean isLoggedIn() {
-        AccessToken accessToken = AccessToken.getCurrentAccessToken();
-        return accessToken != null;
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        FacebookSdk.sdkInitialize(getApplicationContext());
-        if (isLoggedIn())
-            LoginManager.getInstance().logOut();
-
         setContentView(R.layout.activity_login);
 
         FirebaseCrash.log("Here comes the exception!");
@@ -105,23 +85,16 @@ public class LoginActivity extends AppCompatActivity implements OnClickListener,
         setViews();
 
         manager = new PrefManager(this);
-
-        setupGoogleSignIn();
     }
 
-    private void setupGoogleSignIn() {
-        signUpWithFace.setCompoundDrawablesWithIntrinsicBounds(0, 0, 0, 0);
-
-        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestEmail()
-                .build();
-        mGoogleApiClient = new GoogleApiClient.Builder(this)
-                .enableAutoManage(this /* FragmentActivity */, this /* OnConnectionFailedListener */)
-                .addApi(Auth.GOOGLE_SIGN_IN_API, gso)
-                .build();
-    }
 
     private void setViews() {
+
+        FacebookSdk.setApplicationId(getResources().getString(R.string.facebook_app_id));
+        FacebookSdk.sdkInitialize(this);
+        facebookHelper = new FacebookHelper(this);
+        googleHelper = new GoogleHelper(this, this, null);
+
         // Set up the login form.
         mEmailView = findViewById(R.id.email);
         login = findViewById(R.id.login);
@@ -143,108 +116,9 @@ public class LoginActivity extends AppCompatActivity implements OnClickListener,
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        Log.e("fawzy.login", "onActivityResult: RC: " + requestCode + " ,RC: " + resultCode + "\n data: " + data.getExtras().toString());
-        if (requestCode == RESULT_OK) {
-            if (requestCode == RC_SIGN_IN) {
-                Log.e(TAG, "onActivityResult.GooGle");
-                GoogleSignInResult result = Auth.GoogleSignInApi.getSignInResultFromIntent(data);
-                Log.e(TAG, "onActivityResult.GooGle.resulyStatus= " + result.getStatus().toString());
-                handleSignInResult(result);
-            } else if (FacebookSdk.isFacebookRequestCode(requestCode)) {
-                Log.e(TAG, "onActivityResult.Facebook");
-                callbackManager.onActivityResult(requestCode, resultCode, data);
-                if (requestCode == CallbackManagerImpl.RequestCodeOffset.Login.toRequestCode()) {
 
-                } else if (requestCode == CallbackManagerImpl.RequestCodeOffset.Share.toRequestCode()) {
-                    //share
-                }
-
-            }
-        }
-    }
-
-    private void handleSignInResult(GoogleSignInResult result) {
-        Log.e(TAG, "handleSignInResult:" + result.isSuccess() + "status: " + result.getStatus().getStatusMessage());
-        if (result.isSuccess()) {
-            // Signed in successfully, show authenticated UI.
-            GoogleSignInAccount acct = result.getSignInAccount();
-            isGoogleUser = true;
-            CURRENT_USER = SOCIAL_MEDIA_USER;
-            sendLoginRequest(/*acct.getDisplayName(),*/ acct.getEmail()
-                    /*, String.valueOf(acct.getPhotoUrl())*/, acct.getId());
-            Log.e(TAG, "handleSignInResultSuccess: " + result.getStatus());
-
-        } else {
-            // Signed out, show unauthenticated UI.
-            Log.e(TAG, "handleSignInResultFaild: " + result.getStatus());
-        }
-    }
-
-    private void signInWithGoogle() {
-        Intent signInIntent = Auth.GoogleSignInApi.getSignInIntent(mGoogleApiClient);
-        startActivityForResult(signInIntent, RC_SIGN_IN);
-
-    }
-
-    private void faceSignIn() {
-        callbackManager = CallbackManager.Factory.create();
-        signUpWithFace.setReadPermissions("email", "public_profile");
-        LoginManager.getInstance().registerCallback(callbackManager,
-                new FacebookCallback<LoginResult>() {
-                    @Override
-                    public void onSuccess(LoginResult loginResult) {
-                        // App code
-                        Log.i(TAG, "onSuccess: " + loginResult);
-//                        progressBar.setVisibility(View.VISIBLE);
-//                        wholeView.setAlpha(0.4f);
-
-                        getUserDetails(loginResult);
-                        //login(profile.getName(), profile.ge.getEmail(), String.valueOf(user.getPhotoUrl()), user.getUid());
-//                        handleFacebookAccessToken(loginResult.getAccessToken());
-
-                    }
-
-                    @Override
-                    public void onCancel() {
-                        // App code
-                        Log.e(TAG, "onCancel: ");
-                    }
-
-                    @Override
-                    public void onError(FacebookException exception) {
-                        // App code
-                        Log.e(TAG, "onError: " + exception.getMessage());
-                    }
-                });
-
-    }
-
-    protected void getUserDetails(LoginResult loginResult) {
-        GraphRequest data_request = GraphRequest.newMeRequest(
-                loginResult.getAccessToken(), new GraphRequest.GraphJSONObjectCallback() {
-                    @Override
-                    public void onCompleted(
-                            JSONObject json_object,
-                            GraphResponse response) {
-                        Log.e(TAG, "onCompleted: " + response);
-                        JSONObject jsonObject;
-                        try {
-                            jsonObject = new JSONObject(response.getRawResponse());
-                            CURRENT_USER = SOCIAL_MEDIA_USER;
-                            isFaceBookUser = true;
-                            sendLoginRequest(jsonObject.getString("email"), jsonObject.getString("id")
-                                    /*, jsonObject.getString("picture"), jsonObject.getString("id")*/);
-                        } catch (JSONException e) {
-                            e.printStackTrace();
-                        }
-                    }
-
-                });
-        Bundle permission_param = new Bundle();
-        permission_param.putString("fields", "id,name,email,picture.width(120).height(120)");
-        data_request.setParameters(permission_param);
-        data_request.executeAsync();
-
+        facebookHelper.onActivityResult(requestCode, resultCode, data);
+        googleHelper.onActivityResult(requestCode, resultCode, data);
     }
 
     private void attemptLogin() {
@@ -287,11 +161,11 @@ public class LoginActivity extends AppCompatActivity implements OnClickListener,
     private void sendLoginRequest(final String email, final String password) {
         final HashMap<String, String> params = new HashMap<>();
 
-        if (isFaceBookUser)
+        if (isFaceBookUser) {
             params.put("Facebook_ID", password);
-        else if (isGoogleUser)
+        } else if (isGoogleUser) {
             params.put("google_ID", password);
-        else {
+        } else {
             params.put("Email", email);
             params.put("Password", password);
         }
@@ -343,46 +217,10 @@ public class LoginActivity extends AppCompatActivity implements OnClickListener,
                         });
 
                     } else {
-                        Log.e(TAG, "onSuccess: Not registed");
-                        if (CURRENT_USER == SOCIAL_MEDIA_USER) {
-                            manager.setUserType(SOCIAL_MEDIA_USER);
-
-                            final JSONObject jsonBody = new JSONObject();
-                            jsonBody.put("Email", email);
-                            jsonBody.put("Mobile", "");
-                            jsonBody.put("Name", "");
-                            jsonBody.put("Image", "");
-
-                            if (isFaceBookUser)
-                                jsonBody.put("Facebook_ID", password);
-                            else if (isGoogleUser) jsonBody.put("google_ID", password);
-
-                            PostData postData = new PostData(LoginActivity.this, jsonBody, REGISTER,
-                                    Request.Method.POST, mProgressView, null);
-
-                            Log.e(TAG, "onSuccess: ID " + password);
-                            postData.post(new VolleyCallBack() {
-                                @Override
-                                public void onSuccess(JSONObject jsonObject) {
-                                    Log.e(TAG, "onSuccess: Response" + jsonObject);
-                                    try {
-                                        boolean isSuccess = jsonObject.getBoolean("IsSuccess");
-                                        if (isSuccess) {
-                                            sendLoginRequest(email, password);
-                                        } else {
-                                            Toast.makeText(LoginActivity.this,
-                                                    jsonObject.getString("ErrorMessage"), Toast.LENGTH_SHORT).show();
-                                        }
-                                    } catch (JSONException e) {
-                                        e.printStackTrace();
-                                    }
-                                }
-                            });
-
-                        } else {
-                            showProgress(false);
-                            Toast.makeText(LoginActivity.this, jsonObject.getString("ErrorMessage"), Toast.LENGTH_SHORT).show();
-                        }
+                        showProgress(false);
+                        Toast.makeText(LoginActivity.this, jsonObject.getString("ErrorMessage"), Toast.LENGTH_SHORT).show();
+//                        register(email, password);
+//                        Toast.makeText(LoginActivity.this, "Login Failed", Toast.LENGTH_SHORT).show();
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -444,10 +282,10 @@ public class LoginActivity extends AppCompatActivity implements OnClickListener,
                 attemptLogin();
                 break;
             case R.id.facebook:
-                faceSignIn();
+                facebookHelper.performSignIn(LoginActivity.this);
                 break;
             case R.id.google:
-                signInWithGoogle();
+                googleHelper.performSignIn(LoginActivity.this);
                 break;
             case R.id.forgetPassword:
                 resetPassDialog();
@@ -542,13 +380,90 @@ public class LoginActivity extends AppCompatActivity implements OnClickListener,
     }
 
     @Override
-    public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
-
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
     }
 
     @Override
-    protected void attachBaseContext(Context newBase) {
-        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
+    public void onFbSignInFail(String errorMsg) {
+        Toast.makeText(this, errorMsg, Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onFbSignInSuccess(String authToken, String userID) {
+//        Toast.makeText(this, authToken, Toast.LENGTH_SHORT).show();
+//        Profile profile = Profile.getCurrentProfile();
+//        String Name = profile.getName();
+//        Toast.makeText(this, Name, Toast.LENGTH_SHORT).show();
+
+        CURRENT_USER = SOCIAL_MEDIA_USER;
+        isFaceBookUser = true;
+        register(userID + "@facebook.com", userID);
+    }
+
+    @Override
+    public void onFBSignOut() {
+        Toast.makeText(this, "Sign out", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onGoogleAuthSignIn(String authToken, String userID) {
+//        Toast.makeText(this, authToken, Toast.LENGTH_SHORT).show();
+        isGoogleUser = true;
+        CURRENT_USER = SOCIAL_MEDIA_USER;
+        register(userID + "@google.com", userID);
+    }
+
+    @Override
+    public void onGoogleAuthSignInFailed(String errorMsg) {
+        Toast.makeText(this, errorMsg, Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onGoogleAuthSignOut() {
+        Toast.makeText(this, "Sign out", Toast.LENGTH_SHORT).show();
+    }
+
+    private void register(final String Email, final String ID) {
+        try {
+            final JSONObject jsonBody = new JSONObject();
+            jsonBody.put("Email", Email);
+            if (isFaceBookUser) {
+                jsonBody.put("Facebook_ID", ID);
+                jsonBody.put("google_ID", "");
+            }
+            if (isGoogleUser) {
+                jsonBody.put("google_ID", ID);
+                jsonBody.put("Facebook_ID", "");
+            }
+            jsonBody.put("Mobile", "");
+            jsonBody.put("Name", "");
+            jsonBody.put("Password", "");
+            jsonBody.put("Image", "");
+
+            PostData postData = new PostData(this, jsonBody, REGISTER, Request.Method.POST,
+                    mProgressView, null);
+            postData.post(new VolleyCallBack() {
+                @Override
+                public void onSuccess(JSONObject jsonObject) {
+                    try {
+                        boolean isSuccess = jsonObject.getBoolean("IsSuccess");
+                        Log.e(TAG, "register.isSuccess");
+                        if (isSuccess) {
+                            sendLoginRequest(Email, ID);
+                        } else {
+                            Toast.makeText(LoginActivity.this,
+                                    jsonObject.getString("ErrorMessage"), Toast.LENGTH_SHORT).show();
+                        }
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                }
+            });
+
+        } catch (JSONException ex) {
+            ex.printStackTrace();
+        }
     }
 }
 

@@ -8,7 +8,6 @@ buildscript {
     repositories {
         google()
         jcenter()
-        maven { url 'http://clojars.org/repo' }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.0.1'
@@ -21,10 +20,10 @@ buildscript {
 allprojects {
     repositories {
         google()
-        //maven { url 'https://jitpack.io' }
-        maven { url 'http://clojars.org/repo' }
         jcenter()
-        mavenCentral()
+        maven { url 'http://clojars.org/repo' }
+        maven{ url "https://jitpack.io"}
+        maven{ url "https://maven.fabric.io/public"}
     }
 }
 

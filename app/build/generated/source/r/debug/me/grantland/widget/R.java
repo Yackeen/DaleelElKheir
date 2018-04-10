@@ -8,12 +8,12 @@ package me.grantland.widget;
 
 public final class R {
     public static final class attr {
-        public static final int minTextSize = 0x7f030139;
-        public static final int precision = 0x7f03014f;
-        public static final int sizeToFit = 0x7f03016a;
+        public static final int minTextSize = 0x7f040190;
+        public static final int precision = 0x7f0401aa;
+        public static final int sizeToFit = 0x7f0401d0;
     }
     public static final class styleable {
-        public static final int[] AutofitTextView = { 0x7f030139, 0x7f03014f, 0x7f03016a };
+        public static final int[] AutofitTextView = { 0x7f040190, 0x7f0401aa, 0x7f0401d0 };
         public static final int AutofitTextView_minTextSize = 0;
         public static final int AutofitTextView_precision = 1;
         public static final int AutofitTextView_sizeToFit = 2;

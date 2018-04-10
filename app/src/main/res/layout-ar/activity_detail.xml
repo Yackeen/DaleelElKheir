@@ -249,6 +249,27 @@
                     android:textColor="@color/black" />
 
                 <me.grantland.widget.AutofitTextView
+                    android:id="@+id/codeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/placeText"
+                    android:layout_marginRight="@dimen/_7sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:text="@string/case_code"
+                    android:textColor="@color/black" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/placeText"
+                    android:layout_marginRight="@dimen/_7sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_toLeftOf="@id/codeText"
+                    android:text="888888888888"
+                    android:textColor="@color/black" />
+
+                <me.grantland.widget.AutofitTextView
                     android:id="@+id/descriptionText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

@@ -139,21 +139,25 @@
                         android:gravity="center|center_vertical"
                         android:orientation="horizontal">
 
-
-                        <com.google.android.gms.common.SignInButton
+                        <Button
                             android:id="@+id/google"
-                            android:layout_width="wrap_content"
-                            android:layout_height="@dimen/_30sdp"
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
                             android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="@dimen/_4sdp"
+                            android:background="@drawable/google_plus"
+                            android:gravity="center"
+                            android:textAllCaps="false" />
 
-                            android:gravity="center" />
-
-                        <com.facebook.login.widget.LoginButton
+                        <Button
                             android:id="@+id/facebook"
-                            android:layout_width="wrap_content"
-                            android:layout_height="@dimen/_30sdp"
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
                             android:layout_gravity="center_vertical"
-                            android:gravity="center" />
+                            android:layout_marginStart="@dimen/_4sdp"
+                            android:background="@drawable/facebookplus"
+                            android:gravity="center"
+                            android:textAllCaps="false" />
                     </LinearLayout>
 
 

@@ -66,6 +66,7 @@ public class EventsAdapter extends RecyclerView.Adapter<EventsAdapter.ViewHolder
                 bundle.putString("startDate", model.getStartDate());
                 bundle.putString("endDate", model.getEndDate());
                 bundle.putString("org", model.getOrganization());
+                bundle.putString("link", model.getLink());
                 //set Fragmentclass Arguments
                 EventDetail fragment = new EventDetail();
                 fragment.setArguments(bundle);

@@ -85,6 +85,7 @@ public class AdapterViewpager extends PagerAdapter implements View.OnClickListen
                 intent.putExtra("currentAmount", model.getCurrentAmount());
                 intent.putExtra("description", model.getDescription());
                 intent.putExtra("sharedLink", model.getSharedLink());
+                intent.putExtra("CaseCode", model.getCaseCode());
                 context.startActivity(intent);
             }
         });

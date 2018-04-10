@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/amr/AndroidStudioProjects/YSolutionsApps/Fawzy-DaleelElKheir/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
+            "outputFile": "/home/amr/AndroidStudioProjects/YSolutionsApps/DaleelElKheir/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
                     "source": "/home/amr/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/016a4cade30da35b324ab73cde8bda13/res/values-v16/values-v16.xml",

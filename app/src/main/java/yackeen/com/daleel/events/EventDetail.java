@@ -32,10 +32,11 @@ import yackeen.com.daleel.R;
 public class EventDetail extends Fragment {
 
     private static final String TAG = "EventDetail";
-    TextView name, date, time, brief, organization, contact, location;
+    TextView name, date, time, brief, organization, contact, location, eventLink;
     ProgressBar progress;
     ImageView image;
     ScrollView scrollView;
+    String link;
 
     public EventDetail() {
         // Required empty public constructor
@@ -55,16 +56,14 @@ public class EventDetail extends Fragment {
 
         name.setText(getArguments().getString("title"));
         brief.setText(getArguments().getString("desc"));
+        eventLink.setText(getString(R.string.event_link) + getArguments().getString("link"));
 
         Log.d(TAG, "onCreateView: " + getArguments().getString("time"));
-        SimpleDateFormat yourDateFormat = new SimpleDateFormat(
-                "dd/MM/yyyy");
+        SimpleDateFormat yourDateFormat = new SimpleDateFormat("dd/MM/yyyy");
         date.setText(DateFormat.format("dd-MMM", new Date(yourDateFormat.format(
                 new Date(getArguments().getString("startDate"))))));
 
-        time.setText(DateFormat.format("h:mm a", new Date(getArguments().getString("startDate"))) +
-                " - " +
-                DateFormat.format("h:mm a", new Date(getArguments().getString("endDate"))));
+        time.setText(DateFormat.format("h:mm a", new Date(getArguments().getString("startDate"))) + " - " + DateFormat.format("h:mm a", new Date(getArguments().getString("endDate"))));
 
         brief.setText(Html.fromHtml(getArguments().getString("desc")));
         contact.setText(getArguments().getString("mob"));
@@ -88,6 +87,7 @@ public class EventDetail extends Fragment {
         progress = view.findViewById(R.id.progress);
         image = view.findViewById(R.id.eventImg);
         scrollView = view.findViewById(R.id.eventDetailMain);
+        eventLink = view.findViewById(R.id.eventLink);
     }
 
     @Override

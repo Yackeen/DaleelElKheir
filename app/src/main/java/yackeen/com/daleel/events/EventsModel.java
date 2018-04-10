@@ -6,14 +6,14 @@ package yackeen.com.daleel.events;
 
 public class EventsModel {
     private String id, title, location, duration, image, description, time, mobile,
-            startDate, endDate, organization;
+            startDate, endDate, organization, Link;
 
     public EventsModel() {
 
     }
 
     public EventsModel(String id, String title, String location, String duration, String image,
-                       String description, String time, String mobile, String startDate, String endDate, String organization) {
+                       String description, String time, String mobile, String startDate, String endDate, String organization, String Link) {
         this.id = id;
         this.title = title;
         this.location = location;
@@ -25,8 +25,16 @@ public class EventsModel {
         this.startDate = startDate;
         this.endDate = endDate;
         this.organization = organization;
+        this.Link = Link;
     }
 
+    public String getLink() {
+        return Link;
+    }
+
+    public void setLink(String link) {
+        Link = link;
+    }
 
     public String getOrganization() {
         return organization;

@@ -79,6 +79,7 @@ class NewsFeedAdapter extends RecyclerView.Adapter<NewsFeedAdapter.ViewHolder> {
                 intent.putExtra("requiredAmount", model.getRequiredAmount());
                 intent.putExtra("description", model.getDescription());
                 intent.putExtra("sharedLink", model.getSharedLink());
+                intent.putExtra("CaseCode", model.getCaseCode());
                 context.startActivity(intent);
             }
         });

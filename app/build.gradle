@@ -6,12 +6,13 @@ android {
     compileSdkVersion 27
     defaultConfig {
         applicationId "yackeen.com.daleel"
-        minSdkVersion 15
+        minSdkVersion 17
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -44,7 +45,7 @@ dependencies {
     implementation 'com.google.android.gms:play-services-auth:11.4.2'
     implementation 'com.google.firebase:firebase-messaging:11.4.2'
 
-    implementation 'com.facebook.android:facebook-login:4.30.0'
+//    implementation 'com.facebook.android:facebook-login:4.30.0'
 
     implementation 'com.github.bumptech.glide:glide:3.7.0'
 
@@ -53,7 +54,9 @@ dependencies {
     implementation 'me.grantland:autofittextview:0.2.+'
     implementation 'uk.co.chrisjenx:calligraphy:2.3.0'
     compile 'io.paperdb:paperdb:2.1'
-
+    compile 'com.github.mukeshsolanki:social-login-helper:1.0.2'
+    compile 'com.google.firebase:firebase-core:11.4.2'
+    compile 'com.google.android.gms:play-services:11.4.2'
 
     compile project(':signalr-client-sdk')
 

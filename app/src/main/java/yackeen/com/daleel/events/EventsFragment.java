@@ -49,6 +49,7 @@ public class EventsFragment extends Fragment {
 
 
     private static final String TAG = "Fawzy.EventsFragment";
+    List<EventsModel> data;
     private MaterialCalendarView calendarView;
     private RecyclerView recyclerView;
     private ProgressBar progress;
@@ -124,19 +125,21 @@ public class EventsFragment extends Fragment {
         recyclerView = view.findViewById(R.id.recycler);
         progress = view.findViewById(R.id.progress);
         noEvents = view.findViewById(R.id.noEvents);
+        recyclerView = view.findViewById(R.id.recycler);
+        data = new ArrayList<>();
 
         calendar = Calendar.getInstance();
         calendar.setTimeInMillis(System.currentTimeMillis());
         calendarView.setDateSelected(calendar.getTime(), true);
+//        calendarView.setSelectionMode(MaterialCalendarView.SELECTION_MODE_MULTIPLE);
         calendarView.setOnDateChangedListener(new OnDateSelectedListener() {
             @Override
             public void onDateSelected(@NonNull MaterialCalendarView widget, @NonNull CalendarDay date, boolean selected) {
-                Log.e("fawzy selected Date", "Year=" + date.getYear() + " Month=" + (date.getMonth() + 1) + " day=" + date.getDay());
+//                Log.e("fawzy selected Date", "Year=" + date.getYear() + " Month=" + (date.getMonth() + 1) + " day=" + date.getDay());
                 String dateStr = date.getDay() + "/" + (date.getMonth() + 1) + "/" + date.getYear();
                 getEvents(dateStr);
             }
         });
-
 
         return view;
     }
@@ -144,8 +147,8 @@ public class EventsFragment extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-        getEvents(calendar.get(Calendar.DAY_OF_MONTH) + "/" + calendar.get(Calendar.MONTH + 1) + "/" +
-                calendar.get(Calendar.YEAR));
+//        getEvents(calendar.get(Calendar.DAY_OF_MONTH) + "/" + calendar.get(Calendar.MONTH + 1) + "/" +
+//                calendar.get(Calendar.YEAR));
     }
 
     @Override
@@ -169,7 +172,7 @@ public class EventsFragment extends Fragment {
 
                     Log.e(TAG, "onSuccess: " + jsonObject);
                     if (isSuccess) {
-                        List<EventsModel> data = new ArrayList<>();
+                        data.clear();
                         JSONArray jsonArray = jsonObject.getJSONArray("Response");
                         for (int i = 0; i < jsonArray.length(); i++) {
                             JSONObject object = jsonArray.getJSONObject(i);
@@ -185,15 +188,14 @@ public class EventsFragment extends Fragment {
                             model.setEndDate(object.getString("EndDate"));
                             model.setMobile(object.getString("Mobile"));
                             model.setTime(object.getString("StartDate"));
+                            model.setLink(object.getString("Link"));
                             data.add(model);
                         }
-                        if (data.size() <= 0) {
+                        if (data.size() == 0)
                             noEvents.setVisibility(View.VISIBLE);
-                        } else {
-                            recyclerView = view.findViewById(R.id.recycler);
-                            recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-                            recyclerView.setAdapter(new EventsAdapter(getActivity(), data));
-                        }
+
+                        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+                        recyclerView.setAdapter(new EventsAdapter(getActivity(), data));
                     }
 
                 } catch (

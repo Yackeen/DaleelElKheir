@@ -43,7 +43,7 @@ public class DetailActivity extends AppCompatActivity implements View.OnClickLis
     double val = 0;
     private ImageView share, thumbnail;
     private TextView caseName, organization, date, currentAmount, requiredAmount, description,
-            urgent, location, category;
+            urgent, location, category, code;
     private ProgressBar progressBar, progress;
     private PrefManager manager;
     private FloatingActionButton addCase;
@@ -76,6 +76,10 @@ public class DetailActivity extends AppCompatActivity implements View.OnClickLis
         try {
             String currentCash = getIntent().getExtras().getString("currentAmount");
             String requiredCash = getIntent().getExtras().getString("requiredAmount");
+
+            String CaseCode = getIntent().getExtras().getString("CaseCode");
+            code.setText(CaseCode);
+
             if (currentCash == null || currentCash.equals("null"))
                 currentCash = "0";
             if (requiredCash == null || requiredCash.equals("null"))
@@ -210,6 +214,7 @@ public class DetailActivity extends AppCompatActivity implements View.OnClickLis
         progress = findViewById(R.id.progress);
         addCase = findViewById(R.id.addCase);
         toolbar = findViewById(R.id.toolbar);
+        code = findViewById(R.id.code);
         manager = new PrefManager(this);
     }
 

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/amr/AndroidStudioProjects/YSolutionsApps/Fawzy-DaleelElKheir/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw540dp-v13/values-sw540dp-v13.xml",
+            "outputFile": "/home/amr/AndroidStudioProjects/YSolutionsApps/DaleelElKheir/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw540dp-v13/values-sw540dp-v13.xml",
             "map": [
                 {
                     "source": "/home/amr/.gradle/caches/transforms-1/files-1.1/sdp-android-1.0.4.aar/bf0df48422c6dfab55adef3d0f805937/res/values-sw540dp-v13/values-sw540dp-v13.xml",
