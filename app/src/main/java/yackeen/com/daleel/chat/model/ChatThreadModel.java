@@ -6,7 +6,7 @@ package yackeen.com.daleel.chat.model;
 
 public class ChatThreadModel {
 
-    private String message;
+    private String caseName;
     private int UserID;
     private int ID;
     private String Image;
@@ -15,8 +15,8 @@ public class ChatThreadModel {
 
     }
 
-    public ChatThreadModel(String message) {
-        this.message = message;
+    public ChatThreadModel(String caseName) {
+        this.caseName = caseName;
     }
 
     public int getUserID() {
@@ -43,11 +43,11 @@ public class ChatThreadModel {
         Image = image;
     }
 
-    public String getMessage() {
-        return message;
+    public String getCaseName() {
+        return caseName;
     }
 
-    public void setMessage(String message) {
-        this.message = message;
+    public void setCaseName(String caseName) {
+        this.caseName = caseName;
     }
 }

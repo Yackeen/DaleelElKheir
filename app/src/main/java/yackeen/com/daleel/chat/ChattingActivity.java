@@ -21,7 +21,6 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.google.firebase.crash.FirebaseCrash;
@@ -217,8 +216,9 @@ public class ChattingActivity extends AppCompatActivity {
         }
     }
 
-    private void newMsgAdded(String mesg, boolean isAdmin) {
+    private void newMsgAdded(String mesg, boolean isAdmin, String caseName) {
         ConversationModel model = new ConversationModel();
+        model.setCaseName(caseName);
         model.setMessage(mesg);
         model.setIsAdmin(isAdmin);
         model.setId(messagesList.size());
@@ -280,9 +280,11 @@ public class ChattingActivity extends AppCompatActivity {
         @SuppressLint("LongLogTag")
         @Override
         public void onReceive(Context context, Intent intent) {
-            String get_message = intent.getStringExtra("message").toString();
-            Log.e("fawzy.MessagesBroadcastReceiver", "onReceive massage= " + get_message + " ,isAdmin= " + intent.getBooleanExtra("isAdmin", false));
-            newMsgAdded(get_message, intent.getBooleanExtra("isAdmin", false));
+            String get_message = intent.getStringExtra("message");
+            boolean isAdmin = intent.getBooleanExtra("isAdmin", false);
+            String caseName = intent.getStringExtra("caseName");
+//            Log.e("fawzy.MessagesBroadcastReceiver", "onReceive massage= " + get_message + " ,isAdmin= " + intent.getBooleanExtra("isAdmin", false));
+            newMsgAdded(get_message, isAdmin, caseName);
         }
     }
 }

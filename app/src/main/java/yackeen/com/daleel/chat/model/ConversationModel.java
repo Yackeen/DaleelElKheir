@@ -7,6 +7,7 @@ package yackeen.com.daleel.chat.model;
 public class ConversationModel {
     private boolean isAdmin;
     private String Message;
+    private String caseName;
     private int id;
 
     public boolean isAdmin() {
@@ -31,5 +32,13 @@ public class ConversationModel {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public String getCaseName() {
+        return caseName;
+    }
+
+    public void setCaseName(String caseName) {
+        this.caseName = caseName;
     }
 }

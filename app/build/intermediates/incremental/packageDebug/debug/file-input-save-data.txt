@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Apr 16 15:24:59 EET 2018
+#Mon Apr 16 19:01:27 EET 2018
 4.path=font/Cocon® Next Arabic-Light.otf
 8.set=ASSET
 6.path=classes.dex

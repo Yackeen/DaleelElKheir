@@ -17,6 +17,7 @@ import microsoft.aspnet.signalr.client.http.Request;
 import microsoft.aspnet.signalr.client.hubs.HubConnection;
 import microsoft.aspnet.signalr.client.hubs.HubProxy;
 import microsoft.aspnet.signalr.client.hubs.SubscriptionHandler3;
+import microsoft.aspnet.signalr.client.hubs.SubscriptionHandler4;
 import microsoft.aspnet.signalr.client.transport.ClientTransport;
 import microsoft.aspnet.signalr.client.transport.ServerSentEventsTransport;
 import yackeen.com.daleel.manager.PrefManager;
@@ -107,10 +108,9 @@ public class SignalRService extends Service {
         }
 
         mHubProxy.invoke(SERVER_METHOD_CONNECT, userId);
-        mHubProxy.on(CLIENT_METHOD_BROADAST_MESSAGE, new SubscriptionHandler3<String, Boolean, String>() {
+        mHubProxy.on(CLIENT_METHOD_BROADAST_MESSAGE, new SubscriptionHandler4<String, Boolean, String, String>() {
             @Override
-            public void run(String user, final Boolean isAdmin, final String msg) {
-//                final String finalMsg = msg.toString();
+            public void run(String user, final Boolean isAdmin, final String msg, final String caseName) {
                 // display Toast message
                 mHandler.post(new Runnable() {
                     @Override
@@ -119,11 +119,12 @@ public class SignalRService extends Service {
                         Intent intent = new Intent(BROADCAST_ACTION);
                         intent.putExtra("message", msg);
                         intent.putExtra("isAdmin", isAdmin);
+                        intent.putExtra("caseName", caseName);
                         sendBroadcast(intent);
                     }
                 });
             }
-        }, String.class, Boolean.class, String.class);
+        }, String.class, Boolean.class, String.class, String.class);
     }
 
     /**

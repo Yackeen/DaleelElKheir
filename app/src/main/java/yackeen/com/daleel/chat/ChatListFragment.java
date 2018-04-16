@@ -123,7 +123,7 @@ public class ChatListFragment extends Fragment implements onThreadTapped {
                 JSONObject object = chatThreadsList.getJSONObject(i);
                 ChatThreadModel model = new ChatThreadModel();
                 model.setID(object.getInt("ID"));
-                model.setMessage(object.getString("Name"));
+                model.setCaseName(object.getString("Name"));
                 model.setUserID(object.getInt("UserID"));
                 model.setImage(object.getString("Image"));
                 list.add(model);
@@ -159,7 +159,7 @@ public class ChatListFragment extends Fragment implements onThreadTapped {
     public void OnThreadTapped(int position) {
         Intent intent = new Intent(getActivity(), ChattingActivity.class);
         intent.putExtra("CaseID", chatThreads.get(position).getID());
-        intent.putExtra("CaseName", chatThreads.get(position).getMessage());
+        intent.putExtra("CaseName", chatThreads.get(position).getCaseName());
         startActivity(intent);
     }
 }
