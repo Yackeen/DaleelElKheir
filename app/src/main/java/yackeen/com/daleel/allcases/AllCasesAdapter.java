@@ -75,6 +75,8 @@ class AllCasesAdapter extends RecyclerView.Adapter<AllCasesAdapter.ViewHolder> {
                 intent.putExtra("currentAmount", model.getCurrentAmount());
                 intent.putExtra("currentAmount", model.getCurrentAmount());
                 intent.putExtra("description", model.getDescription());
+                intent.putExtra("CaseCode", model.getCaseCode());
+                intent.putExtra("Joined", model.isJoined());
                 context.startActivity(intent);
             }
         });

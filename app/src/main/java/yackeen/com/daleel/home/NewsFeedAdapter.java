@@ -80,6 +80,7 @@ class NewsFeedAdapter extends RecyclerView.Adapter<NewsFeedAdapter.ViewHolder> {
                 intent.putExtra("description", model.getDescription());
                 intent.putExtra("sharedLink", model.getSharedLink());
                 intent.putExtra("CaseCode", model.getCaseCode());
+                intent.putExtra("Joined", model.isJoined());
                 context.startActivity(intent);
             }
         });

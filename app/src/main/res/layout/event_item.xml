@@ -34,18 +34,20 @@
         android:tint="@color/colorPrimary"
         app:srcCompat="@drawable/circle_shape" />
 
-    <me.grantland.widget.AutofitTextView
+    <TextView
         android:id="@+id/eventTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:layout_margin="@dimen/_2sdp"
-        android:layout_toLeftOf="@id/circlShape"
+        android:layout_marginStart="@dimen/_2sdp"
+        android:layout_marginEnd="@dimen/_2sdp"
+        android:layout_toEndOf="@+id/eventLocation"
         android:layout_toStartOf="@id/circlShape"
         android:ellipsize="end"
         android:maxEms="20"
+        android:textSize="@dimen/_10sdp"
         android:maxLines="1"
-        android:text="test test test"
+        android:text="test test"
         android:textColor="@color/black" />
 
     <me.grantland.widget.AutofitTextView
@@ -69,5 +71,6 @@
         android:ellipsize="end"
         android:maxEms="6"
         android:maxLines="1"
+        android:text="Cairo"
         android:textColor="@color/black" />
 </RelativeLayout>

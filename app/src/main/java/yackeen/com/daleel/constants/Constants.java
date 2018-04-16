@@ -7,6 +7,9 @@ package yackeen.com.daleel.constants;
 public class Constants {
 
     // Get some cases
+    public static final String GetEventDays = "http://yakensolution.cloudapp.net:80/DaleelElkheir/api/Event/GetEventDays";
+
+    // Get some cases
     public static final String GET_CASES = "http://yakensolution.cloudapp.net:80/DaleelElkheir/api/Case/GetRecentCases";
 
     // Get All cases

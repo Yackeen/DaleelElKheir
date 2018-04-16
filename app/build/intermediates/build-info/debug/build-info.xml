@@ -5,45 +5,50 @@
     build-mode="COLD"
     density="xhdpi"
     format="10"
+    ir-eligibility="COMPATIBLE"
     plugin-version="3.0.1"
-    timestamp="1523315278730"
+    timestamp="1523885238339"
     token="-7051321845685985477"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="4155" />
+        duration="1705" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="49" />
     <task
         name="verifier"
-        duration="0" />
+        duration="4" />
+
+    <artifact
+        location="/home/amr/AndroidStudioProjects/YSolutionsApps/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/amr/AndroidStudioProjects/YSolutionsApps/DaleelElKheir/app/build/outputs/apk/debug/app-debug.apk"
+        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1523313048206"
+        timestamp="1523885078730"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="/home/amr/AndroidStudioProjects/YSolutionsApps/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            location="/home/amr/AndroidStudioProjects/YSolutionsApps/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
             type="SPLIT" />
         <artifact
             location="/home/amr/AndroidStudioProjects/YSolutionsApps/DaleelElKheir/app/build/outputs/apk/debug/app-debug.apk"
             type="SPLIT_MAIN" />
         <artifact
-            location="/home/amr/AndroidStudioProjects/YSolutionsApps/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
-            type="SPLIT" />
-        <artifact
             location="/home/amr/AndroidStudioProjects/YSolutionsApps/DaleelElKheir/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
             type="SPLIT" />
         <artifact
-            location="/home/amr/AndroidStudioProjects/YSolutionsApps/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            location="/home/amr/AndroidStudioProjects/YSolutionsApps/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
             type="SPLIT" />
         <artifact
-            location="/home/amr/AndroidStudioProjects/YSolutionsApps/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            location="/home/amr/AndroidStudioProjects/YSolutionsApps/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
         <artifact
             location="/home/amr/AndroidStudioProjects/YSolutionsApps/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
@@ -61,24 +66,32 @@
             location="/home/amr/AndroidStudioProjects/YSolutionsApps/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
             type="SPLIT" />
         <artifact
+            location="/home/amr/AndroidStudioProjects/YSolutionsApps/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            type="SPLIT" />
+        <artifact
             location="/home/amr/AndroidStudioProjects/YSolutionsApps/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
             type="SPLIT" />
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="CLASS_ADDED"
-        timestamp="1523314220380"
+        ir-eligibility="COMPATIBLE"
+        timestamp="1523885168390"
         verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/home/amr/AndroidStudioProjects/YSolutionsApps/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
-            type="SPLIT" />
         <artifact
             location="/home/amr/AndroidStudioProjects/YSolutionsApps/DaleelElKheir/app/build/outputs/apk/debug/app-debug.apk"
             type="SPLIT_MAIN" />
     </build>
     <build
         build-mode="COLD"
-        timestamp="1523315278730"
-        verifier="COLD_SWAP_REQUESTED" />
+        ir-eligibility="COMPATIBLE"
+        timestamp="1523885238339"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/home/amr/AndroidStudioProjects/YSolutionsApps/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/amr/AndroidStudioProjects/YSolutionsApps/DaleelElKheir/app/build/outputs/apk/debug/app-debug.apk"
+            type="SPLIT_MAIN" />
+    </build>
 
 </instant-run>

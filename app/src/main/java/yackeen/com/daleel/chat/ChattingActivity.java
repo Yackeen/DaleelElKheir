@@ -63,6 +63,7 @@ public class ChattingActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private ChattingAdapter adapter;
     private MessagesBroadcastReceiver receiver;
+    private String caseName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,6 +74,7 @@ public class ChattingActivity extends AppCompatActivity {
         FirebaseCrash.report(new Exception("oops!"));
 
         CaseID = getIntent().getIntExtra("CaseID", 0);
+
         setConnection();
         startSignlar();
         mContext = this;
@@ -84,7 +86,8 @@ public class ChattingActivity extends AppCompatActivity {
     private void setToolbar() {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        setTitle(getIntent().getStringExtra("CaseName"));
+        caseName = getIntent().getStringExtra("CaseName");
+        setTitle(caseName);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
     }
@@ -117,7 +120,8 @@ public class ChattingActivity extends AppCompatActivity {
         send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                sendMessage();
+                if (!message.getText().toString().isEmpty())
+                    sendMessage();
             }
         });
     }
@@ -205,8 +209,10 @@ public class ChattingActivity extends AppCompatActivity {
             String mesg = message.getText().toString();
             Log.e(TAG, "sendingMessage: " + mesg + " ,userId= " + user.getId());
 //            newMsgAdded(mesg, false);
-            if (mService != null)
-                mService.sendMessage(mesg, user.getId());
+            if (mService != null) {
+//                Toast.makeText(ChattingActivity.this, String.valueOf(CaseID), Toast.LENGTH_SHORT).show();
+                mService.sendMessage(mesg, user.getId(), String.valueOf(CaseID));
+            }
             message.setText("");
         }
     }

@@ -5,11 +5,13 @@ import android.app.Fragment;
 import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.style.ForegroundColorSpan;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -19,10 +21,13 @@ import android.view.ViewGroup;
 import android.widget.ProgressBar;
 import android.widget.SearchView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.google.firebase.crash.FirebaseCrash;
 import com.prolificinteractive.materialcalendarview.CalendarDay;
+import com.prolificinteractive.materialcalendarview.DayViewDecorator;
+import com.prolificinteractive.materialcalendarview.DayViewFacade;
 import com.prolificinteractive.materialcalendarview.MaterialCalendarView;
 import com.prolificinteractive.materialcalendarview.OnDateSelectedListener;
 
@@ -41,6 +46,7 @@ import yackeen.com.daleel.connection.VolleyCallBack;
 
 import static yackeen.com.daleel.constants.Constants.ALL_EVENTS;
 import static yackeen.com.daleel.constants.Constants.EVENTS_DATE;
+import static yackeen.com.daleel.constants.Constants.GetEventDays;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -50,6 +56,9 @@ public class EventsFragment extends Fragment {
 
     private static final String TAG = "Fawzy.EventsFragment";
     List<EventsModel> data;
+    boolean ch = false, che = false;
+    int val = -1, year;
+    ArrayList<Integer> dates;
     private MaterialCalendarView calendarView;
     private RecyclerView recyclerView;
     private ProgressBar progress;
@@ -121,6 +130,9 @@ public class EventsFragment extends Fragment {
         FirebaseCrash.log("Here comes the exception!");
         FirebaseCrash.report(new Exception("oops!"));
 
+        dates = new ArrayList<>();
+
+        year = Calendar.getInstance().get(Calendar.YEAR);
         calendarView = view.findViewById(R.id.eventsPicker);
         recyclerView = view.findViewById(R.id.recycler);
         progress = view.findViewById(R.id.progress);
@@ -129,9 +141,9 @@ public class EventsFragment extends Fragment {
         data = new ArrayList<>();
 
         calendar = Calendar.getInstance();
-        calendar.setTimeInMillis(System.currentTimeMillis());
-        calendarView.setDateSelected(calendar.getTime(), true);
-//        calendarView.setSelectionMode(MaterialCalendarView.SELECTION_MODE_MULTIPLE);
+//        calendar.setTimeInMillis(System.currentTimeMillis());
+//        calendarView.setDateSelected(calendar.getTime(), true);
+////        calendarView.setSelectionMode(MaterialCalendarView.SELECTION_MODE_MULTIPLE);
         calendarView.setOnDateChangedListener(new OnDateSelectedListener() {
             @Override
             public void onDateSelected(@NonNull MaterialCalendarView widget, @NonNull CalendarDay date, boolean selected) {
@@ -140,6 +152,40 @@ public class EventsFragment extends Fragment {
                 getEvents(dateStr);
             }
         });
+
+        calendarView.addDecorator(new DayViewDecorator() {
+            @Override
+            public boolean shouldDecorate(CalendarDay day) {
+
+                if (!ch || val != calendarView.getCurrentDate().getMonth() + 1) {
+//                    Toast.makeText(getActivity(), String.valueOf(calendarView.getCurrentDate().getMonth() + 1), Toast.LENGTH_SHORT).show();
+                    ch = true;
+                    val = calendarView.getCurrentDate().getMonth() + 1;
+                    GetEventDays(String.valueOf(val));
+                }
+
+                return false;
+            }
+
+            @Override
+            public void decorate(DayViewFacade view) {
+                view.addSpan(new ForegroundColorSpan(Color.BLUE));
+            }
+        });
+
+//        calendarView.addDecorator(new DayViewDecorator() {
+//            @Override
+//            public boolean shouldDecorate(CalendarDay day) {
+//                CalendarDay date = CalendarDay.today();
+//                return day.equals(date);
+//            }
+//
+//            @Override
+//            public void decorate(DayViewFacade view) {
+//                view.addSpan(new ForegroundColorSpan(Color.RED));
+//            }
+//
+//        });
 
         return view;
     }
@@ -197,7 +243,6 @@ public class EventsFragment extends Fragment {
                         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
                         recyclerView.setAdapter(new EventsAdapter(getActivity(), data));
                     }
-
                 } catch (
                         JSONException e)
 
@@ -208,4 +253,51 @@ public class EventsFragment extends Fragment {
         });
     }
 
+    private void GetEventDays(String date) {
+        HashMap<String, String> params = new HashMap<>();
+        params.put("Month", date);
+        fetchData = new FetchData(getActivity(), TAG, progress, GetEventDays,
+                Request.Method.POST, params, null);
+        fetchData.getData(new VolleyCallBack() {
+            @Override
+            public void onSuccess(JSONObject jsonObject) {
+
+                try {
+                    boolean isSuccess = jsonObject.getBoolean("IsSuccess");
+//                    Log.e(TAG, "onSuccess: " + jsonObject);
+                    if (isSuccess) {
+                        JSONObject jsonObj = jsonObject.getJSONObject("Response");
+                        JSONArray jsonArray = jsonObj.getJSONArray("Days");
+                        dates.clear();
+                        for (int i = 0; i < jsonArray.length(); i++) {
+                            dates.add((Integer) jsonArray.get(i));
+//                            Toast.makeText(getActivity(), dates.get(i) + "", Toast.LENGTH_SHORT).show();
+                        }
+
+                        calendarView.addDecorator(new DayViewDecorator() {
+                            @Override
+                            public boolean shouldDecorate(CalendarDay day) {
+
+                                if (!che || val != calendarView.getCurrentDate().getMonth() + 1) {
+                                    che = true;
+                                    val = calendarView.getCurrentDate().getMonth() + 1;
+                                }
+
+                                return (day.getYear() == year && day.getMonth() + 1 == val && dates.contains(day.getDay()));
+                            }
+
+                            @Override
+                            public void decorate(DayViewFacade view) {
+                                view.addSpan(new ForegroundColorSpan(Color.BLUE));
+                            }
+                        });
+                    }
+
+                } catch (
+                        JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+    }
 }

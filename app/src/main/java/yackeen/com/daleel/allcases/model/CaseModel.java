@@ -9,6 +9,7 @@ public class CaseModel {
     private String id, name, image, dueDate, organization, city, governorate, category, caseType,
             caseStatue, requiredAmount, currentAmount, description, sharedLink, CaseCode;
     private String urgentCase;
+    private boolean Joined;
 
     public CaseModel() {
     }
@@ -16,7 +17,7 @@ public class CaseModel {
     public CaseModel(String id, String name, String image, String dueDate,
                      String organization, String city, String governorate, String category, String caseType,
                      String caseStatue, String requiredAmount, String currentAmount, String description, String urgentCase,
-                     String sharedLink, String CaseCode) {
+                     String sharedLink, String CaseCode, boolean Joined) {
         this.id = id;
         this.name = name;
         this.image = image;
@@ -33,6 +34,15 @@ public class CaseModel {
         this.description = description;
         this.sharedLink = sharedLink;
         this.CaseCode = CaseCode;
+        this.Joined = Joined;
+    }
+
+    public boolean isJoined() {
+        return Joined;
+    }
+
+    public void setJoined(boolean joined) {
+        Joined = joined;
     }
 
     public String getCaseCode() {

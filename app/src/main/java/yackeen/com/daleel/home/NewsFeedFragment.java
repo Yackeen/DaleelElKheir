@@ -38,6 +38,8 @@ import yackeen.com.daleel.circleindicator.CircleIndicator;
 import yackeen.com.daleel.connection.FetchData;
 import yackeen.com.daleel.connection.VolleyCallBack;
 import yackeen.com.daleel.home.listener.OnHomeStarted;
+import yackeen.com.daleel.manager.PrefManager;
+import yackeen.com.daleel.user.User;
 
 import static yackeen.com.daleel.constants.Constants.ALL_CASES;
 import static yackeen.com.daleel.constants.Constants.GET_CASES;
@@ -58,6 +60,8 @@ public class NewsFeedFragment extends Fragment implements View.OnClickListener {
     private AdapterViewpager adapterViewpager;
     private CircleIndicator indicator;
     private FetchData fetchData;
+    PrefManager manager;
+    User user;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -131,6 +135,10 @@ public class NewsFeedFragment extends Fragment implements View.OnClickListener {
     }
 
     public void setViews(View view) {
+
+        manager = new PrefManager(getActivity());
+        user = manager.getUser();
+
         TextView moreRecentCases = view.findViewById(R.id.more2);
         TextView moreUrgentCases = view.findViewById(R.id.more);
         progressBar = view.findViewById(R.id.progress);
@@ -146,6 +154,10 @@ public class NewsFeedFragment extends Fragment implements View.OnClickListener {
     private void setViewpager(final View view) {
         viewPager = view.findViewById(R.id.viewPager);
         HashMap<String, String> params = new HashMap<>();
+
+        if (manager.isLoggedIn())
+            params.put("UserID", user.getId());
+
         fetchData = new FetchData(getActivity(), TAG, urgentProgress, URGENT_CASES,
                 Request.Method.POST, params, null);
 
@@ -176,6 +188,7 @@ public class NewsFeedFragment extends Fragment implements View.OnClickListener {
                             model.setDescription(object.getString("Description"));
                             model.setSharedLink(object.getString("SharedURL"));
                             model.setCaseCode(object.getString("CaseCode"));
+                            model.setJoined(object.getBoolean("Joined"));
                             data.add(model);
                         }
 
@@ -205,6 +218,10 @@ public class NewsFeedFragment extends Fragment implements View.OnClickListener {
     public void setRecycler() {
         recyclerView = view.findViewById(R.id.recycler);
         HashMap<String, String> params = new HashMap<>();
+
+        if (manager.isLoggedIn())
+            params.put("UserID", user.getId());
+
         fetchData = new FetchData(getActivity(), TAG, progressBar, GET_CASES,
                 Request.Method.POST, params, null);
         fetchData.getData(new VolleyCallBack() {
@@ -234,6 +251,7 @@ public class NewsFeedFragment extends Fragment implements View.OnClickListener {
                             model.setDescription(object.getString("Description"));
                             model.setSharedLink(object.getString("SharedURL"));
                             model.setCaseCode(object.getString("CaseCode"));
+                            model.setJoined(object.getBoolean("Joined"));
                             data.add(model);
                         }
                         recyclerView.setLayoutManager(new GridLayoutManager(getActivity(), 2));

@@ -49,7 +49,7 @@ public class DetailActivity extends AppCompatActivity implements View.OnClickLis
     private FloatingActionButton addCase;
     private Toolbar toolbar;
     private AlertDialog.Builder dialog;
-
+    private boolean Joined;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,6 +76,7 @@ public class DetailActivity extends AppCompatActivity implements View.OnClickLis
         try {
             String currentCash = getIntent().getExtras().getString("currentAmount");
             String requiredCash = getIntent().getExtras().getString("requiredAmount");
+            Joined = getIntent().getExtras().getBoolean("Joined");
 
             String CaseCode = getIntent().getExtras().getString("CaseCode");
             code.setText(CaseCode);
@@ -102,35 +103,9 @@ public class DetailActivity extends AppCompatActivity implements View.OnClickLis
         }
         progressBar.setProgress((int) val);
 
-        if (manager.isLoggedIn()) {
-            HashMap<String, String> params = new HashMap<>();
-            HashMap<String, String> headers = new HashMap<>();
-            params.put("UserID", user.getId());
-            params.put("CaseID", getIntent().getExtras().getString("caseId"));
-            headers.put("SecurityToken", user.getToken());
-            FetchData fetchData = new FetchData(DetailActivity.this, TAG, progress, ADD_CASE,
-                    Request.Method.POST, params, headers);
-            fetchData.getData(new VolleyCallBack() {
-                @Override
-                public void onSuccess(JSONObject jsonObject) {
-                    Log.d(TAG, "onSuccess: " + jsonObject);
-                    try {
-                        boolean isSuccess = jsonObject.getBoolean("IsSuccess");
-                        if (isSuccess) {
-                            String res = jsonObject.getString("Response");
-                            if (res.equalsIgnoreCase("you joined this Case before"))
-                                addCase.setImageResource(android.R.drawable.ic_menu_send);
+        if (Joined)
+            addCase.setImageResource(android.R.drawable.ic_menu_send);
 
-//                            Toast.makeText(DetailActivity.this, res, Toast.LENGTH_SHORT).show();
-                        }
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                    }
-                }
-            });
-        } else {
-            dialog.show();
-        }
     }
 
     private void addCase(final User user) {
@@ -158,39 +133,48 @@ public class DetailActivity extends AppCompatActivity implements View.OnClickLis
             @Override
             public void onClick(View view) {
                 if (manager.isLoggedIn()) {
-                    HashMap<String, String> params = new HashMap<>();
-                    HashMap<String, String> headers = new HashMap<>();
-                    params.put("UserID", user.getId());
-                    params.put("CaseID", getIntent().getExtras().getString("caseId"));
-                    headers.put("SecurityToken", user.getToken());
-                    FetchData fetchData = new FetchData(DetailActivity.this, TAG, progress, ADD_CASE,
-                            Request.Method.POST, params, headers);
-                    fetchData.getData(new VolleyCallBack() {
-                        @Override
-                        public void onSuccess(JSONObject jsonObject) {
-                            Log.d(TAG, "onSuccess: " + jsonObject);
-                            try {
-                                boolean isSuccess = jsonObject.getBoolean("IsSuccess");
-                                if (isSuccess) {
-                                    String res = jsonObject.getString("Response");
-                                    if (res.equalsIgnoreCase("you joined this Case before")) {
+                    if (Joined) {
+                        int casID = Integer.parseInt(getIntent().getExtras().getString("caseId"));
+                        String casName = getIntent().getExtras().getString("caseName");
+
+                        Intent intent = new Intent(DetailActivity.this, ChattingActivity.class);
+                        intent.putExtra("CaseID", casID);
+                        intent.putExtra("CaseName", casName);
+                        startActivity(intent);
+                    } else {
+                        HashMap<String, String> params = new HashMap<>();
+                        HashMap<String, String> headers = new HashMap<>();
+                        params.put("UserID", user.getId());
+                        params.put("CaseID", getIntent().getExtras().getString("caseId"));
+                        headers.put("SecurityToken", user.getToken());
+                        FetchData fetchData = new FetchData(DetailActivity.this, TAG, progress, ADD_CASE,
+                                Request.Method.POST, params, headers);
+                        fetchData.getData(new VolleyCallBack() {
+                            @Override
+                            public void onSuccess(JSONObject jsonObject) {
+                                Log.d(TAG, "onSuccess: " + jsonObject);
+                                try {
+                                    boolean isSuccess = jsonObject.getBoolean("IsSuccess");
+                                    if (isSuccess) {
+                                        String res = jsonObject.getString("Response");
                                         addCase.setImageResource(android.R.drawable.ic_menu_send);
+
+                                        int casID = Integer.parseInt(getIntent().getExtras().getString("caseId"));
+                                        String casName = getIntent().getExtras().getString("caseName");
+
+                                        Intent intent = new Intent(DetailActivity.this, ChattingActivity.class);
+                                        intent.putExtra("CaseID", casID);
+                                        intent.putExtra("CaseName", casName);
+                                        startActivity(intent);
+
+                                        Toast.makeText(DetailActivity.this, res, Toast.LENGTH_SHORT).show();
                                     }
-
-                                    int v = Integer.parseInt(getIntent().getExtras().getString("caseId"));
-
-                                    Intent intent = new Intent(DetailActivity.this, ChattingActivity.class);
-                                    intent.putExtra("CaseID", v);
-                                    intent.putExtra("CaseName", getIntent().getExtras().getString("caseName"));
-                                    startActivity(intent);
-
-                                    Toast.makeText(DetailActivity.this, res, Toast.LENGTH_SHORT).show();
+                                } catch (JSONException e) {
+                                    e.printStackTrace();
                                 }
-                            } catch (JSONException e) {
-                                e.printStackTrace();
                             }
-                        }
-                    });
+                        });
+                    }
                 } else {
                     dialog.show();
                 }

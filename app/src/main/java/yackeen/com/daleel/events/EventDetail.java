@@ -99,10 +99,10 @@ public class EventDetail extends Fragment {
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         Log.d(TAG, "onCreateOptionsMenu: ");
-        MenuItem itemFilter = menu.findItem(R.id.action_filter);
-        MenuItem itemSearch = menu.findItem(R.id.action_search);
-        itemFilter.setVisible(false);
-        itemSearch.setVisible(false);
+//        MenuItem itemFilter = menu.findItem(R.id.action_filter);
+//        MenuItem itemSearch = menu.findItem(R.id.action_search);
+//        itemFilter.setVisible(false);
+//        itemSearch.setVisible(false);
         super.onCreateOptionsMenu(menu, inflater);
     }
 

@@ -28,12 +28,16 @@ import yackeen.com.daleel.R;
 import yackeen.com.daleel.allcases.model.CaseModel;
 import yackeen.com.daleel.connection.FetchData;
 import yackeen.com.daleel.connection.VolleyCallBack;
+import yackeen.com.daleel.manager.PrefManager;
+import yackeen.com.daleel.user.User;
 
 public class AllCasesActivity extends AppCompatActivity {
     private static final String TAG = "AllCasesActivity";
     private RecyclerView recyclerView;
     private String url;
     private TextView noCases;
+    private PrefManager manager;
+    private User user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +46,9 @@ public class AllCasesActivity extends AppCompatActivity {
 
         FirebaseCrash.log("Here comes the exception!");
         FirebaseCrash.report(new Exception("oops!"));
+
+        manager = new PrefManager(AllCasesActivity.this);
+        user = manager.getUser();
 
         noCases = findViewById(R.id.noCasesMsg);
         try {
@@ -66,6 +73,10 @@ public class AllCasesActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.recycler);
         ProgressBar progressBar = findViewById(R.id.progress);
         HashMap<String, String> params = new HashMap<>();
+
+        if (manager.isLoggedIn())
+            params.put("UserID", user.getId());
+
         if (getIntent().getExtras().getString("catId") != null) {
             params.put("CategoryID", getIntent().getExtras().getString("catId"));
             params.put("OrganizationID", getIntent().getExtras().getString("orgId"));
@@ -99,6 +110,8 @@ public class AllCasesActivity extends AppCompatActivity {
                             model.setRequiredAmount(object.getString("RequiredAmount"));
                             model.setCurrentAmount(object.getString("CurrentAmount"));
                             model.setDescription(object.getString("Description"));
+                            model.setCaseCode(object.getString("CaseCode"));
+                            model.setJoined(object.getBoolean("Joined"));
                             if (getIntent().getExtras().getString("searchText") != null) {
                                 if (!isContain(object.getString("Name"),
                                         getIntent().getExtras().getString("searchText")))

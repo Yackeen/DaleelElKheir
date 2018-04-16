@@ -76,9 +76,9 @@ public class SignalRService extends Service {
     /**
      * method for clients (activities)
      */
-    public void sendMessage(String message, String userId) {
+    public void sendMessage(String message, String userId, String CaseID) {
         Log.e(TAG, "sendMessage: " + userId + ",msg= " + message);
-        mHubProxy.invoke(SERVER_METHOD_SEND, "", userId, "10", message);
+        mHubProxy.invoke(SERVER_METHOD_SEND, "", userId, CaseID, message);
     }
 
     private void startSignalR() {
@@ -91,7 +91,7 @@ public class SignalRService extends Service {
             }
         };
 
-          /*/DaleelElkheirAdmin/ChatThread/ChatThreadMessageRoom*/
+        /*/DaleelElkheirAdmin/ChatThread/ChatThreadMessageRoom*/
         mHubConnection = new HubConnection(serverUrl);
         mHubConnection.setCredentials(credentials);
         String SERVER_HUB_CHAT = "letschathub";
@@ -110,14 +110,14 @@ public class SignalRService extends Service {
         mHubProxy.on(CLIENT_METHOD_BROADAST_MESSAGE, new SubscriptionHandler3<String, Boolean, String>() {
             @Override
             public void run(String user, final Boolean isAdmin, final String msg) {
-                final String finalMsg = msg.toString();
+//                final String finalMsg = msg.toString();
                 // display Toast message
                 mHandler.post(new Runnable() {
                     @Override
                     public void run() {
 //                        Toast.makeText(getApplicationContext(), finalMsg, Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(BROADCAST_ACTION);
-                        intent.putExtra("message", msg.toString());
+                        intent.putExtra("message", msg);
                         intent.putExtra("isAdmin", isAdmin);
                         sendBroadcast(intent);
                     }
