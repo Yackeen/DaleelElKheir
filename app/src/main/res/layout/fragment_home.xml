@@ -102,6 +102,5 @@
             android:background="@color/offWhite"
             android:focusable="false" />
 
-
     </RelativeLayout>
 </android.support.v4.widget.NestedScrollView>

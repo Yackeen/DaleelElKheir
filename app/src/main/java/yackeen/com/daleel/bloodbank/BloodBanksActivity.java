@@ -39,13 +39,15 @@ import yackeen.com.daleel.home.model.SpinnerAdapterModel;
 
 import static yackeen.com.daleel.constants.Constants.BLOOD_BANKS;
 import static yackeen.com.daleel.constants.Constants.BLOOD_BANKS_FILTER;
+import static yackeen.com.daleel.constants.Constants.GET_GOVERNORATE;
 import static yackeen.com.daleel.constants.Constants.GET_REGION;
 
 public class BloodBanksActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private static final String TAG = "BloodBanksActivity";
-    String locationId;
+    String locationId = "", placId = "";
     private DrawerLayout drawer;
+    private Spinner locationPlaceSpinner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,7 +62,6 @@ public class BloodBanksActivity extends AppCompatActivity implements NavigationV
         Bundle bundle = new Bundle();
         bundle.putString("url", BLOOD_BANKS);
         loadBloodBanksList(bundle);
-
     }
 
     private void loadBloodBanksList(Bundle bundle) {
@@ -83,18 +84,19 @@ public class BloodBanksActivity extends AppCompatActivity implements NavigationV
         View filterView = filterNav.getHeaderView(0);
         filterNav.setNavigationItemSelectedListener(this);
         Spinner locationSpin = filterView.findViewById(R.id.locationSpinner);
+        locationPlaceSpinner = filterView.findViewById(R.id.locationPlaceSpinner);
         Spinner catSpin = filterView.findViewById(R.id.catSpinner);
         Spinner orgSpin = filterView.findViewById(R.id.orgSpinner);
         catSpin.setVisibility(View.GONE);
         orgSpin.setVisibility(View.GONE);
         TextView sort = filterView.findViewById(R.id.sort);
         //Click listener for sort button
-        setSpinner(locationSpin, GET_REGION, getResources().getString(R.string.choose_place));
+        setSpinner(locationSpin, GET_GOVERNORATE, getResources().getString(R.string.choose_place));
         sort.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Bundle bundle = new Bundle();
-                bundle.putString("location", locationId);
+                bundle.putString("location", placId);
                 bundle.putString("url", BLOOD_BANKS_FILTER);
                 loadBloodBanksList(bundle);
                 drawer.closeDrawer(GravityCompat.END);
@@ -106,8 +108,11 @@ public class BloodBanksActivity extends AppCompatActivity implements NavigationV
     private void setSpinner(final Spinner spinner, String URL, final String hint) {
         final List<SpinnerAdapterModel> catList = new ArrayList<>();
 
+        HashMap<String, String> params = new HashMap<>();
+        params.put("GovernorateID", locationId);
+
         FetchData fetchData = new FetchData(BloodBanksActivity.this, TAG, null,
-                URL, Request.Method.POST, new HashMap<String, String>(), null);
+                URL, Request.Method.POST, params, null);
         fetchData.getData(new VolleyCallBack() {
             @Override
             public void onSuccess(JSONObject jsonObject) {
@@ -131,17 +136,20 @@ public class BloodBanksActivity extends AppCompatActivity implements NavigationV
 
                         adapter.setAdapter(spinner, new ChosenId() {
                             @Override
-                            public void theChosenId(String categoryId, String organizationId, String placeId, Spinner spinner1) {
+                            public void theChosenId(String categoryId, String organizationId, String locID, String placeId, Spinner spinner1) {
 
                                 if (spinner.getId() == R.id.catSpinner) {
                                     //catId = categoryId;
                                 } else if (spinner.getId() == R.id.orgSpinner) {
                                     //orgId = organizationId;
                                 } else if (spinner.getId() == R.id.locationSpinner) {
-                                    locationId = placeId;
+                                    locationId = locID;
+                                    if (!"".equals(locationId))
+                                        setSpinner(locationPlaceSpinner, GET_REGION, getResources().getString(R.string.choose_region));
+                                } else if (spinner.getId() == R.id.locationSpinner) {
+                                    placId = placeId;
                                 }
-                                Log.d(TAG, "theChosenId: " + ", " +
-                                        locationId);
+//                                Log.d(TAG, "theChosenId: " + ", " + locationId);
                             }
                         });
                     }

@@ -7,17 +7,25 @@ package yackeen.com.daleel.allcases.model;
 public class CaseModel {
 
     private String id, name, image, dueDate, organization, city, governorate, category, caseType,
-            caseStatue, requiredAmount, currentAmount, description, sharedLink, CaseCode;
+            caseStatue, requiredAmount, currentAmount, description, sharedLink, CaseCode, type;
     private String urgentCase;
     private boolean Joined;
 
     public CaseModel() {
     }
 
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
     public CaseModel(String id, String name, String image, String dueDate,
                      String organization, String city, String governorate, String category, String caseType,
                      String caseStatue, String requiredAmount, String currentAmount, String description, String urgentCase,
-                     String sharedLink, String CaseCode, boolean Joined) {
+                     String sharedLink, String CaseCode, String type, boolean Joined) {
         this.id = id;
         this.name = name;
         this.image = image;
@@ -35,6 +43,7 @@ public class CaseModel {
         this.sharedLink = sharedLink;
         this.CaseCode = CaseCode;
         this.Joined = Joined;
+        this.type = type;
     }
 
     public boolean isJoined() {

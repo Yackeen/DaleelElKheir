@@ -39,9 +39,9 @@ public class ContactDialog extends DialogFragment {
     int mNum;
     private ProgressBar progressBar;
     private TextView facebook, phone, email, location, send;
-    private EditText contactEmail, contactPhone, contactMsg;
+    private EditText contactUserName, contactEmail, contactPhone, contactMsg;
     private Spinner spinner;
-    private String chosenItem = " ";
+    private String chosenItem = "";
 
     /**
      * Create a new instance of MyDialogFragment, providing "num"
@@ -93,6 +93,7 @@ public class ContactDialog extends DialogFragment {
         facebook = v.findViewById(R.id.contactFacebook);
         phone = v.findViewById(R.id.contactPhoneNum);
         location = v.findViewById(R.id.contactLocation);
+        contactUserName = v.findViewById(R.id.contactUserName);
         contactEmail = v.findViewById(R.id.contactUserEmail);
         contactMsg = v.findViewById(R.id.contactMessage);
         contactPhone = v.findViewById(R.id.contactUserPhone);
@@ -134,10 +135,11 @@ public class ContactDialog extends DialogFragment {
             @Override
             public void onClick(View view) {
                 HashMap<String, String> params = new HashMap<>();
+                params.put("Name", contactUserName.getText().toString());
                 params.put("Email", contactEmail.getText().toString());
                 params.put("Mobile", contactPhone.getText().toString());
-                params.put("Message", contactMsg.getText().toString());
                 params.put("DonorIn", chosenItem);
+                params.put("Message", contactMsg.getText().toString());
                 FetchData fetchData = new FetchData(getActivity(), TAG, progressBar, CONTACT_US,
                         Request.Method.POST, params, null);
                 fetchData.getData(new VolleyCallBack() {

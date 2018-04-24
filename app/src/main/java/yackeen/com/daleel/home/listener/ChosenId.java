@@ -7,5 +7,5 @@ import android.widget.Spinner;
  */
 
 public interface ChosenId {
-    void theChosenId(String catId, String orgId, String locationId, Spinner spinner);
+    void theChosenId(String catId, String orgId, String locationId, String placeID, Spinner spinner);
 }

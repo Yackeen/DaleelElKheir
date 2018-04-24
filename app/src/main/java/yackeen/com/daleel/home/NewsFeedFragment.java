@@ -54,14 +54,14 @@ public class NewsFeedFragment extends Fragment implements View.OnClickListener {
 
     private static final String TAG = "NewsFeedFragment";
     ViewPager viewPager;
+    PrefManager manager;
+    User user;
     private View view;
     private RecyclerView recyclerView;
     private ProgressBar progressBar, urgentProgress;
     private AdapterViewpager adapterViewpager;
     private CircleIndicator indicator;
     private FetchData fetchData;
-    PrefManager manager;
-    User user;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -189,6 +189,7 @@ public class NewsFeedFragment extends Fragment implements View.OnClickListener {
                             model.setSharedLink(object.getString("SharedURL"));
                             model.setCaseCode(object.getString("CaseCode"));
                             model.setJoined(object.getBoolean("Joined"));
+                            model.setType("Urgent");
                             data.add(model);
                         }
 
@@ -252,6 +253,7 @@ public class NewsFeedFragment extends Fragment implements View.OnClickListener {
                             model.setSharedLink(object.getString("SharedURL"));
                             model.setCaseCode(object.getString("CaseCode"));
                             model.setJoined(object.getBoolean("Joined"));
+                            model.setType("Recent");
                             data.add(model);
                         }
                         recyclerView.setLayoutManager(new GridLayoutManager(getActivity(), 2));
@@ -278,17 +280,18 @@ public class NewsFeedFragment extends Fragment implements View.OnClickListener {
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.more2:
-                launchAllCasesActivity(ALL_CASES);
+                launchAllCasesActivity(ALL_CASES, "Recent");
                 break;
             case R.id.more:
-                launchAllCasesActivity(URGENT_CASES);
+                launchAllCasesActivity(URGENT_CASES, "Urgent");
                 break;
         }
     }
 
-    private void launchAllCasesActivity(String URL) {
+    private void launchAllCasesActivity(String URL, String type) {
         Intent intent = new Intent(getActivity(), AllCasesActivity.class);
         intent.putExtra("URL", URL);
+        intent.putExtra("type", type);
         startActivity(intent);
     }
 }

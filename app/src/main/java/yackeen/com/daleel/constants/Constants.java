@@ -70,6 +70,9 @@ public class Constants {
     // Get Region List
     public static final String GET_REGION = "http://yakensolution.cloudapp.net:80/DaleelElkheir/api/Region/GetRegions";
 
+    // Get GetGovernorate List
+    public static final String GET_GOVERNORATE = "http://yakensolution.cloudapp.net:80/DaleelElkheir/api/Region/GetGovernorate";
+
 
     // Get Organization
     public static final String GET_ORGANIZATIONS = "http://yakensolution.cloudapp.net:80/DaleelElkheir/api/Organization/GetOrganizationsName";

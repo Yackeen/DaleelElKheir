@@ -86,7 +86,7 @@ public class FilterSpinnerAdapter {
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                String catId = " ", orgId = " ", locationId = " ";
+                String catId = "", orgId = "", locationId = "", placeID = "";
                 if (!spinner.getSelectedItem().equals(defaultHint)) {
                     if (spinner.getId() == R.id.catSpinner)
                         catId = list.get(i).getId();
@@ -94,8 +94,10 @@ public class FilterSpinnerAdapter {
                         orgId = list.get(i).getId();
                     else if (spinner.getId() == R.id.locationSpinner)
                         locationId = list.get(i).getId();
+                    else if (spinner.getId() == R.id.locationPlaceSpinner)
+                        placeID = list.get(i).getId();
                 }
-                chosenId.theChosenId(catId, orgId, locationId, spinner);
+                chosenId.theChosenId(catId, orgId, locationId, placeID, spinner);
 
             }
 

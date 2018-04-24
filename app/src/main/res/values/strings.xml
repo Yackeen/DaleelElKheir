@@ -83,9 +83,10 @@
     <string name="duration">Time </string>
     <string name="sort_by">Sort By</string>
     <string name="sort">Sort</string>
-    <string name="chooseCat">All Category</string>
-    <string name="choose_org">All Organization</string>
-    <string name="choose_place">All Place</string>
+    <string name="chooseCat">All Categories</string>
+    <string name="choose_org">All Organizations</string>
+    <string name="choose_place">All Governorates</string>
+    <string name="choose_region">All Regions</string>
     <string name="language">Language</string>
     <string name="notification">Notification</string>
     <string name="home">Home</string>
@@ -130,5 +131,6 @@
     <string name="typeHere">type message</string>
     <string name="case_code">Case Code:</string>
     <string name="event_link">Event Link :</string>
+    <string name="name">Name</string>
 
 </resources>

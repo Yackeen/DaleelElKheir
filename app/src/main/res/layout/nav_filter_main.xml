@@ -9,7 +9,7 @@
         android:id="@+id/sortByText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
         android:padding="@dimen/_5sdp"
         android:text="@string/sort_by"
         android:textColor="@color/black"
@@ -57,7 +57,6 @@
         android:background="@color/dark_grey"
         app:layout_constraintTop_toBottomOf="@id/orgSpinner" />
 
-
     <Spinner
         android:id="@+id/locationSpinner"
         android:layout_width="match_parent"
@@ -78,6 +77,25 @@
         android:background="@color/dark_grey"
         app:layout_constraintTop_toBottomOf="@id/locationSpinner" />
 
+    <Spinner
+        android:id="@+id/locationPlaceSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_28sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_9sdp"
+        android:gravity="start"
+        android:padding="@dimen/_5sdp"
+        app:layout_constraintTop_toBottomOf="@id/v3" />
+
+    <View
+        android:id="@+id/v4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:background="@color/dark_grey"
+        app:layout_constraintTop_toBottomOf="@id/locationPlaceSpinner" />
 
     <me.grantland.widget.AutofitTextView
         android:id="@+id/sort"
@@ -94,5 +112,5 @@
         android:textSize="@dimen/_16sdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/v3" />
+        app:layout_constraintTop_toBottomOf="@id/v4" />
 </android.support.constraint.ConstraintLayout>

@@ -38,6 +38,7 @@ public class AllCasesActivity extends AppCompatActivity {
     private TextView noCases;
     private PrefManager manager;
     private User user;
+    private String type;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,8 +53,8 @@ public class AllCasesActivity extends AppCompatActivity {
 
         noCases = findViewById(R.id.noCasesMsg);
         try {
-
             url = getIntent().getExtras().getString("URL");
+            type = getIntent().getExtras().getString("type");
         } catch (NullPointerException ex) {
             Log.e(TAG, "onCreate: " + "Error with intent data $URL");
         }
@@ -112,6 +113,7 @@ public class AllCasesActivity extends AppCompatActivity {
                             model.setDescription(object.getString("Description"));
                             model.setCaseCode(object.getString("CaseCode"));
                             model.setJoined(object.getBoolean("Joined"));
+                            model.setType(type);
                             if (getIntent().getExtras().getString("searchText") != null) {
                                 if (!isContain(object.getString("Name"),
                                         getIntent().getExtras().getString("searchText")))

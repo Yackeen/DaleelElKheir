@@ -72,6 +72,7 @@ import static yackeen.com.daleel.constants.Constants.FILTERED_CASES;
 import static yackeen.com.daleel.constants.Constants.FILTERED_EVENT;
 import static yackeen.com.daleel.constants.Constants.FILTERED_ORGANIZATION;
 import static yackeen.com.daleel.constants.Constants.GET_CATEGORIES;
+import static yackeen.com.daleel.constants.Constants.GET_GOVERNORATE;
 import static yackeen.com.daleel.constants.Constants.GET_ORGANIZATIONS;
 import static yackeen.com.daleel.constants.Constants.GET_REGION;
 import static yackeen.com.daleel.constants.Constants.HOME_FRAGMENT;
@@ -88,11 +89,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private static final String TAG = "Fawzy.MainActivity";
     private DrawerLayout drawer;
     private PrefManager manager;
-    private String catId = " ", orgId = " ", locationId = " ";
+    private String catId = "", orgId = "", locationId = "", placId = "";
     private Spinner orgSpin;
     private BroadcastReceiver mRegistrationBroadcastReceiver;
     private Spinner catSpin;
     private Spinner locationSpin;
+    private Spinner locationPlaceSpinner;
     private BottomNavigationView bottomNav;
     private String TOKEN_URL;
     private boolean backTapped;
@@ -109,7 +111,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         manager = new PrefManager(this);
         bottomNav = findViewById(R.id.bottomNav);
         centrizeIcons();
-
 
         setToolbar();
         setLogout();
@@ -159,7 +160,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             layoutParams.width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 32, displayMetrics);
             iconView.setLayoutParams(layoutParams);
         }
-
     }
 
     private void displayFirebaseRegId() {
@@ -238,9 +238,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 bottomNav.setSelectedItemId(R.id.home);
                 manager.setNotificationType(null);
             }
-
         }
-
     }
 
     @Override
@@ -249,11 +247,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         super.onPause();
     }
 
-    private void setSpinner(final Spinner spinner, String URL, final String hint) {
+    private void setSpinner(final Spinner spinner, String URL, final String hint, int type) {
         final List<SpinnerAdapterModel> catList = new ArrayList<>();
 
+        HashMap<String, String> params = new HashMap<>();
+
+        if (type == 1)
+            params.put("GovernorateID", locationId);
+
         FetchData fetchData = new FetchData(MainActivity.this, TAG, null,
-                URL, Request.Method.POST, new HashMap<String, String>(), null);
+                URL, Request.Method.POST, params, null);
         fetchData.getData(new VolleyCallBack() {
             @Override
             public void onSuccess(JSONObject jsonObject) {
@@ -261,7 +264,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                     boolean isSuccess = jsonObject.getBoolean("IsSuccess");
                     SpinnerAdapterModel defaultModel = new SpinnerAdapterModel();
                     defaultModel.setName(hint);
-                    defaultModel.setId(" ");
+                    defaultModel.setId("");
                     catList.add(defaultModel);
                     if (isSuccess) {
                         JSONArray jsonArray = jsonObject.getJSONArray("Response");
@@ -277,17 +280,20 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
                         adapter.setAdapter(spinner, new ChosenId() {
                             @Override
-                            public void theChosenId(String categoryId, String organizationId, String placeId, Spinner spinner1) {
+                            public void theChosenId(String categoryId, String organizationId, String locId, String placeID, Spinner spinner1) {
 
                                 if (spinner.getId() == R.id.catSpinner) {
                                     catId = categoryId;
                                 } else if (spinner.getId() == R.id.orgSpinner) {
                                     orgId = organizationId;
                                 } else if (spinner.getId() == R.id.locationSpinner) {
-                                    locationId = placeId;
+                                    locationId = locId;
+                                    if (!"".equals(locationId))
+                                        setSpinner(locationPlaceSpinner, GET_REGION, getResources().getString(R.string.choose_region), 1);
+                                } else if (spinner.getId() == R.id.locationPlaceSpinner) {
+                                    placId = placeID;
                                 }
-                                Log.e(TAG, "theChosenId: " + catId + ", " + orgId + ", " +
-                                        locationId);
+//                                Log.e(TAG, "theChosenId: " + catId + ", " + orgId + ", " + locationId);
                             }
                         });
                     }
@@ -320,7 +326,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         toggle.setHomeAsUpIndicator(R.drawable.tog);
         drawer.addDrawerListener(toggle);
 
-
         toggle.syncState();
 
         // Perform navigation item
@@ -333,6 +338,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         catSpin = filterView.findViewById(R.id.catSpinner);
         orgSpin = filterView.findViewById(R.id.orgSpinner);
         locationSpin = filterView.findViewById(R.id.locationSpinner);
+        locationPlaceSpinner = filterView.findViewById(R.id.locationPlaceSpinner);
         TextView sort = filterView.findViewById(R.id.sort);
         //Click listener for sort button
         sort.setOnClickListener(this);
@@ -358,7 +364,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             Glide.with(this).load(decodedImg)
                     .placeholder(getResources().getDrawable(R.drawable.prof)).dontAnimate().into(pic);
 
-
         }
         pic.setOnClickListener(new ClickListener(this));
         userName.setOnClickListener(new ClickListener(this));
@@ -366,9 +371,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     private void setSpinners() {
-        setSpinner(catSpin, GET_CATEGORIES, getResources().getString(R.string.chooseCat));
-        setSpinner(orgSpin, GET_ORGANIZATIONS, getResources().getString(R.string.choose_org));
-        setSpinner(locationSpin, GET_REGION, getResources().getString(R.string.choose_place));
+        setSpinner(catSpin, GET_CATEGORIES, getResources().getString(R.string.chooseCat), 0);
+        setSpinner(orgSpin, GET_ORGANIZATIONS, getResources().getString(R.string.choose_org), 0);
+        setSpinner(locationSpin, GET_GOVERNORATE, getResources().getString(R.string.choose_place), 0);
     }
 
     @Override
@@ -475,19 +480,19 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         Intent intent = new Intent(this, AllOrganization.class);
         intent.putExtra("URL", FILTERED_ORGANIZATION);
         intent.putExtra("catId", catId);
-        intent.putExtra("locationId", locationId);
+        intent.putExtra("locationId", placId);
         startActivity(intent);
     }
 
     private void sort(String URL, Class<?> clas) {
         Intent intent = new Intent(this, clas);
         intent.putExtra("URL", URL);
+        intent.putExtra("type", "Recent");
         intent.putExtra("catId", catId);
         intent.putExtra("orgId", orgId);
-        intent.putExtra("locationId", locationId);
+        intent.putExtra("locationId", placId);
         startActivity(intent);
     }
-
 
     private void checkSigning() {
         if (manager.isLoggedIn()) {
@@ -497,7 +502,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
         drawer.closeDrawer(GravityCompat.START);
     }
-
 
     private void performLogout() {
         manager.clearSession();

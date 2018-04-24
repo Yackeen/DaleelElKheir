@@ -79,7 +79,8 @@
     <string name="sort">صنف</string>
     <string name="chooseCat">اختر القسم</string>
     <string name="choose_org">اختر المنظمة</string>
-    <string name="choose_place">اختر المنطقة</string>
+    <string name="choose_place">اختر المحافظة</string>
+    <string name="choose_region">اختر المنطقة</string>
     <string name="language">اللغة</string>
     <string name="notification">الإشعارات</string>
     <string name="home">آخر الأحداث</string>
@@ -124,4 +125,5 @@
     <string name="typeHere">الرسالة</string>
     <string name="case_code">الكود :</string>
     <string name="event_link">لينك الحدث :</string>
+    <string name="name">الاسم</string>
 </resources>

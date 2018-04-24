@@ -43,7 +43,7 @@ public class DetailActivity extends AppCompatActivity implements View.OnClickLis
     double val = 0;
     private ImageView share, thumbnail;
     private TextView caseName, organization, date, currentAmount, requiredAmount, description,
-            urgent, location, category, code;
+            caseStatue, location, category, code;
     private ProgressBar progressBar, progress;
     private PrefManager manager;
     private FloatingActionButton addCase;
@@ -77,6 +77,14 @@ public class DetailActivity extends AppCompatActivity implements View.OnClickLis
             String currentCash = getIntent().getExtras().getString("currentAmount");
             String requiredCash = getIntent().getExtras().getString("requiredAmount");
             Joined = getIntent().getExtras().getBoolean("Joined");
+
+            String RU = getIntent().getExtras().getString("type");
+            caseStatue.setText(RU);
+            assert RU != null;
+            if(RU.equals("Recent"))
+                caseStatue.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
+
+//            Toast.makeText(this, getIntent().getExtras().getString("type"), Toast.LENGTH_SHORT).show();
 
             String CaseCode = getIntent().getExtras().getString("CaseCode");
             code.setText(CaseCode);
@@ -191,7 +199,7 @@ public class DetailActivity extends AppCompatActivity implements View.OnClickLis
         currentAmount = findViewById(R.id.currentAmount);
         requiredAmount = findViewById(R.id.requiredAmount);
         description = findViewById(R.id.description);
-        urgent = findViewById(R.id.caseStatue);
+        caseStatue = findViewById(R.id.caseStatue);
         category = findViewById(R.id.category);
         location = findViewById(R.id.region);
         progressBar = findViewById(R.id.progressBar);
