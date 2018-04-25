@@ -61,6 +61,7 @@ public class OrganizationsFragment extends Fragment {
     private User user;
     private CircleIndicator indicator;
     private FetchData fetchData;
+    String category = "";
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -119,17 +120,23 @@ public class OrganizationsFragment extends Fragment {
                             OrganizationModel model = new OrganizationModel();
                             model.setId(object.getString("ID"));
                             model.setName(object.getString("Name"));
+                            model.setDescription(object.getString("Description"));
                             model.setLocation(object.getString("Address"));
                             model.setRegion(object.getString("Area"));
                             model.setLogo(object.getString("Logo"));
 
                             JSONArray categoryArr = object.getJSONArray("Categories");
-                            String category = "";
-                            for (int j = 0; j < categoryArr.length(); j++) {
+                            for (int j = 0; j < categoryArr.length(); ++j) {
                                 JSONObject categoryObj = categoryArr.getJSONObject(j);
-                                category += categoryObj.getString("Name") + ", ";
+
+                                if (j != categoryArr.length() - 1)
+                                    category += categoryObj.getString("Name") + ", ";
+                                else
+                                    category += categoryObj.getString("Name");
                             }
                             model.setCategory(category);
+                            category = "";
+
                             list.add(model);
                         }
                     }
@@ -191,7 +198,6 @@ public class OrganizationsFragment extends Fragment {
         progress = view.findViewById(R.id.progress);
         String url = "";
 
-
         HashMap<String, String> headers = new HashMap<>();
         HashMap<String, String> params = new HashMap<>();
         if (manager.isLoggedIn()) {
@@ -223,12 +229,16 @@ public class OrganizationsFragment extends Fragment {
                             model.setLogo(object.getString("Logo"));
 
                             JSONArray categoryArr = object.getJSONArray("Categories");
-                            String category = "";
                             for (int j = 0; j < categoryArr.length(); j++) {
                                 JSONObject categoryObj = categoryArr.getJSONObject(j);
-                                category += categoryObj.getString("Name") + ", ";
+
+                                if (j != categoryArr.length() - 1)
+                                    category += categoryObj.getString("Name") + ", ";
+                                else
+                                    category += categoryObj.getString("Name");
                             }
                             model.setCategory(category);
+                            category = "";
                             list.add(model);
                         }
                     }

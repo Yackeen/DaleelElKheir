@@ -14,14 +14,6 @@ public class CaseModel {
     public CaseModel() {
     }
 
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
-
     public CaseModel(String id, String name, String image, String dueDate,
                      String organization, String city, String governorate, String category, String caseType,
                      String caseStatue, String requiredAmount, String currentAmount, String description, String urgentCase,
@@ -43,6 +35,14 @@ public class CaseModel {
         this.sharedLink = sharedLink;
         this.CaseCode = CaseCode;
         this.Joined = Joined;
+        this.type = type;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
         this.type = type;
     }
 

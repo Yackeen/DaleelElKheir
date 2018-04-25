@@ -5,6 +5,10 @@
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
+    <meta-data
+        android:name="com.facebook.sdk.ApplicationId"
+        android:value="@string/facebook_app_id" />
+
     <!-- <uses-permission andrnamename="android.permission.CALL_PHONE" /> -->
     <application
         android:allowBackup="true"
@@ -32,7 +36,6 @@
             android:configChanges="orientation|screenSize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -42,26 +45,25 @@
         <activity android:name=".bloodbank.BloodBanksActivity" />
         <activity android:name=".allcases.AllCasesActivity" />
         <activity android:name=".allcases.DetailActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".home.MainActivity" />
+            <!--<meta-data-->
+            <!--android:name="android.support.PARENT_ACTIVITY"-->
+            <!--android:value=".home.MainActivity" />-->
         </activity>
         <activity android:name=".user.ProfileActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".home.MainActivity" />
+            <!--<meta-data-->
+            <!--android:name="android.support.PARENT_ACTIVITY"-->
+            <!--android:value=".home.MainActivity" />-->
         </activity>
         <activity android:name=".conact.ContactActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".home.MainActivity" />
+            <!--<meta-data-->
+            <!--android:name="android.support.PARENT_ACTIVITY"-->
+            <!--android:value=".home.MainActivity" />-->
         </activity>
         <activity android:name=".settings.SettingsActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".home.MainActivity" />
+            <!--<meta-data-->
+            <!--android:name="android.support.PARENT_ACTIVITY"-->
+            <!--android:value=".home.MainActivity" />-->
         </activity>
-
         <activity
             android:name=".login.LoginActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
@@ -84,9 +86,9 @@
             android:name=".user.EditProfile"
             android:windowSoftInputMode="stateHidden" />
         <activity android:name=".events.AllEventsActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".home.MainActivity" />
+            <!--<meta-data-->
+            <!--android:name="android.support.PARENT_ACTIVITY"-->
+            <!--android:value=".home.MainActivity" />-->
         </activity>
 
         <service android:name=".notification.MyFirebaseMessagingService">
@@ -113,10 +115,7 @@
             android:exported="true" />
 
         <activity android:name=".chat.ChattingActivity" />
+        <activity android:name=".organization.OrganizationDetailsActivity" />
     </application>
-
-    <meta-data
-        android:name="com.facebook.sdk.ApplicationId"
-        android:value="@string/facebook_app_id" />
 
 </manifest>

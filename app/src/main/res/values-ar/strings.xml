@@ -33,6 +33,7 @@
     <string name="organization">منظمة:</string>
     <string name="sign_in">تسجيل الدخول</string>
     <string name="recent_cases">الحالات الحالية</string>
+    <string name="recent">حاليا</string>
     <string name="category">القسم: </string>
     <string name="collected">ما تم تحصيله: </string>
     <string name="needed">المطلوب : </string>
@@ -126,4 +127,6 @@
     <string name="case_code">الكود :</string>
     <string name="event_link">لينك الحدث :</string>
     <string name="name">الاسم</string>
+    <string name="donate">تبرع</string>
+    <string name="chat2">محادثة</string>
 </resources>

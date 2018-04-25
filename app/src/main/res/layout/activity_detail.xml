@@ -119,10 +119,32 @@
                     android:text="1234"
                     android:textColor="@color/black" />
 
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/currentAmountText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:layout_marginTop="@dimen/_35sdp"
+                    android:text="@string/current"
+                    android:textColor="@color/black" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/currentAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_35sdp"
+                    android:layout_toRightOf="@id/currentAmountText"
+                    android:text="123"
+                    android:textColor="@color/black" />
+
                 <FrameLayout
                     android:id="@+id/progressLayout"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_16sdp"
                     android:layout_toRightOf="@id/requiredAmount">
 
                     <ProgressBar
@@ -161,26 +183,6 @@
 
 
                 </FrameLayout>
-
-                <me.grantland.widget.AutofitTextView
-                    android:id="@+id/currentAmountText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignBaseline="@id/progressLayout"
-                    android:layout_marginTop="@dimen/_70sdp"
-                    android:layout_toRightOf="@+id/progressLayout"
-                    android:text="@string/current"
-                    android:textColor="@color/black" />
-
-                <me.grantland.widget.AutofitTextView
-                    android:id="@+id/currentAmount"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/_2sdp"
-                    android:layout_marginTop="@dimen/_70sdp"
-                    android:layout_toRightOf="@id/currentAmountText"
-                    android:text="123"
-                    android:textColor="@color/black" />
 
                 <me.grantland.widget.AutofitTextView
                     android:id="@+id/organizationText"
@@ -270,7 +272,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/codeText"
                     android:layout_marginLeft="@dimen/_7sdp"
-                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
                     android:text="@string/description"
                     android:textColor="@color/black" />
 
@@ -280,7 +282,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/codeText"
                     android:layout_marginLeft="@dimen/_7sdp"
-                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
                     android:layout_toRightOf="@id/descriptionText"
                     android:text="desctiption description"
                     android:textColor="@color/black" />
@@ -290,15 +292,28 @@
         </android.support.constraint.ConstraintLayout>
     </ScrollView>
 
-    <android.support.design.widget.FloatingActionButton
+    <!--<android.support.design.widget.FloatingActionButton-->
+    <!--android:id="@+id/addCase"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="bottom|end"-->
+    <!--android:layout_margin="@dimen/_8sdp"-->
+    <!--android:background="@color/bage"-->
+    <!--app:backgroundTint="@color/bage"-->
+    <!--app:elevation="@dimen/_6sdp"-->
+    <!--app:srcCompat="@android:drawable/ic_input_add" />-->
+
+    <Button
         android:id="@+id/addCase"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/_8sdp"
-        android:background="@color/bage"
-        app:backgroundTint="@color/bage"
-        app:elevation="@dimen/_6sdp"
-        app:srcCompat="@android:drawable/ic_input_add" />
+        android:background="@drawable/circle_shape2"
+        android:text="@string/donate"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_13sdp"
+        android:textStyle="bold" />
 
 </FrameLayout>

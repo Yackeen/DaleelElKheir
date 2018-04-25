@@ -31,34 +31,34 @@ public final class R {
         public static final int mcv_text_date_light = 0x7f060084;
     }
     public static final class drawable {
-        public static final int mcv_action_next = 0x7f080191;
-        public static final int mcv_action_previous = 0x7f080192;
+        public static final int mcv_action_next = 0x7f080192;
+        public static final int mcv_action_previous = 0x7f080193;
     }
     public static final class id {
-        public static final int all = 0x7f090028;
-        public static final int decorated_disabled = 0x7f0900ae;
-        public static final int defaults = 0x7f0900b0;
-        public static final int friday = 0x7f0900ef;
-        public static final int horizontal = 0x7f090101;
-        public static final int match_parent = 0x7f090133;
-        public static final int mcv_pager = 0x7f090134;
-        public static final int monday = 0x7f09013a;
-        public static final int month = 0x7f09013c;
-        public static final int none = 0x7f090169;
-        public static final int other_months = 0x7f09017c;
-        public static final int out_of_range = 0x7f09017e;
-        public static final int saturday = 0x7f0901ae;
-        public static final int sunday = 0x7f0901ec;
-        public static final int thursday = 0x7f090202;
-        public static final int tuesday = 0x7f090213;
-        public static final int vertical = 0x7f090254;
-        public static final int wednesday = 0x7f09025d;
-        public static final int week = 0x7f09025e;
+        public static final int all = 0x7f09002a;
+        public static final int decorated_disabled = 0x7f0900b0;
+        public static final int defaults = 0x7f0900b2;
+        public static final int friday = 0x7f0900f1;
+        public static final int horizontal = 0x7f090103;
+        public static final int match_parent = 0x7f090135;
+        public static final int mcv_pager = 0x7f090136;
+        public static final int monday = 0x7f09013c;
+        public static final int month = 0x7f09013e;
+        public static final int none = 0x7f09016b;
+        public static final int other_months = 0x7f09017e;
+        public static final int out_of_range = 0x7f090180;
+        public static final int saturday = 0x7f0901b0;
+        public static final int sunday = 0x7f0901ee;
+        public static final int thursday = 0x7f090204;
+        public static final int tuesday = 0x7f090215;
+        public static final int vertical = 0x7f090256;
+        public static final int wednesday = 0x7f09025f;
+        public static final int week = 0x7f090260;
     }
     public static final class string {
         public static final int calendar = 0x7f110031;
-        public static final int next = 0x7f1100db;
-        public static final int previous = 0x7f1100f6;
+        public static final int next = 0x7f1100dd;
+        public static final int previous = 0x7f1100f8;
     }
     public static final class style {
         public static final int TextAppearance_MaterialCalendarWidget_Date = 0x7f12012e;

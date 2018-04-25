@@ -68,12 +68,6 @@ public class ContactActivity extends AppCompatActivity implements OnDialogStopLi
         toolbar.setTitleTextColor(Color.parseColor("#000000"));
     }
 
-    @Override
-    public boolean onSupportNavigateUp() {
-        onBackPressed();
-        return true;
-    }
-
     private void openImageMail() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             email.setImageDrawable(getDrawable(R.drawable.opened));
@@ -90,17 +84,16 @@ public class ContactActivity extends AppCompatActivity implements OnDialogStopLi
         }
     }
 
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            // Respond to the action bar's Up/Home button
-            case android.R.id.home:
-                NavUtils.navigateUpFromSameTask(this);
-                return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//        switch (item.getItemId()) {
+//            // Respond to the action bar's Up/Home button
+//            case android.R.id.home:
+//                NavUtils.navigateUpFromSameTask(this);
+//                return true;
+//        }
+//        return super.onOptionsItemSelected(item);
+//    }
 
     @Override
     protected void attachBaseContext(Context newBase) {
@@ -127,5 +120,11 @@ public class ContactActivity extends AppCompatActivity implements OnDialogStopLi
     public void onClick(View view) {
         if (dialogVisible)
             onDialogDestroy();
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
     }
 }

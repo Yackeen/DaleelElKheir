@@ -217,7 +217,7 @@
         android:id="@+id/more"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_25sdp"
-        android:background="@android:color/holo_blue_bright"
+        android:background="@color/colorPrimary"
         android:text="@string/more"
         android:textSize="@dimen/_12sdp" />
 </LinearLayout>

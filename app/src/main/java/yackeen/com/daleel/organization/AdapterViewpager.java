@@ -1,12 +1,15 @@
 package yackeen.com.daleel.organization;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v4.view.PagerAdapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.bumptech.glide.Glide;
@@ -62,8 +65,10 @@ public class AdapterViewpager extends PagerAdapter implements View.OnClickListen
         View view = inflater.inflate(R.layout.item_orgs_pager, container, false);
 
         // Init View
+        LinearLayout details;
         TextView orgName, orgCategory, orgRegion, orgLocation;
         ImageView thumbnail, unFollow;
+        details = view.findViewById(R.id.details);
         orgName = view.findViewById(R.id.orgName);
         orgCategory = view.findViewById(R.id.orgCategory);
         orgRegion = view.findViewById(R.id.orgRegion);
@@ -77,6 +82,7 @@ public class AdapterViewpager extends PagerAdapter implements View.OnClickListen
         orgCategory.setText(model.getCategory());
         orgRegion.setText(model.getRegion());
         orgLocation.setText(model.getLocation());
+
 //        final byte[] decodedImg = Base64.decode(model.getLogo(), Base64.DEFAULT);
         Glide.with(context).load(model.getLogo()).into(thumbnail);
 
@@ -97,19 +103,32 @@ public class AdapterViewpager extends PagerAdapter implements View.OnClickListen
                         showFragment(new OrganizationsFragment(), context.getResources().getString(R.string.organizations), ORGANIZATION_FRAGMENT);
                     }
                 });
-
             }
         });
+
+        details.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, OrganizationDetailsActivity.class);
+                intent.putExtra("ID", model.getId());
+                intent.putExtra("Name", model.getName());
+                intent.putExtra("Description", model.getDescription());
+                intent.putExtra("Address", model.getLocation());
+                intent.putExtra("Area", model.getRegion());
+                intent.putExtra("Logo", model.getLogo());
+                intent.putExtra("Categories", model.getCategory());
+                context.startActivity(intent);
+            }
+        });
+
         container.addView(view);
         return view;
     }
-
 
     @Override
     public void destroyItem(ViewGroup container, int position, Object object) {
         container.removeView((View) object);
     }
-
 
     @Override
     public void onClick(View v) {

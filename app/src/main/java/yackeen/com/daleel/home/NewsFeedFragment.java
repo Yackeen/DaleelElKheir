@@ -189,7 +189,7 @@ public class NewsFeedFragment extends Fragment implements View.OnClickListener {
                             model.setSharedLink(object.getString("SharedURL"));
                             model.setCaseCode(object.getString("CaseCode"));
                             model.setJoined(object.getBoolean("Joined"));
-                            model.setType("Urgent");
+                            model.setType(getResources().getString(R.string.urgent));
                             data.add(model);
                         }
 
@@ -253,7 +253,7 @@ public class NewsFeedFragment extends Fragment implements View.OnClickListener {
                             model.setSharedLink(object.getString("SharedURL"));
                             model.setCaseCode(object.getString("CaseCode"));
                             model.setJoined(object.getBoolean("Joined"));
-                            model.setType("Recent");
+                            model.setType(getResources().getString(R.string.recent));
                             data.add(model);
                         }
                         recyclerView.setLayoutManager(new GridLayoutManager(getActivity(), 2));
@@ -280,10 +280,10 @@ public class NewsFeedFragment extends Fragment implements View.OnClickListener {
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.more2:
-                launchAllCasesActivity(ALL_CASES, "Recent");
+                launchAllCasesActivity(ALL_CASES, getResources().getString(R.string.recent));
                 break;
             case R.id.more:
-                launchAllCasesActivity(URGENT_CASES, "Urgent");
+                launchAllCasesActivity(URGENT_CASES, getResources().getString(R.string.urgent));
                 break;
         }
     }

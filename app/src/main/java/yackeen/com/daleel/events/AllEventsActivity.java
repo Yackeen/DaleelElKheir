@@ -131,6 +131,4 @@ public class AllEventsActivity extends AppCompatActivity {
         onBackPressed();
         return true;
     }
-
-
 }

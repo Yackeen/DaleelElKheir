@@ -8,9 +8,9 @@ package com.android.databinding.library.baseAdapters;
 
 public final class R {
     public static final class id {
-        public static final int dataBinding = 0x7f0900a9;
-        public static final int onAttachStateChangeListener = 0x7f090170;
-        public static final int onDateChanged = 0x7f090171;
-        public static final int textWatcher = 0x7f0901fb;
+        public static final int dataBinding = 0x7f0900ab;
+        public static final int onAttachStateChangeListener = 0x7f090172;
+        public static final int onDateChanged = 0x7f090173;
+        public static final int textWatcher = 0x7f0901fd;
     }
 }

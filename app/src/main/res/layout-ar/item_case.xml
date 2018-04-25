@@ -195,7 +195,7 @@
             android:layout_below="@id/details"
             android:layout_margin="@dimen/_5sdp"
             android:text="@string/more"
-            android:textColor="@android:color/holo_blue_bright"
+            android:textColor="@color/colorPrimary"
             android:textSize="@dimen/_12sdp" />
     </RelativeLayout>
 </android.support.v7.widget.CardView>

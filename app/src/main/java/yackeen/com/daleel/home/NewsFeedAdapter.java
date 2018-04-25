@@ -86,6 +86,28 @@ class NewsFeedAdapter extends RecyclerView.Adapter<NewsFeedAdapter.ViewHolder> {
             }
         });
 
+        holder.detail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, DetailActivity.class);
+
+                intent.putExtra("caseId", model.getId());
+                intent.putExtra("caseName", model.getName());
+                intent.putExtra("date", model.getDueDate());
+                intent.putExtra("department", model.getCategory());
+                intent.putExtra("organization", model.getOrganization());
+                intent.putExtra("place", model.getCity());
+                intent.putExtra("image", model.getImage());
+                intent.putExtra("currentAmount", model.getCurrentAmount());
+                intent.putExtra("requiredAmount", model.getRequiredAmount());
+                intent.putExtra("description", model.getDescription());
+                intent.putExtra("sharedLink", model.getSharedLink());
+                intent.putExtra("CaseCode", model.getCaseCode());
+                intent.putExtra("Joined", model.isJoined());
+                intent.putExtra("type", model.getType());
+                context.startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -95,7 +117,7 @@ class NewsFeedAdapter extends RecyclerView.Adapter<NewsFeedAdapter.ViewHolder> {
 
     class ViewHolder extends RecyclerView.ViewHolder {
 
-        Button detail;
+        private Button detail;
         private ImageView thumbnail;
         private TextView eventName, organizationName, category, requiredAmount, currentAmount, percentage;
         private LinearLayout parentLayout;
@@ -116,8 +138,6 @@ class NewsFeedAdapter extends RecyclerView.Adapter<NewsFeedAdapter.ViewHolder> {
         }
 
         void bind(int position) {
-
         }
-
     }
 }

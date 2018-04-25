@@ -67,24 +67,28 @@
         <activity android:name="yackeen.com.daleel.bloodbank.BloodBanksActivity" />
         <activity android:name="yackeen.com.daleel.allcases.AllCasesActivity" />
         <activity android:name="yackeen.com.daleel.allcases.DetailActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".home.MainActivity" />
+
+            <!-- <meta-data -->
+            <!-- android:name="android.support.PARENT_ACTIVITY" -->
+            <!-- android:value=".home.MainActivity" /> -->
         </activity>
         <activity android:name="yackeen.com.daleel.user.ProfileActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".home.MainActivity" />
+
+            <!-- <meta-data -->
+            <!-- android:name="android.support.PARENT_ACTIVITY" -->
+            <!-- android:value=".home.MainActivity" /> -->
         </activity>
         <activity android:name="yackeen.com.daleel.conact.ContactActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".home.MainActivity" />
+
+            <!-- <meta-data -->
+            <!-- android:name="android.support.PARENT_ACTIVITY" -->
+            <!-- android:value=".home.MainActivity" /> -->
         </activity>
         <activity android:name="yackeen.com.daleel.settings.SettingsActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".home.MainActivity" />
+
+            <!-- <meta-data -->
+            <!-- android:name="android.support.PARENT_ACTIVITY" -->
+            <!-- android:value=".home.MainActivity" /> -->
         </activity>
         <activity
             android:name="yackeen.com.daleel.login.LoginActivity"
@@ -108,9 +112,10 @@
             android:name="yackeen.com.daleel.user.EditProfile"
             android:windowSoftInputMode="stateHidden" />
         <activity android:name="yackeen.com.daleel.events.AllEventsActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".home.MainActivity" />
+
+            <!-- <meta-data -->
+            <!-- android:name="android.support.PARENT_ACTIVITY" -->
+            <!-- android:value=".home.MainActivity" /> -->
         </activity>
 
         <service android:name="yackeen.com.daleel.notification.MyFirebaseMessagingService" >
@@ -137,6 +142,7 @@
             android:exported="true" />
 
         <activity android:name="yackeen.com.daleel.chat.ChattingActivity" />
+        <activity android:name="yackeen.com.daleel.organization.OrganizationDetailsActivity" />
         <activity
             android:name="com.facebook.FacebookActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"

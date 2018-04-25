@@ -6,12 +6,12 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.Html;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -46,7 +46,7 @@ public class DetailActivity extends AppCompatActivity implements View.OnClickLis
             caseStatue, location, category, code;
     private ProgressBar progressBar, progress;
     private PrefManager manager;
-    private FloatingActionButton addCase;
+    private Button addCase;
     private Toolbar toolbar;
     private AlertDialog.Builder dialog;
     private boolean Joined;
@@ -66,9 +66,10 @@ public class DetailActivity extends AppCompatActivity implements View.OnClickLis
         setSupportActionBar(toolbar);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+//        getSupportActionBar().setDisplayShowHomeEnabled(true);
 
         //Add case to user
-        addCase(user);
+        addCaseFunc(user);
 
         //Share case
         share.setOnClickListener(this);
@@ -81,7 +82,7 @@ public class DetailActivity extends AppCompatActivity implements View.OnClickLis
             String RU = getIntent().getExtras().getString("type");
             caseStatue.setText(RU);
             assert RU != null;
-            if(RU.equals("Recent"))
+            if (RU.equals(getResources().getString(R.string.recent)))
                 caseStatue.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
 
 //            Toast.makeText(this, getIntent().getExtras().getString("type"), Toast.LENGTH_SHORT).show();
@@ -112,11 +113,12 @@ public class DetailActivity extends AppCompatActivity implements View.OnClickLis
         progressBar.setProgress((int) val);
 
         if (Joined)
-            addCase.setImageResource(android.R.drawable.ic_menu_send);
+            addCase.setText(getResources().getString(R.string.chat2));
+//            addCase.setImageResource(android.R.drawable.ic_menu_send);
 
     }
 
-    private void addCase(final User user) {
+    private void addCaseFunc(final User user) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             dialog = new AlertDialog.Builder(this, android.R.style.Theme_Material_Dialog_Alert);
         } else {
@@ -165,7 +167,8 @@ public class DetailActivity extends AppCompatActivity implements View.OnClickLis
                                     boolean isSuccess = jsonObject.getBoolean("IsSuccess");
                                     if (isSuccess) {
                                         String res = jsonObject.getString("Response");
-                                        addCase.setImageResource(android.R.drawable.ic_menu_send);
+//                                        addCase.setImageResource(android.R.drawable.ic_menu_send);
+                                        addCase.setText(getResources().getString(R.string.chat2));
 
                                         int casID = Integer.parseInt(getIntent().getExtras().getString("caseId"));
                                         String casName = getIntent().getExtras().getString("caseName");
@@ -230,5 +233,11 @@ public class DetailActivity extends AppCompatActivity implements View.OnClickLis
     @Override
     protected void attachBaseContext(Context newBase) {
         super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
     }
 }

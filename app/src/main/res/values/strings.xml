@@ -37,6 +37,7 @@
     <string name="sign_in">Sign in</string>
     <string name="title_activity_main2">Main2Activity</string>
     <string name="recent_cases">Recent cases</string>
+    <string name="recent">Recent</string>
     <string name="category">Category: </string>
     <string name="collected">Collected: </string>
     <string name="needed">Needed: </string>
@@ -132,5 +133,7 @@
     <string name="case_code">Case Code:</string>
     <string name="event_link">Event Link :</string>
     <string name="name">Name</string>
+    <string name="donate">Donate</string>
+    <string name="chat2">Chat</string>
 
 </resources>

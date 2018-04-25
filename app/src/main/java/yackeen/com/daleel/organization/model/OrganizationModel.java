@@ -6,20 +6,29 @@ package yackeen.com.daleel.organization.model;
 
 public class OrganizationModel {
 
-    private String id, name, category, location, region, logo;
+    private String id, name, Description, location, region, logo, category;
 
     public OrganizationModel() {
 
     }
 
     public OrganizationModel(String id, String name, String category, String location,
-                             String region, String logo) {
+                             String region, String logo, String Description) {
         this.id = id;
         this.name = name;
         this.category = category;
         this.location = location;
         this.region = region;
         this.logo = logo;
+        this.Description = Description;
+    }
+
+    public String getDescription() {
+        return Description;
+    }
+
+    public void setDescription(String description) {
+        Description = description;
     }
 
     public String getId() {
