@@ -17,9 +17,9 @@
     <string name="dontation_for">Donation for</string>
     <string name="needed_cash">Needed cash</string>
     <string name="urgent">Urgent</string>
-    <string name="region">Region:</string>
-    <string name="department">Department:</string>
-    <string name="organization">Organization:</string>
+    <string name="region">Region :</string>
+    <string name="department">Department :</string>
+    <string name="organization">Organization :</string>
     <string name="title_activity_login">Sign in</string>
 
     <!-- Strings related to login -->
@@ -38,9 +38,9 @@
     <string name="title_activity_main2">Main2Activity</string>
     <string name="recent_cases">Recent cases</string>
     <string name="recent">Recent</string>
-    <string name="category">Category: </string>
-    <string name="collected">Collected: </string>
-    <string name="needed">Needed: </string>
+    <string name="category">Category : </string>
+    <string name="collected">Collected : </string>
+    <string name="needed">Needed : </string>
     <string name="forget_password">Forget password?</string>
     <string name="sign_with">Sign with</string>
     <string name="new_account">New account</string>
@@ -50,7 +50,7 @@
     <string name="phoneNumber">Phone number</string>
     <string name="confirmPassword">confirm password</string>
     <string name="signUp">Sign up</string>
-    <string name="address">Address: </string>
+    <string name="address">Address : </string>
     <string name="folowed_orgs">Followed Oragnizations</string>
     <string name="all_orgs">All organizations</string>
     <string name="blood_banks_help">Blood banks help</string>
@@ -130,10 +130,11 @@
     <string name="pressBackAgain">press back again to exit</string>
     <string name="noDataFound">No messages found</string>
     <string name="typeHere">type message</string>
-    <string name="case_code">Case Code:</string>
+    <string name="case_code">Case Code :</string>
     <string name="event_link">Event Link :</string>
     <string name="name">Name</string>
     <string name="donate">Donate</string>
     <string name="chat2">Chat</string>
+    <string name="governorate">Governorate :</string>
 
 </resources>

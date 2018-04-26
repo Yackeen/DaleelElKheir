@@ -31,11 +31,11 @@ import yackeen.com.daleel.organization.model.OrganizationModel;
 public class AllOrganization extends AppCompatActivity {
 
     private static final String TAG = "AllOrganization";
+    String category = "";
     private RecyclerView recyclerView;
     private ProgressBar progress;
     private TextView noOrgs;
     private String url;
-    String category = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -91,6 +91,7 @@ public class AllOrganization extends AppCompatActivity {
                             model.setDescription(object.getString("Description"));
                             model.setLocation(object.getString("Address"));
                             model.setRegion(object.getString("Area"));
+                            model.setGovernorate(object.getString("Governorate"));
                             model.setLogo(object.getString("Logo"));
 
                             JSONArray categoryArr = object.getJSONArray("Categories");
@@ -102,6 +103,9 @@ public class AllOrganization extends AppCompatActivity {
                                 else
                                     category += categoryObj.getString("Name");
                             }
+
+                            if ("".equals(category))
+                                category = "null";
 
                             model.setCategory(category);
                             category = "";

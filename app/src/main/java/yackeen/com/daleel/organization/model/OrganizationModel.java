@@ -6,21 +6,30 @@ package yackeen.com.daleel.organization.model;
 
 public class OrganizationModel {
 
-    private String id, name, Description, location, region, logo, category;
+    private String id, name, Description, location, Governorate, region, logo, category;
 
     public OrganizationModel() {
 
     }
 
     public OrganizationModel(String id, String name, String category, String location,
-                             String region, String logo, String Description) {
+                             String Governorate, String region, String logo, String Description) {
         this.id = id;
         this.name = name;
         this.category = category;
         this.location = location;
+        this.Governorate = Governorate;
         this.region = region;
         this.logo = logo;
         this.Description = Description;
+    }
+
+    public String getGovernorate() {
+        return Governorate;
+    }
+
+    public void setGovernorate(String governorate) {
+        Governorate = governorate;
     }
 
     public String getDescription() {

@@ -129,4 +129,5 @@
     <string name="name">الاسم</string>
     <string name="donate">تبرع</string>
     <string name="chat2">محادثة</string>
+    <string name="governorate">المحافظة :</string>
 </resources>

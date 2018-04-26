@@ -104,7 +104,24 @@ class OrganizationsAdapter extends RecyclerView.Adapter<OrganizationsAdapter.Vie
                 intent.putExtra("Name", model.getName());
                 intent.putExtra("Description", model.getDescription());
                 intent.putExtra("Address", model.getLocation());
+                intent.putExtra("Governorate", model.getGovernorate());
                 intent.putExtra("Area", model.getRegion());
+                intent.putExtra("Logo", model.getLogo());
+                intent.putExtra("Categories", model.getCategory());
+                context.startActivity(intent);
+            }
+        });
+
+        holder.logo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, OrganizationDetailsActivity.class);
+                intent.putExtra("ID", model.getId());
+                intent.putExtra("Name", model.getName());
+                intent.putExtra("Description", model.getDescription());
+                intent.putExtra("Address", model.getLocation());
+                intent.putExtra("Area", model.getRegion());
+                intent.putExtra("Governorate", model.getGovernorate());
                 intent.putExtra("Logo", model.getLogo());
                 intent.putExtra("Categories", model.getCategory());
                 context.startActivity(intent);

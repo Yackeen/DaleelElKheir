@@ -122,6 +122,7 @@ public class OrganizationsFragment extends Fragment {
                             model.setName(object.getString("Name"));
                             model.setDescription(object.getString("Description"));
                             model.setLocation(object.getString("Address"));
+                            model.setGovernorate(object.getString("Governorate"));
                             model.setRegion(object.getString("Area"));
                             model.setLogo(object.getString("Logo"));
 
@@ -134,6 +135,10 @@ public class OrganizationsFragment extends Fragment {
                                 else
                                     category += categoryObj.getString("Name");
                             }
+
+                            if ("".equals(category))
+                                category = "null";
+
                             model.setCategory(category);
                             category = "";
 
@@ -224,7 +229,9 @@ public class OrganizationsFragment extends Fragment {
                             OrganizationModel model = new OrganizationModel();
                             model.setId(object.getString("ID"));
                             model.setName(object.getString("Name"));
+                            model.setDescription(object.getString("Description"));
                             model.setLocation(object.getString("Address"));
+                            model.setGovernorate(object.getString("Governorate"));
                             model.setRegion(object.getString("Area"));
                             model.setLogo(object.getString("Logo"));
 
@@ -237,6 +244,10 @@ public class OrganizationsFragment extends Fragment {
                                 else
                                     category += categoryObj.getString("Name");
                             }
+
+                            if ("".equals(category))
+                                category = "null";
+
                             model.setCategory(category);
                             category = "";
                             list.add(model);
@@ -245,7 +256,6 @@ public class OrganizationsFragment extends Fragment {
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
-
 
                 //Add to recycleView
                 recyclerView = view.findViewById(R.id.recycler);

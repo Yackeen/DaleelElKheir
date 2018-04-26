@@ -6,6 +6,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.Html;
@@ -47,6 +48,7 @@ public class DetailActivity extends AppCompatActivity implements View.OnClickLis
     private ProgressBar progressBar, progress;
     private PrefManager manager;
     private Button addCase;
+    private FloatingActionButton addCase2;
     private Toolbar toolbar;
     private AlertDialog.Builder dialog;
     private boolean Joined;
@@ -112,10 +114,12 @@ public class DetailActivity extends AppCompatActivity implements View.OnClickLis
         }
         progressBar.setProgress((int) val);
 
-        if (Joined)
+        if (Joined) {
             addCase.setText(getResources().getString(R.string.chat2));
+            addCase.setVisibility(View.GONE);
+            addCase2.setVisibility(View.VISIBLE);
 //            addCase.setImageResource(android.R.drawable.ic_menu_send);
-
+        }
     }
 
     private void addCaseFunc(final User user) {
@@ -167,8 +171,11 @@ public class DetailActivity extends AppCompatActivity implements View.OnClickLis
                                     boolean isSuccess = jsonObject.getBoolean("IsSuccess");
                                     if (isSuccess) {
                                         String res = jsonObject.getString("Response");
+
 //                                        addCase.setImageResource(android.R.drawable.ic_menu_send);
                                         addCase.setText(getResources().getString(R.string.chat2));
+                                        addCase.setVisibility(View.GONE);
+                                        addCase2.setVisibility(View.VISIBLE);
 
                                         int casID = Integer.parseInt(getIntent().getExtras().getString("caseId"));
                                         String casName = getIntent().getExtras().getString("caseName");
@@ -191,6 +198,19 @@ public class DetailActivity extends AppCompatActivity implements View.OnClickLis
                 }
             }
         });
+
+        addCase2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int casID = Integer.parseInt(getIntent().getExtras().getString("caseId"));
+                String casName = getIntent().getExtras().getString("caseName");
+
+                Intent intent = new Intent(DetailActivity.this, ChattingActivity.class);
+                intent.putExtra("CaseID", casID);
+                intent.putExtra("CaseName", casName);
+                startActivity(intent);
+            }
+        });
     }
 
     private void initView() {
@@ -208,6 +228,7 @@ public class DetailActivity extends AppCompatActivity implements View.OnClickLis
         progressBar = findViewById(R.id.progressBar);
         progress = findViewById(R.id.progress);
         addCase = findViewById(R.id.addCase);
+        addCase2 = findViewById(R.id.addCase2);
         toolbar = findViewById(R.id.toolbar);
         code = findViewById(R.id.code);
         manager = new PrefManager(this);

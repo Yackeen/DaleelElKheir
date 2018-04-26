@@ -297,17 +297,6 @@
         </android.support.constraint.ConstraintLayout>
     </ScrollView>
 
-    <!--<android.support.design.widget.FloatingActionButton-->
-    <!--android:id="@+id/addCase"-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:layout_gravity="bottom"-->
-    <!--android:layout_margin="@dimen/_8sdp"-->
-    <!--android:background="@color/bage"-->
-    <!--app:backgroundTint="@color/bage"-->
-    <!--app:elevation="@dimen/_6sdp"-->
-    <!--app:srcCompat="@android:drawable/ic_input_add" />-->
-
     <Button
         android:id="@+id/addCase"
         android:layout_width="@dimen/_50sdp"
@@ -320,5 +309,18 @@
         android:textColor="@android:color/white"
         android:textSize="@dimen/_13sdp"
         android:textStyle="bold" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/addCase2"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/_8sdp"
+        android:background="@color/colorPrimaryDark"
+        app:backgroundTint="@color/colorPrimaryDark"
+        app:elevation="@dimen/_6sdp"
+        android:tint="@color/white"
+        android:visibility="gone"
+        app:srcCompat="@drawable/new_chat" />
 
 </FrameLayout>
