@@ -55,10 +55,13 @@ class AllCasesAdapter extends RecyclerView.Adapter<AllCasesAdapter.ViewHolder> {
         holder.organization.setText(model.getOrganization());
         holder.region.setText(model.getCity());
 
-        if (model.getCaseType().equals(URGENT_CASE))
+        if (model.getCaseType().equals(URGENT_CASE)) {
             holder.urgentCaseLayout.setVisibility(View.VISIBLE);
-        else holder.urgentCaseLayout.setVisibility(View.INVISIBLE);
-
+            model.setType(context.getResources().getString(R.string.urgent));
+        } else {
+            holder.urgentCaseLayout.setVisibility(View.INVISIBLE);
+            model.setType(context.getResources().getString(R.string.recent));
+        }
 
         holder.detail.setOnClickListener(new View.OnClickListener() {
             @Override

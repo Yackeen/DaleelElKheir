@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    android:layoutDirection="locale">
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="@dimen/_160sdp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:background="@android:color/white"
+        android:layoutDirection="locale">
+
+        <FrameLayout
+            android:id="@+id/imageLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp">
+
+            <ImageView
+                android:id="@+id/thumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/header" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_20sdp">
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progress="100"
+                    android:progressDrawable="@drawable/circular_progress"
+                    android:rotation="180" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/casePercentage"
+                    android:layout_width="@dimen/_33sdp"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:background="@drawable/circle_shape"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:maxLines="1"
+                    android:text="0%"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+        </FrameLayout>
+
+
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/caseDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@color/light_gray"
+            android:text="@string/more"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_14sdp" />
+
+        <ImageView
+            android:id="@+id/star"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/_5sdp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/star" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/imageLayout"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/caseName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="hospital titledfsdfs "
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/requiredAmountText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:text="@string/needed_cash"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_12sdp" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/requiredAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:ellipsize="end"
+                    android:maxEms="8"
+                    android:maxLines="1"
+                    android:text="50000"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

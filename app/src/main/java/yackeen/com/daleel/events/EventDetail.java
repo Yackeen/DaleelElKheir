@@ -1,7 +1,11 @@
 package yackeen.com.daleel.events;
 
 
+import android.app.AlertDialog;
 import android.app.Fragment;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.text.Html;
@@ -10,7 +14,6 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -59,9 +62,10 @@ public class EventDetail extends Fragment {
         eventLink.setText(getString(R.string.event_link) + getArguments().getString("link"));
 
         Log.d(TAG, "onCreateView: " + getArguments().getString("time"));
-        SimpleDateFormat yourDateFormat = new SimpleDateFormat("dd/MM/yyyy");
-        date.setText(DateFormat.format("dd-MMM", new Date(yourDateFormat.format(
-                new Date(getArguments().getString("startDate"))))));
+//        SimpleDateFormat yourDateFormat = new SimpleDateFormat("dd/MM/yyyy");
+//        date.setText(DateFormat.format("dd-MMM", new Date(yourDateFormat.format(
+//                new Date(getArguments().getString("startDate"))))));
+        date.setText(getArguments().getString("startDate"));
 
         time.setText(DateFormat.format("h:mm a", new Date(getArguments().getString("startDate"))) + " - " + DateFormat.format("h:mm a", new Date(getArguments().getString("endDate"))));
 
@@ -72,6 +76,46 @@ public class EventDetail extends Fragment {
 //        byte[] decodedImg = Base64.decode(getArguments().getString("image"), Base64.DEFAULT);
         Glide.with(getActivity()).load(getArguments().getString("image")).into(image);
         location.setText(getArguments().getString("location"));
+
+        contact.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                builder.setMessage("Do you want to call " + contact.getText().toString() + " ?")
+                        .setPositiveButton("yes", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                startActivity(new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", contact.getText().toString(), null)));
+                            }
+                        }).setNegativeButton("no", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        // Nothing
+                    }
+                });
+                AlertDialog d = builder.create();
+                d.show();
+            }
+        });
+
+        location.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                builder.setMessage("Do you want to search on google map ?")
+                        .setPositiveButton("yes", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                Intent googleMap = new Intent(Intent.ACTION_VIEW);
+                                googleMap.setData(Uri.parse("geo:0,0?q=" + location.getText().toString()));
+                                getActivity().startActivity(googleMap);
+                            }
+                        }).setNegativeButton("no", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        // Nothing
+                    }
+                });
+                AlertDialog d = builder.create();
+                d.show();
+            }
+        });
 
         return view;
     }

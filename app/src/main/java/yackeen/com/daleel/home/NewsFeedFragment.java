@@ -113,9 +113,7 @@ public class NewsFeedFragment extends Fragment implements View.OnClickListener {
             @Override
             public boolean onQueryTextChange(String query) {
 
-
                 return true;
-
             }
 
         });
@@ -205,8 +203,6 @@ public class NewsFeedFragment extends Fragment implements View.OnClickListener {
                 }
             }
         });
-
-
     }
 
     @Override
@@ -266,15 +262,12 @@ public class NewsFeedFragment extends Fragment implements View.OnClickListener {
             }
         });
 
-
     }
-
 
     public void setScrollView(View view) {
         NestedScrollView scrollView = view.findViewById(R.id.scrollView);
         scrollView.smoothScrollTo(0, 0);
     }
-
 
     @Override
     public void onClick(View view) {

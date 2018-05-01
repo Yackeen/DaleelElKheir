@@ -52,7 +52,7 @@ public class BottomNavListener implements BottomNavigationView.OnNavigationItemS
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.home:
-                showFragment(new NewsFeedFragment(), context.getResources().getString(R.string.home), HOME_FRAGMENT);
+                showFragment(new NewsFeedFragment(), context.getResources().getString(R.string.news_feed), HOME_FRAGMENT);
                 spinner.setVisibility(View.VISIBLE);
                 break;
             case R.id.about:

@@ -65,19 +65,19 @@ public class ChatListAdapter extends RecyclerView.Adapter<ChatListAdapter.ViewHo
             super(itemView);
             image = itemView.findViewById(R.id.thumbnail);
             title = itemView.findViewById(R.id.chatTitle);
-            message = itemView.findViewById(R.id.chatMsg);
-            date = itemView.findViewById(R.id.chatDate);
-            unRead = itemView.findViewById(R.id.chatCount);
+//            message = itemView.findViewById(R.id.chatMsg);
+//            date = itemView.findViewById(R.id.chatDate);
+//            unRead = itemView.findViewById(R.id.chatCount);
             containerLayout = itemView.findViewById(R.id.layout);
         }
 
         public void bind(final int position) {
-            Log.e("fawzy.ChatList", "image at " + position + "= " + list.get(position).getImage());
+//            Log.e("fawzy.ChatList", "image at " + position + "= " + list.get(position).getImage());
             Glide.with(context).load(list.get(position).getImage()).into(image);
             title.setText(list.get(position).getCaseName());
 //            message.setText(list.get(position).getMessage());
-            date.setText("yesterday");
-            unRead.setText("2");
+//            date.setText("yesterday");
+//            unRead.setText("2");
             containerLayout.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {

@@ -150,7 +150,9 @@ public class ContactDialog extends DialogFragment {
                         try {
                             boolean isSuccess = jsonObject.getBoolean("IsSuccess");
                             if (isSuccess) {
-                                Toast.makeText(getActivity(), "Success", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getActivity(), "Thank you for contacting us, we'll get back to you soon", Toast.LENGTH_SHORT).show();
+                                OnDialogStopListner listner = (OnDialogStopListner) getActivity();
+                                listner.onDialogDestroy();
                             }
                         } catch (JSONException e) {
                             e.printStackTrace();

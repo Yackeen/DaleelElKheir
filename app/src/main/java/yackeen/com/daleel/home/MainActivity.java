@@ -462,16 +462,19 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 checkSigning();
                 break;
             case R.id.sort:
-                if (getFragmentManager().findFragmentByTag(HOME_FRAGMENT) != null &&
-                        getFragmentManager().findFragmentByTag(HOME_FRAGMENT).isVisible()) {
-                    sort(FILTERED_CASES, AllCasesActivity.class);
-                } else if (getFragmentManager().findFragmentByTag(ORGANIZATION_FRAGMENT) != null &&
-                        getFragmentManager().findFragmentByTag(ORGANIZATION_FRAGMENT).isVisible()) {
-                    sortOrganizations();
-                } else if (getFragmentManager().findFragmentByTag(EVENT_FRAGMENT) != null &&
-                        getFragmentManager().findFragmentByTag(EVENT_FRAGMENT).isVisible()) {
-                    sort(FILTERED_EVENT, AllEventsActivity.class);
-                }
+                if (!"".equals(placId)) {
+                    if (getFragmentManager().findFragmentByTag(HOME_FRAGMENT) != null &&
+                            getFragmentManager().findFragmentByTag(HOME_FRAGMENT).isVisible()) {
+                        sort(FILTERED_CASES, AllCasesActivity.class);
+                    } else if (getFragmentManager().findFragmentByTag(ORGANIZATION_FRAGMENT) != null &&
+                            getFragmentManager().findFragmentByTag(ORGANIZATION_FRAGMENT).isVisible()) {
+                        sortOrganizations();
+                    } else if (getFragmentManager().findFragmentByTag(EVENT_FRAGMENT) != null &&
+                            getFragmentManager().findFragmentByTag(EVENT_FRAGMENT).isVisible()) {
+                        sort(FILTERED_EVENT, AllEventsActivity.class);
+                    }
+                } else
+                    Toast.makeText(this, "Please select region", Toast.LENGTH_SHORT).show();
                 break;
         }
     }

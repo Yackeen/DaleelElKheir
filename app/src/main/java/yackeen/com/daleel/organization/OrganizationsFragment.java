@@ -205,6 +205,7 @@ public class OrganizationsFragment extends Fragment {
 
         HashMap<String, String> headers = new HashMap<>();
         HashMap<String, String> params = new HashMap<>();
+
         if (manager.isLoggedIn()) {
             url = UN_FOLLOWED_ORGANIZATION;
             headers.put("SecurityToken", user.getToken());

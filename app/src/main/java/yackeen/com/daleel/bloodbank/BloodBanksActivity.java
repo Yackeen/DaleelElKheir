@@ -17,6 +17,7 @@ import android.view.View;
 import android.widget.SearchView;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.google.firebase.crash.FirebaseCrash;
@@ -95,11 +96,15 @@ public class BloodBanksActivity extends AppCompatActivity implements NavigationV
         sort.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Bundle bundle = new Bundle();
-                bundle.putString("location", placId);
-                bundle.putString("url", BLOOD_BANKS_FILTER);
-                loadBloodBanksList(bundle);
-                drawer.closeDrawer(GravityCompat.END);
+                if (!"".equals(placId)) {
+                    Bundle bundle = new Bundle();
+                    bundle.putString("location", placId);
+                    bundle.putString("url", BLOOD_BANKS_FILTER);
+                    loadBloodBanksList(bundle);
+                    drawer.closeDrawer(GravityCompat.END);
+                }
+                else
+                    Toast.makeText(BloodBanksActivity.this, "Please select region", Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -146,7 +151,7 @@ public class BloodBanksActivity extends AppCompatActivity implements NavigationV
                                     locationId = locID;
                                     if (!"".equals(locationId))
                                         setSpinner(locationPlaceSpinner, GET_REGION, getResources().getString(R.string.choose_region));
-                                } else if (spinner.getId() == R.id.locationSpinner) {
+                                } else if (spinner.getId() == R.id.locationPlaceSpinner) {
                                     placId = placeId;
                                 }
 //                                Log.d(TAG, "theChosenId: " + ", " + locationId);
@@ -183,17 +188,13 @@ public class BloodBanksActivity extends AppCompatActivity implements NavigationV
                 Bundle bundle = new Bundle();
                 bundle.putString("url", BLOOD_BANKS);
                 bundle.putString("searchedText", s);
-                ;
                 loadBloodBanksList(bundle);
                 return true;
             }
 
             @Override
             public boolean onQueryTextChange(String query) {
-
-
                 return true;
-
             }
 
         });
