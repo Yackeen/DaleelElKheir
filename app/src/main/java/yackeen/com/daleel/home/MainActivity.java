@@ -28,6 +28,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -76,6 +77,7 @@ import static yackeen.com.daleel.constants.Constants.GET_GOVERNORATE;
 import static yackeen.com.daleel.constants.Constants.GET_ORGANIZATIONS;
 import static yackeen.com.daleel.constants.Constants.GET_REGION;
 import static yackeen.com.daleel.constants.Constants.HOME_FRAGMENT;
+import static yackeen.com.daleel.constants.Constants.LOG_OUT;
 import static yackeen.com.daleel.constants.Constants.ORGANIZATION_FRAGMENT;
 import static yackeen.com.daleel.constants.Constants.UPDATE_DEVICE_TOKEN;
 import static yackeen.com.daleel.home.BottomNavListener.showFragment;
@@ -163,6 +165,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     private void displayFirebaseRegId() {
+        if (getIntent().getBooleanExtra("logout", false))
+            //in case the user just logged out so we don't want any access on token
+            return;
         SharedPreferences pref = getApplicationContext().getSharedPreferences(Config.SHARED_PREF, 0);
         String regId = pref.getString("regId", null);
 
@@ -499,7 +504,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     private void checkSigning() {
         if (manager.isLoggedIn()) {
-            performLogout();
+            logoutRequest();
         } else {
             launchActivity(LoginActivity.class);
         }
@@ -509,15 +514,41 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private void performLogout() {
         manager.clearSession();
         Intent intent = new Intent(this, MainActivity.class);
+        intent.putExtra("logout", true);
         startActivity(intent);
         finish();
+    }
+
+    private void logoutRequest() {
+        ProgressBar progress = findViewById(R.id.progress);
+        User user = manager.getUser();
+        HashMap<String, String> params = new HashMap<>();
+        HashMap<String, String> headers = new HashMap<>();
+        params.put("SecurityToken", user.getToken());
+        headers.put("SecurityToken", user.getToken());
+
+        FetchData fetchData = new FetchData(getApplicationContext(), TAG, progress,
+                LOG_OUT, Request.Method.POST, params, headers);
+        fetchData.getData(new VolleyCallBack() {
+            @Override
+            public void onSuccess(JSONObject jsonObject) {
+                try {
+                    boolean isSuccess = jsonObject.getBoolean("IsSuccess");
+                    if (isSuccess) {
+                        Log.e(TAG, "onSuccess: Success");
+                        performLogout();
+                    }
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
     }
 
     @Override
     protected void attachBaseContext(Context newBase) {
         super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
     }
-
 
     @Override
     public void onHomeStarted() {

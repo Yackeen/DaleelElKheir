@@ -1,4 +1,4 @@
-#Mon Apr 30 23:39:10 EET 2018
-base.0=/home/amr/AndroidStudioProjects/YSolutionsApps/DaleelElKheir/app/build/intermediates/transforms/dexMerger/debug/99
+#Wed May 02 16:50:58 EET 2018
+base.0=/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/transforms/dexMerger/debug/4
 path.0=classes.dex
 renamed.0=classes.dex

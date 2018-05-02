@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/amr/AndroidStudioProjects/YSolutionsApps/DaleelElKheir/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
+            "outputFile": "/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "/home/amr/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/ff34c801e7fe2a210a20f02573896ece/res/values-v24/values-v24.xml",
+                    "source": "/home/fawzy/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/99ec2d9892f00c779236b02f2630401b/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/home/amr/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/846c353eb6a7e8bc66568b84944c8a38/res/values-v24/values-v24.xml",
+                    "source": "/home/fawzy/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/284d602bf3ccf0189371990d78f846cf/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

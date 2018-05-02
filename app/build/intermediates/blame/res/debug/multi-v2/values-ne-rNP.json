@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/amr/AndroidStudioProjects/YSolutionsApps/DaleelElKheir/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ne-rNP/values-ne-rNP.xml",
+            "outputFile": "/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ne-rNP/values-ne-rNP.xml",
             "map": [
                 {
-                    "source": "/home/amr/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-25.2.0.aar/27d3f849f6243f79e7b34e600cd66648/res/values-ne-rNP/values-ne-rNP.xml",
+                    "source": "/home/fawzy/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-25.2.0.aar/44384749ccafcc458575c36ce6e82438/res/values-ne-rNP/values-ne-rNP.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

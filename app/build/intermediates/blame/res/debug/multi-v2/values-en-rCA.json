@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/amr/AndroidStudioProjects/YSolutionsApps/DaleelElKheir/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rCA/values-en-rCA.xml",
+            "outputFile": "/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rCA/values-en-rCA.xml",
             "map": [
                 {
-                    "source": "/home/amr/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/846c353eb6a7e8bc66568b84944c8a38/res/values-en-rCA/values-en-rCA.xml",
+                    "source": "/home/fawzy/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/284d602bf3ccf0189371990d78f846cf/res/values-en-rCA/values-en-rCA.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/home/amr/.gradle/caches/transforms-1/files-1.1/play-services-wallet-11.4.2.aar/eb6de7d286400cefe210943ea55cded8/res/values-en-rCA/values.xml",
+                    "source": "/home/fawzy/.gradle/caches/transforms-1/files-1.1/play-services-wallet-11.4.2.aar/c5234d7d5fa36f36ca4391dac50e0f49/res/values-en-rCA/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",

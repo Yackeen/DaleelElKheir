@@ -1,10 +1,20 @@
 {
     "logs": [
         {
-            "outputFile": "/home/amr/AndroidStudioProjects/YSolutionsApps/DaleelElKheir/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
+            "outputFile": "/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
             "map": [
                 {
-                    "source": "/home/amr/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/846c353eb6a7e8bc66568b84944c8a38/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "source": "/home/fawzy/.gradle/caches/transforms-1/files-1.1/twitter-core-2.3.1.aar/8316816bcfaeec69fbdf3a90ebe67c0e/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,116,168,226,285",
+                        "endColumns": "60,51,57,58,54",
+                        "endOffsets": "111,163,221,280,335"
+                    }
+                },
+                {
+                    "source": "/home/fawzy/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/284d602bf3ccf0189371990d78f846cf/res/values-hdpi-v4/values-hdpi-v4.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -20,16 +30,6 @@
                         "endLines": "11",
                         "endColumns": "13",
                         "endOffsets": "612"
-                    }
-                },
-                {
-                    "source": "/home/amr/.gradle/caches/transforms-1/files-1.1/twitter-core-2.3.1.aar/e8ca1063220c4504e164b0cad825dd6f/res/values-hdpi-v4/values-hdpi-v4.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "55,116,168,226,285",
-                        "endColumns": "60,51,57,58,54",
-                        "endOffsets": "111,163,221,280,335"
                     }
                 }
             ]
