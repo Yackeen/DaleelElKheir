@@ -148,23 +148,6 @@ public class LoginActivity extends AppCompatActivity implements OnClickListener,
         this.finish();
     }
 
-
-    void setLang(String lang) {
-        Locale myLocale = new Locale(lang);
-        Locale.setDefault(myLocale);
-        Resources res = getResources();
-        DisplayMetrics dm = res.getDisplayMetrics();
-        Configuration conf = res.getConfiguration();
-        conf.locale = myLocale;
-        res.updateConfiguration(conf, dm);
-    }
-    void restart(){
-        Intent i = getIntent();
-        i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-        startActivity(i);
-        this.finish();
-    }
-
     @Override
     public void onBackPressed() {
         startActivity(new Intent(LoginActivity.this, MainActivity.class));
