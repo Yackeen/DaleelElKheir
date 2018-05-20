@@ -83,12 +83,6 @@ public class SplashActivity extends AppCompatActivity {
                 getBaseContext().getResources().getDisplayMetrics());
         changeFont();
 
-//        Locale myLocale = new Locale(lang);
-//        Resources res = getResources();
-//        DisplayMetrics dm = res.getDisplayMetrics();
-//        Configuration conf = res.getConfiguration();
-//        conf.locale = myLocale;
-//        res.updateConfiguration(conf, dm);
     }
 
     @Override

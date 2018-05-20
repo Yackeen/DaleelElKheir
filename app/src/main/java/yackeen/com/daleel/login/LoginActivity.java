@@ -6,15 +6,19 @@ import android.annotation.TargetApi;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -37,6 +41,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.HashMap;
+import java.util.Locale;
 
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 import yackeen.com.daleel.R;
@@ -46,6 +51,7 @@ import yackeen.com.daleel.connection.VolleyCallBack;
 import yackeen.com.daleel.home.MainActivity;
 import yackeen.com.daleel.manager.PrefManager;
 import yackeen.com.daleel.register.RegisterActivity;
+import yackeen.com.daleel.splash.SplashActivity;
 import yackeen.com.daleel.user.User;
 
 import static yackeen.com.daleel.constants.Constants.FORGET_PASSWORD;
@@ -69,7 +75,7 @@ public class LoginActivity extends AppCompatActivity implements OnClickListener,
     private EditText mEmailView, mPasswordView;
     private View mLoginFormView;
     private ProgressBar mProgressView;
-    private TextView newAccount, login, forgetPass;
+    private TextView newAccount, login, forgetPass, langTV;
     private PrefManager manager;
     private boolean isFaceBookUser = false;
     private boolean isGoogleUser = false;
@@ -79,12 +85,11 @@ public class LoginActivity extends AppCompatActivity implements OnClickListener,
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        FirebaseCrash.log("Here comes the exception!");
-        FirebaseCrash.report(new Exception("oops!"));
-
-        setViews();
-
+//        FirebaseCrash.log("Here comes the exception!");
+//        FirebaseCrash.report(new Exception("oops!"));
         manager = new PrefManager(this);
+        setViews();
+//        setLang(manager.getAppLanguage().equals("en") ? "ar" : "en");
     }
 
 
@@ -103,6 +108,7 @@ public class LoginActivity extends AppCompatActivity implements OnClickListener,
         signUpWithGoogle = findViewById(R.id.google);
         mPasswordView = (EditText) findViewById(R.id.password);
         mLoginFormView = findViewById(R.id.login_form);
+        langTV = findViewById(R.id.setLang);
         mProgressView = findViewById(R.id.progress);
         newAccount = findViewById(R.id.newAccount);
         newAccount.setOnClickListener(this);
@@ -110,8 +116,60 @@ public class LoginActivity extends AppCompatActivity implements OnClickListener,
         forgetPass.setOnClickListener(this);
         signUpWithGoogle.setOnClickListener(this);
         signUpWithFace.setOnClickListener(this);
+        setLangSwitch();
     }
 
+    private void setLangSwitch() {
+        langTV.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (manager.getAppLanguage() != null) {
+                    updateLanguage(manager.getAppLanguage().equals("en") ? "ar" : "en");
+                }
+            }
+        });
+    }
+    private void updateLanguage(String language) {
+        manager.setAppLanguage(language);
+        final Locale locale = new Locale(language);
+        Locale.setDefault(locale);
+
+        Resources res = getResources();
+        Configuration cfg = new Configuration(res.getConfiguration());
+        cfg.locale = locale;
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
+            cfg.setLayoutDirection(locale);
+        }
+        res.updateConfiguration(cfg, res.getDisplayMetrics());
+
+        Intent i = getIntent();
+//        i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(i);
+        this.finish();
+    }
+
+
+    void setLang(String lang) {
+        Locale myLocale = new Locale(lang);
+        Locale.setDefault(myLocale);
+        Resources res = getResources();
+        DisplayMetrics dm = res.getDisplayMetrics();
+        Configuration conf = res.getConfiguration();
+        conf.locale = myLocale;
+        res.updateConfiguration(conf, dm);
+    }
+    void restart(){
+        Intent i = getIntent();
+        i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(i);
+        this.finish();
+    }
+
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(LoginActivity.this, MainActivity.class));
+        this.finish();
+    }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {

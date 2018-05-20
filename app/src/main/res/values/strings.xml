@@ -136,5 +136,7 @@
     <string name="donate">Donate</string>
     <string name="chat2">Chat</string>
     <string name="governorate">Governorate :</string>
+    <string name="sendUsHere">Send us a message here if you want to donate for this case</string>
+    <string name="lang">عربي</string>
 
 </resources>

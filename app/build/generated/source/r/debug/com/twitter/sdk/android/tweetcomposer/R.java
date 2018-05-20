@@ -62,51 +62,51 @@ public final class R {
         public static final int tw__permission_title_text_size = 0x7f0703bf;
     }
     public static final class drawable {
-        public static final int tw__app_info_layout_border = 0x7f08020a;
-        public static final int tw__btn_composer_tweet = 0x7f08020c;
-        public static final int tw__composer_close = 0x7f08020e;
-        public static final int tw__composer_logo_blue = 0x7f08020f;
-        public static final int tw__composer_logo_white = 0x7f080210;
-        public static final int tw__ic_logo_default = 0x7f080251;
-        public static final int tw__install_button_border = 0x7f080264;
-        public static final int tw__login_btn = 0x7f080266;
-        public static final int tw__login_btn_default = 0x7f080267;
-        public static final int tw__login_btn_default_light = 0x7f080268;
-        public static final int tw__login_btn_disabled = 0x7f080269;
-        public static final int tw__login_btn_light = 0x7f08026a;
-        public static final int tw__login_btn_pressed = 0x7f08026b;
-        public static final int tw__login_btn_pressed_light = 0x7f08026c;
-        public static final int tw__login_btn_text_color_light = 0x7f08026d;
-        public static final int tw__share_email_header = 0x7f080272;
-        public static final int tw__transparent = 0x7f080273;
+        public static final int tw__app_info_layout_border = 0x7f08020b;
+        public static final int tw__btn_composer_tweet = 0x7f08020d;
+        public static final int tw__composer_close = 0x7f08020f;
+        public static final int tw__composer_logo_blue = 0x7f080210;
+        public static final int tw__composer_logo_white = 0x7f080211;
+        public static final int tw__ic_logo_default = 0x7f080252;
+        public static final int tw__install_button_border = 0x7f080265;
+        public static final int tw__login_btn = 0x7f080267;
+        public static final int tw__login_btn_default = 0x7f080268;
+        public static final int tw__login_btn_default_light = 0x7f080269;
+        public static final int tw__login_btn_disabled = 0x7f08026a;
+        public static final int tw__login_btn_light = 0x7f08026b;
+        public static final int tw__login_btn_pressed = 0x7f08026c;
+        public static final int tw__login_btn_pressed_light = 0x7f08026d;
+        public static final int tw__login_btn_text_color_light = 0x7f08026e;
+        public static final int tw__share_email_header = 0x7f080273;
+        public static final int tw__transparent = 0x7f080274;
     }
     public static final class id {
         public static final int height = 0x7f0900fe;
         public static final int imageView = 0x7f090112;
-        public static final int tw__allow_btn = 0x7f090217;
-        public static final int tw__app_image = 0x7f090218;
-        public static final int tw__app_info_layout = 0x7f090219;
-        public static final int tw__app_install_button = 0x7f09021a;
-        public static final int tw__app_name = 0x7f09021b;
-        public static final int tw__app_store_name = 0x7f09021c;
-        public static final int tw__author_avatar = 0x7f09021f;
-        public static final int tw__card_view = 0x7f090220;
-        public static final int tw__char_count = 0x7f090221;
-        public static final int tw__composer_close = 0x7f090222;
-        public static final int tw__composer_header = 0x7f090223;
-        public static final int tw__composer_profile_divider = 0x7f090224;
-        public static final int tw__composer_scroll_view = 0x7f090225;
-        public static final int tw__composer_toolbar = 0x7f090226;
-        public static final int tw__composer_toolbar_divider = 0x7f090227;
-        public static final int tw__composer_view = 0x7f090228;
-        public static final int tw__edit_tweet = 0x7f09022b;
-        public static final int tw__not_now_btn = 0x7f09022e;
-        public static final int tw__post_tweet = 0x7f09022f;
-        public static final int tw__share_email_desc = 0x7f090231;
-        public static final int tw__spinner = 0x7f090232;
-        public static final int tw__twitter_logo = 0x7f09023e;
-        public static final int tw__web_view = 0x7f090241;
-        public static final int width = 0x7f090263;
+        public static final int tw__allow_btn = 0x7f090218;
+        public static final int tw__app_image = 0x7f090219;
+        public static final int tw__app_info_layout = 0x7f09021a;
+        public static final int tw__app_install_button = 0x7f09021b;
+        public static final int tw__app_name = 0x7f09021c;
+        public static final int tw__app_store_name = 0x7f09021d;
+        public static final int tw__author_avatar = 0x7f090220;
+        public static final int tw__card_view = 0x7f090221;
+        public static final int tw__char_count = 0x7f090222;
+        public static final int tw__composer_close = 0x7f090223;
+        public static final int tw__composer_header = 0x7f090224;
+        public static final int tw__composer_profile_divider = 0x7f090225;
+        public static final int tw__composer_scroll_view = 0x7f090226;
+        public static final int tw__composer_toolbar = 0x7f090227;
+        public static final int tw__composer_toolbar_divider = 0x7f090228;
+        public static final int tw__composer_view = 0x7f090229;
+        public static final int tw__edit_tweet = 0x7f09022c;
+        public static final int tw__not_now_btn = 0x7f09022f;
+        public static final int tw__post_tweet = 0x7f090230;
+        public static final int tw__share_email_desc = 0x7f090232;
+        public static final int tw__spinner = 0x7f090233;
+        public static final int tw__twitter_logo = 0x7f09023f;
+        public static final int tw__web_view = 0x7f090242;
+        public static final int width = 0x7f090264;
     }
     public static final class layout {
         public static final int tw__activity_composer = 0x7f0c008c;
@@ -120,16 +120,16 @@ public final class R {
     }
     public static final class string {
         public static final int kit_name = 0x7f1100bc;
-        public static final int tw__allow_btn_txt = 0x7f11011f;
-        public static final int tw__composer_hint = 0x7f110120;
-        public static final int tw__install = 0x7f110121;
-        public static final int tw__login_btn_txt = 0x7f110125;
-        public static final int tw__max_tweet_chars = 0x7f110126;
-        public static final int tw__not_now_btn_txt = 0x7f110127;
-        public static final int tw__play_store = 0x7f11012a;
-        public static final int tw__post_tweet = 0x7f11012b;
-        public static final int tw__share_email_desc = 0x7f110131;
-        public static final int tw__share_email_title = 0x7f110132;
+        public static final int tw__allow_btn_txt = 0x7f110121;
+        public static final int tw__composer_hint = 0x7f110122;
+        public static final int tw__install = 0x7f110123;
+        public static final int tw__login_btn_txt = 0x7f110127;
+        public static final int tw__max_tweet_chars = 0x7f110128;
+        public static final int tw__not_now_btn_txt = 0x7f110129;
+        public static final int tw__play_store = 0x7f11012c;
+        public static final int tw__post_tweet = 0x7f11012d;
+        public static final int tw__share_email_desc = 0x7f110133;
+        public static final int tw__share_email_title = 0x7f110134;
     }
     public static final class style {
         public static final int ComposerDark = 0x7f1200b4;

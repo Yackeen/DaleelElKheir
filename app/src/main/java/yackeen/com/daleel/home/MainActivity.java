@@ -5,6 +5,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
+import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.design.internal.BottomNavigationMenuView;
@@ -26,10 +28,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.Spinner;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -45,6 +49,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Locale;
 
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 import yackeen.com.daleel.R;
@@ -101,6 +106,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private String TOKEN_URL;
     private boolean backTapped;
     private NavigationView navigationView;
+    private Switch langSwitch;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -112,6 +118,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         manager = new PrefManager(this);
         bottomNav = findViewById(R.id.bottomNav);
+        langSwitch = findViewById(R.id.setLang);
         centrizeIcons();
 
         setToolbar();
@@ -122,6 +129,46 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         showFragment(new NewsFeedFragment(), getResources().getString(R.string.news_feed), HOME_FRAGMENT);
         setReceiver();
         displayFirebaseRegId();
+        setLangSwitch();
+    }
+    private void setLangSwitch() {
+        if (manager.getAppLanguage() != null) {
+            if (manager.getAppLanguage().equals("en")) {
+                langSwitch.setChecked(true);
+            } else {
+                langSwitch.setChecked(false);
+            }
+        }
+        langSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (b) {
+                    manager.setAppLanguage("en");
+                    compoundButton.setChecked(true);
+                    setLang("en");
+                } else {
+                    manager.setAppLanguage("ar");
+                    compoundButton.setChecked(false);
+                    setLang("ar");
+                }
+            }
+        });
+    }
+
+    void setLang(String lang) {
+        Locale myLocale = new Locale(lang);
+        Resources res = getResources();
+        DisplayMetrics dm = res.getDisplayMetrics();
+        Configuration conf = res.getConfiguration();
+        conf.locale = myLocale;
+        res.updateConfiguration(conf, dm);
+
+        Intent i = getBaseContext().getPackageManager()
+                .getLaunchIntentForPackage(getBaseContext().getPackageName());
+        i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(i);
+        this.finish();
+
     }
 
     private void setReceiver() {
@@ -139,12 +186,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
                 } else if (intent.getAction().equals(Config.PUSH_NOTIFICATION)) {
                     // new push notification is received
-
-                    String message = intent.getStringExtra("message");
-
-                    Toast.makeText(getApplicationContext(), "Push notification: " + message, Toast.LENGTH_LONG).show();
-
-                    Log.e(TAG, "onReceive: " + message);
+//                    Toast.makeText(getApplicationContext(), "Push notification: " + message, Toast.LENGTH_LONG).show();
+                    Log.e(TAG, "onReceive: " + intent.getStringExtra("message"));
                 }
             }
         };
@@ -203,8 +246,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 }
             }
         });
-
-        Log.e(TAG, "Firebase reg id: " + regId);
 
         if (!TextUtils.isEmpty(regId))
             Log.e(TAG, "displayFirebaseRegId: " + regId);
@@ -507,6 +548,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             logoutRequest();
         } else {
             launchActivity(LoginActivity.class);
+            finish();
         }
         drawer.closeDrawer(GravityCompat.START);
     }

@@ -14,7 +14,17 @@
         android:scaleType="centerCrop"
         app:srcCompat="@drawable/bg" />
     <!-- Login progress -->
-
+    <TextView
+        android:id="@+id/setLang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:gravity="start"
+        android:text="@string/lang"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16sdp" />
 
     <ScrollView
         android:id="@+id/login_form"
@@ -35,6 +45,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_2sdp"
                 android:layout_marginRight="@dimen/_2sdp"
+                android:focusableInTouchMode="true"
                 app:cardCornerRadius="@dimen/_8sdp">
 
                 <LinearLayout

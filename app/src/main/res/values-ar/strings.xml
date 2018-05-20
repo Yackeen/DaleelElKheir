@@ -130,4 +130,6 @@
     <string name="donate">تبرع</string>
     <string name="chat2">محادثة</string>
     <string name="governorate">المحافظة :</string>
+    <string name="sendUsHere">تواصل معنا هنا إذا أردت التبرع لهذه الحالة</string>
+    <string name="lang">English</string>
 </resources>

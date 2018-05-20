@@ -4588,6 +4588,10 @@
         "source": "/home/fawzy/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-25.2.0.aar/44384749ccafcc458575c36ce6e82438/res/drawable-xxhdpi-v4/ic_mr_button_connected_11_dark.png"
     },
     {
+        "merged": "/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/res/merged/debug/drawable_ic_language.xml.flat",
+        "source": "/media/fawzy/Files/Android/codes/DaleelElKheir/app/src/main/res/drawable/ic_language.xml"
+    },
+    {
         "merged": "/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_close.png.flat",
         "source": "/home/fawzy/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.20.0.aar/c1dab127f180ba833aa564d0d58ef9d6/res/drawable-mdpi-v4/com_facebook_close.png"
     },
