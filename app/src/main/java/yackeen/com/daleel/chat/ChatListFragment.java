@@ -140,9 +140,7 @@ public class ChatListFragment extends Fragment implements onThreadTapped {
     }
 
     private void updateRecycler() {
-        if (chatThreads.size() > 0)
-            hideNoData();
-        else showNoData();
+        noDataFound.setVisibility(chatThreads.size() > 0 ? View.GONE : View.VISIBLE);
         adapter.setList(chatThreads);
     }
 

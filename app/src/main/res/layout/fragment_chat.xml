@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
-        android:text="@string/sendUsHere"
+        android:text="@string/noDataFound"
         android:textColor="@color/black"
         android:textSize="@dimen/_16sdp"
         android:visibility="gone" />

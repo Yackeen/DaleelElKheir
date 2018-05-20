@@ -6,22 +6,22 @@
     density="xhdpi"
     format="10"
     plugin-version="3.0.1"
-    timestamp="1526821428834"
+    timestamp="1526821693849"
     token="-3114424113949064713"
     verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="2200" />
+        duration="2527" />
     <task
         name="instant-run-dex"
-        duration="12" />
+        duration="34" />
     <task
         name="instant-run-transform"
-        duration="56" />
+        duration="50" />
     <task
         name="verifier"
-        duration="3" />
+        duration="64" />
 
     <artifact
         location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
@@ -123,6 +123,14 @@
     <build
         build-mode="HOT_WARM"
         timestamp="1526821428834"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/builds/debug/1526821428834/classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        build-mode="HOT_WARM"
+        timestamp="1526821693849"
         verifier="COMPATIBLE" >
         <artifact
             location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"

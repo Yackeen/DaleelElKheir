@@ -176,6 +176,7 @@ public class ChattingActivity extends AppCompatActivity {
     }
 
     private void updateRecycler() {
+        noDataFound.setVisibility(messagesList.size() > 0?View.GONE:View.VISIBLE);
         adapter.setList(messagesList);
     }
 
