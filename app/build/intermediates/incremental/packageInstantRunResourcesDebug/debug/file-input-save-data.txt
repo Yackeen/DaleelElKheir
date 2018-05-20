@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sun May 20 15:08:21 EET 2018
+#Sun May 20 15:22:20 EET 2018
 1.base=/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/assets/debug
 2.path=font/Cocon® Next Arabic-Light.otf
 0.baseType=DIRECTORY

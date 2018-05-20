@@ -75,10 +75,11 @@
         android:id="@+id/noData"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/noDataFound"
-        android:textColor="@color/black"
+        android:gravity="center"
+        android:text="@string/sendUsHere"
+        android:layout_centerInParent="true"
+                android:textColor="@color/black"
         android:textSize="@dimen/_16sdp"
-        android:visibility="gone" />
+        android:visibility="visible" />
 
 </RelativeLayout>
