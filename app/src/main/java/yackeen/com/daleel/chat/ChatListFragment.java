@@ -76,6 +76,10 @@ public class ChatListFragment extends Fragment implements onThreadTapped {
         noDataFound.setVisibility(View.VISIBLE);
     }
 
+    private void hideNoData() {
+        noDataFound.setVisibility(View.GONE);
+    }
+
     @Override
     public void onStop() {
         // Unbind from the service
@@ -136,6 +140,9 @@ public class ChatListFragment extends Fragment implements onThreadTapped {
     }
 
     private void updateRecycler() {
+        if (chatThreads.size() > 0)
+            hideNoData();
+        else showNoData();
         adapter.setList(chatThreads);
     }
 
