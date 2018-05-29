@@ -71,6 +71,7 @@ import yackeen.com.daleel.organization.AllOrganization;
 import yackeen.com.daleel.settings.SettingsActivity;
 import yackeen.com.daleel.user.ClickListener;
 import yackeen.com.daleel.user.User;
+import yackeen.com.daleel.volunteer.VolunteerActivity;
 
 import static yackeen.com.daleel.constants.Constants.ADD_TOKEN;
 import static yackeen.com.daleel.constants.Constants.EVENT_FRAGMENT;
@@ -131,6 +132,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         displayFirebaseRegId();
         setLangSwitch();
     }
+
     private void setLangSwitch() {
         if (manager.getAppLanguage() != null) {
             if (manager.getAppLanguage().equals("en")) {
@@ -492,6 +494,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         } else if (id == R.id.nav_setting) {
             launchActivity(SettingsActivity.class);
+        } else if (id == R.id.nav_volunteer) {
+            launchActivity(VolunteerActivity.class);
         }
         drawer.closeDrawer(GravityCompat.START);
         return true;

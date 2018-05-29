@@ -138,5 +138,20 @@
     <string name="governorate">Governorate :</string>
     <string name="sendUsHere">Send us a message here if you want to donate for this case</string>
     <string name="lang">عربي</string>
+    <string name="volunteer_withUs">Volunteer with us</string>
+    <string name="job">Job</string>
+    <string name="nationality">Nationality</string>
+    <string name="s">S</string>
+    <string name="st">S</string>
+    <string name="sn">S</string>
+    <string name="m">M</string>
+    <string name="t">T</string>
+    <string name="w">W</string>
+    <string name="tu">T</string>
+    <string name="f">F</string>
+    <string name="how_u_know">How do you know about us?</string>
+    <string name="how_would">How would you prefer to volunteer?</string>
+    <string name="submit">Submit</string>
+    <string name="DaysAvailableRequired">please check your volunteering categories</string>
 
 </resources>

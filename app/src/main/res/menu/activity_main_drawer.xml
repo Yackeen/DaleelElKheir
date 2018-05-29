@@ -13,13 +13,17 @@
             android:icon="@drawable/donation"
             android:title="@string/blod_bank" />
         <item
-            android:id="@+id/nav_setting"
-            android:icon="@drawable/settings"
-            android:title="@string/action_settings" />
-        <item
             android:id="@+id/nav_contact"
             android:icon="@drawable/mail"
             android:title="@string/contact_us" />
+        <item
+            android:id="@+id/nav_volunteer"
+            android:icon="@drawable/mail"
+            android:title="@string/volunteer_withUs" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/settings"
+            android:title="@string/action_settings" />
     </group>
 
 </menu>

@@ -132,4 +132,19 @@
     <string name="governorate">المحافظة :</string>
     <string name="sendUsHere">تواصل معنا هنا إذا أردت التبرع لهذه الحالة</string>
     <string name="lang">English</string>
+    <string name="volunteer_withUs">تطوع معنا</string>
+    <string name="job">الوظيفة</string>
+    <string name="nationality">الجنسية</string>
+    <string name="s">س</string>
+    <string name="st">س</string>
+    <string name="sn">ح</string>
+    <string name="m">ن</string>
+    <string name="t">ث</string>
+    <string name="w">ب</string>
+    <string name="tu">خ</string>
+    <string name="f">ج</string>
+    <string name="how_u_know">كيف سمعت عنّا؟</string>
+    <string name="how_would">كيف تُفضّل التطوّع؟</string>
+    <string name="submit">إرسال</string>
+    <string name="DaysAvailableRequired">يرجى إختيار أقسام التطوع</string>
 </resources>

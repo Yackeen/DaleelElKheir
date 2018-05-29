@@ -6,9 +6,9 @@
     density="xhdpi"
     format="10"
     plugin-version="3.0.1"
-    timestamp="1526822534535"
+    timestamp="1527612011382"
     token="-3114424113949064713"
-    verifier="COMPATIBLE" >
+    verifier="NO_CHANGES" >
 
     <task
         name="javac"
@@ -23,40 +23,27 @@
         name="verifier"
         duration="0" />
 
-    <artifact
-        location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
-        type="RESOURCES" />
-
     <build
         build-mode="FULL"
-        timestamp="1526816546504"
+        timestamp="1527610772695"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
+            location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
             type="SPLIT" />
         <artifact
             location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
-            type="SPLIT" />
-        <artifact
             location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
-            type="SPLIT" />
-        <artifact
-            location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
             type="SPLIT" />
         <artifact
             location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
-            type="SPLIT" />
-        <artifact
             location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
             type="SPLIT" />
         <artifact
             location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
@@ -65,18 +52,27 @@
             location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
             type="SPLIT" />
         <artifact
+            location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            type="SPLIT" />
+        <artifact
             location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/outputs/apk/debug/app-debug.apk"
             type="SPLIT_MAIN" />
+        <artifact
+            location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
+            type="SPLIT" />
     </build>
     <build
         build-mode="COLD"
-        timestamp="1526822391619"
-        verifier="COLD_SWAP_REQUESTED" >
+        timestamp="1527611140850"
+        verifier="BINARY_MANIFEST_FILE_CHANGE" >
         <artifact
-            location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/reload-dex/debug/classes.dex"
-            type="RELOAD_DEX" />
+            location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            type="SPLIT" />
         <artifact
-            location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
+            location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
             type="SPLIT" />
         <artifact
             location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
@@ -85,10 +81,7 @@
             location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
-            type="SPLIT" />
-        <artifact
-            location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
         <artifact
             location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
@@ -97,16 +90,18 @@
             location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
-            type="SPLIT" />
-        <artifact
             location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
             type="SPLIT" />
         <artifact
-            location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
-            type="SPLIT" />
-        <artifact
             location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1527611658038"
+        verifier="MANIFEST_FILE_CHANGE" >
+        <artifact
+            location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
             type="SPLIT" />
         <artifact
             location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/outputs/apk/debug/app-debug.apk"
@@ -114,19 +109,15 @@
     </build>
     <build
         build-mode="HOT_WARM"
-        timestamp="1526822512808"
+        timestamp="1527611826442"
         verifier="COMPATIBLE" >
         <artifact
-            location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/builds/debug/1526822512808/classes.dex"
+            location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/builds/debug/1527611826442/classes.dex"
             type="RELOAD_DEX" />
     </build>
     <build
         build-mode="HOT_WARM"
-        timestamp="1526822534535"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
-            type="RESOURCES" />
-    </build>
+        timestamp="1527612011382"
+        verifier="NO_CHANGES" />
 
 </instant-run>

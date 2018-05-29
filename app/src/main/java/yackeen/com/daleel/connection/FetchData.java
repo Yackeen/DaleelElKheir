@@ -122,8 +122,9 @@ public class FetchData {
                         } else if (volleyError instanceof TimeoutError) {
                             errorMessage = "Connection TimeOut! Please check your internet connection.";
                         }
-
                         Toast.makeText(context, errorMessage, Toast.LENGTH_SHORT).show();
+                        if (progressBar != null)
+                            progressBar.setVisibility(View.GONE);
 
                     }
 

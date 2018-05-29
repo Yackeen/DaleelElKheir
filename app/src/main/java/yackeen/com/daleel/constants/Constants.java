@@ -53,6 +53,11 @@ public class Constants {
     // Get Blood Banks
     public static final String BLOOD_BANKS = "http://yakensolution.cloudapp.net:80/DaleelElkheir/api/BloodBank/GetBloodBanks";
 
+    // Get Volunteer categories
+    public static final String VOLUNTEER_CATEGORIES = "http://yakensolution.cloudapp.net:80/DaleelElkheir/api/Category/GetCategory";
+    // Submit Volunteer
+    public static final String ADD_VOLUNTEER = "http://yakensolution.cloudapp.net:80/DaleelElkheir/api/Volunteer/AddVolunteer";
+
 
     // Blood banks filter
     public static final String BLOOD_BANKS_FILTER = "http://yakensolution.cloudapp.net:80/DaleelElkheir/api/BloodBank/GetFilterBloodBanks";

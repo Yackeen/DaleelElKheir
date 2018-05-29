@@ -84,6 +84,14 @@
             <!-- android:name="android.support.PARENT_ACTIVITY" -->
             <!-- android:value=".home.MainActivity" /> -->
         </activity>
+        <activity
+            android:name="yackeen.com.daleel.volunteer.VolunteerActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation" >
+
+            <!-- <meta-data -->
+            <!-- android:name="android.support.PARENT_ACTIVITY" -->
+            <!-- android:value=".home.MainActivity" /> -->
+        </activity>
         <activity android:name="yackeen.com.daleel.settings.SettingsActivity" >
 
             <!-- <meta-data -->

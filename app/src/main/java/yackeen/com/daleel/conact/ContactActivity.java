@@ -4,10 +4,8 @@ import android.content.Context;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
@@ -20,7 +18,7 @@ import yackeen.com.daleel.R;
 
 public class ContactActivity extends AppCompatActivity implements OnDialogStopListner, View.OnClickListener {
 
-    private static final String TAG = "ContactActivity";
+    private static final String TAG = "VolunteerActivity";
     Toolbar toolbar;
     private ProgressBar progressBar;
     private ImageView email, contactBack;
