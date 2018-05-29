@@ -203,6 +203,7 @@ public class VolunteerActivity extends AppCompatActivity implements View.OnClick
                         isSuccess = jsonObject.getBoolean("IsSuccess");
                         if (isSuccess) {
                             Toast.makeText(VolunteerActivity.this, "sent successfully", Toast.LENGTH_SHORT).show();
+                            onBackPressed();
                         }
                     } catch (JSONException e) {
                         e.printStackTrace();
