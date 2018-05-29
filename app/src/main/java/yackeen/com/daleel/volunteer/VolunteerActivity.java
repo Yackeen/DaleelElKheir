@@ -30,6 +30,7 @@ import java.util.List;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 import yackeen.com.daleel.R;
 import yackeen.com.daleel.connection.FetchData;
+import yackeen.com.daleel.connection.PostData;
 import yackeen.com.daleel.connection.VolleyCallBack;
 import yackeen.com.daleel.constants.Constants;
 import yackeen.com.daleel.manager.PrefManager;
@@ -48,7 +49,7 @@ public class VolunteerActivity extends AppCompatActivity implements View.OnClick
     private EditText name, mail, job, nationality, aboutQuestion, volunteeringMethod, phone;
     private CheckBox sat, sun, mon, tue, wen, thur, fri;
     private StringBuilder weekDays;
-    private String volunteeringCategories;
+    private JSONArray volunteeringCategories;
 
 
     @Override
@@ -165,7 +166,7 @@ public class VolunteerActivity extends AppCompatActivity implements View.OnClick
             valid = false;
             phone.setError(getResources().getString(R.string.error_field_required));
         }
-        if (volunteeringCategories == null || volunteeringCategories.isEmpty()) {
+        if (volunteeringCategories == null || volunteeringCategories.length() == 0) {
             valid = false;
             Snackbar.make(sat, R.string.DaysAvailableRequired, Snackbar.LENGTH_SHORT).show();
         }
@@ -174,33 +175,43 @@ public class VolunteerActivity extends AppCompatActivity implements View.OnClick
 
     private void submitRequest() {
         getCheckedWeekDays();
-        HashMap<String, String> params = new HashMap<>();
-        params.put("Name", name.getText().toString());
-        params.put("Email", mail.getText().toString());
-        params.put("Contact", phone.getText().toString());
-        params.put("Job", job.getText().toString());
-        params.put("Nationality", nationality.getText().toString());
-        params.put("AboutQuestion", aboutQuestion.getText().toString());
-        params.put("VoulunteeringMethod", aboutQuestion.getText().toString());
-        params.put("DaysAvailable", weekDays.toString());
-        params.put("Categories", volunteeringCategories);
-        FetchData fetchData = new FetchData(this, TAG, progressBar, ADD_VOLUNTEER,
-                Request.Method.POST, params, null);
-        fetchData.getData(new VolleyCallBack() {
-            @Override
-            public void onSuccess(JSONObject jsonObject) {
-
-                //Log.d(TAG, "onSuccess: " + jsonObject);
-                try {
-                    boolean isSuccess = jsonObject.getBoolean("IsSuccess");
-                    if (isSuccess) {
-                        Toast.makeText(VolunteerActivity.this, "sent successfully", Toast.LENGTH_SHORT).show();
+//        HashMap<String, String> headers = new HashMap<>();
+//        headers.put("Accept", "application/json");
+//        headers.put("Content-Type", "application/json");
+        JSONObject body = new JSONObject();
+        try {
+            body.put("Name", name.getText().toString());
+            body.put("Email", mail.getText().toString());
+            body.put("Contact", phone.getText().toString());
+            body.put("Job", job.getText().toString());
+            body.put("Nationality", nationality.getText().toString());
+            body.put("AboutQuestion", aboutQuestion.getText().toString());
+            body.put("VoulunteeringMethod", aboutQuestion.getText().toString());
+            body.put("DaysAvailable", weekDays.toString());
+            body.put("Categories", volunteeringCategories);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        PostData fetchData = new PostData(this, body, ADD_VOLUNTEER,
+                Request.Method.POST, progressBar, null);
+        try {
+            fetchData.post(new VolleyCallBack() {
+                @Override
+                public void onSuccess(JSONObject jsonObject) {
+                    boolean isSuccess = false;
+                    try {
+                        isSuccess = jsonObject.getBoolean("IsSuccess");
+                        if (isSuccess) {
+                            Toast.makeText(VolunteerActivity.this, "sent successfully", Toast.LENGTH_SHORT).show();
+                        }
+                    } catch (JSONException e) {
+                        e.printStackTrace();
                     }
-                } catch (JSONException e) {
-                    e.printStackTrace();
                 }
-            }
-        });
+            });
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
@@ -227,13 +238,17 @@ public class VolunteerActivity extends AppCompatActivity implements View.OnClick
             weekDays.append(" Friday");
     }
 
-    public String getCheckedCategories() {
+    public JSONArray getCheckedCategories() {
         List<CategoryModel> modelList = adapter.getList();
         List<String> checkedList = new ArrayList<>();
+        JSONArray array = new JSONArray();
+
         for (int i = 0; i < modelList.size(); i++) {
-            if (modelList.get(i).isChecked())
+            if (modelList.get(i).isChecked()) {
                 checkedList.add(modelList.get(i).getId());
+                array.put(Integer.parseInt(modelList.get(i).getId()));
+            }
         }
-        return checkedList.toString();
+        return array;
     }
 }

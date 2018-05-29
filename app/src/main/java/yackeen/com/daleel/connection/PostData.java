@@ -87,6 +87,8 @@ public class PostData {
                 }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                if (progressBar != null)
+                    progressBar.setVisibility(View.GONE);
                 VolleyLog.e("Error: ", error.getMessage());
             }
 

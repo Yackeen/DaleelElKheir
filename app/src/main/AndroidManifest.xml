@@ -61,7 +61,8 @@
         </activity>
         <activity
             android:name=".volunteer.VolunteerActivity"
-            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation">
+            android:configChanges="layoutDirection"
+            android:windowSoftInputMode="adjustPan">
             <!--<meta-data-->
             <!--android:name="android.support.PARENT_ACTIVITY"-->
             <!--android:value=".home.MainActivity" />-->

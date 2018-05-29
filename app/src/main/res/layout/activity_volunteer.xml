@@ -4,9 +4,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_below="@id/appBar"
         android:layout_marginBottom="@dimen/_38sdp">
 
         <LinearLayout
@@ -15,21 +32,6 @@
             android:focusableInTouchMode="true"
             android:orientation="vertical">
 
-            <android.support.design.widget.AppBarLayout
-                android:id="@+id/appBar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:theme="@style/AppTheme.AppBarOverlay">
-
-
-                <android.support.v7.widget.Toolbar
-                    android:id="@+id/toolbar"
-                    android:layout_width="match_parent"
-                    android:layout_height="?android:attr/actionBarSize"
-                    android:background="@color/colorPrimary"
-                    app:popupTheme="@style/AppTheme.PopupOverlay" />
-
-            </android.support.design.widget.AppBarLayout>
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
@@ -41,7 +43,6 @@
                     android:id="@+id/name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/ic_person_outline"
                     android:drawablePadding="@dimen/_10sdp"
                     android:drawableStart="@drawable/ic_person_outline"
                     android:inputType="text" />
@@ -58,7 +59,6 @@
                     android:id="@+id/email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/ic_mail"
                     android:drawablePadding="@dimen/_10sdp"
                     android:drawableStart="@drawable/ic_mail"
                     android:inputType="text" />
@@ -75,7 +75,6 @@
                     android:id="@+id/phone"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/ic_phone"
                     android:drawablePadding="@dimen/_10sdp"
                     android:drawableStart="@drawable/ic_phone"
                     android:inputType="number" />
@@ -92,7 +91,6 @@
                     android:id="@+id/job"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/ic_job"
                     android:drawablePadding="@dimen/_10sdp"
                     android:drawableStart="@drawable/ic_job"
                     android:inputType="text" />
@@ -109,7 +107,6 @@
                     android:id="@+id/nationality"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/ic_language"
                     android:drawablePadding="@dimen/_10sdp"
                     android:drawableStart="@drawable/ic_language"
                     android:inputType="text" />
@@ -120,6 +117,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="start"
                 android:orientation="horizontal">
 
                 <ImageView
@@ -135,7 +133,7 @@
                     android:layout_gravity="center_vertical"
                     android:gravity="center_horizontal"
                     android:orientation="horizontal"
-                    android:weightSum="8">
+                    android:weightSum="7">
 
                     <CheckBox
                         android:id="@+id/sat"
@@ -198,7 +196,6 @@
                     android:id="@+id/how"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/ic_help"
                     android:drawablePadding="@dimen/_10sdp"
                     android:drawableStart="@drawable/ic_help"
                     android:inputType="text" />
@@ -215,7 +212,6 @@
                     android:id="@+id/how2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/ic_help"
                     android:drawablePadding="@dimen/_10sdp"
                     android:drawableStart="@drawable/ic_help"
                     android:inputType="text" />
