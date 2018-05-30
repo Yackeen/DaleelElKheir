@@ -9,7 +9,9 @@ import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.text.TextUtils;
 import android.util.Log;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -161,10 +163,16 @@ public class VolunteerActivity extends AppCompatActivity implements View.OnClick
         if (mail.getText().toString().trim().isEmpty()) {
             valid = false;
             mail.setError(getResources().getString(R.string.error_field_required));
+        } else if (isValidEmail(mail.getText().toString().trim())) {
+            valid = false;
+            mail.setError(getResources().getString(R.string.validate_inputs));
         }
         if (phone.getText().toString().trim().isEmpty()) {
             valid = false;
             phone.setError(getResources().getString(R.string.error_field_required));
+        } else if (isValidPhone(phone.getText().toString().trim())) {
+            valid = false;
+            phone.setError(getResources().getString(R.string.validate_inputs));
         }
         if (volunteeringCategories == null || volunteeringCategories.length() == 0) {
             valid = false;
@@ -202,7 +210,7 @@ public class VolunteerActivity extends AppCompatActivity implements View.OnClick
                     try {
                         isSuccess = jsonObject.getBoolean("IsSuccess");
                         if (isSuccess) {
-                            Toast.makeText(VolunteerActivity.this, "sent successfully", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(VolunteerActivity.this, R.string.volunteer_add_succ, Toast.LENGTH_SHORT).show();
                             onBackPressed();
                         }
                     } catch (JSONException e) {
@@ -212,6 +220,18 @@ public class VolunteerActivity extends AppCompatActivity implements View.OnClick
             });
         } catch (JSONException e) {
             e.printStackTrace();
+        }
+    }
+
+    private boolean isValidEmail(CharSequence target) {
+        return (!TextUtils.isEmpty(target) && Patterns.EMAIL_ADDRESS.matcher(target).matches());
+    }
+
+    private boolean isValidPhone(CharSequence phone) {
+        if (TextUtils.isEmpty(phone)) {
+            return false;
+        } else {
+            return android.util.Patterns.PHONE.matcher(phone).matches();
         }
     }
 

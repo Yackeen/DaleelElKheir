@@ -103,7 +103,7 @@
     <string name="inquiry">إستفسار</string>
     <string name="volunteer">مُتطوع</string>
     <string name="volunteer_in">مُتطوع في</string>
-    <string name="validate_inputs">المدخلات صحيحة</string>
+    <string name="validate_inputs">المدخلات غير صحيحة</string>
     <string name="passIsSmall">كلمة المرور يجب أن تكون اكثر من ثلاثة أحرف</string>
     <string name="passNotSimilar">كلمة المرور ليست مُتطابقة</string>
     <string name="search_hint">إبحث عن ..</string>
@@ -147,4 +147,5 @@
     <string name="how_would">كيف تُفضّل التطوّع؟</string>
     <string name="submit">إرسال</string>
     <string name="DaysAvailableRequired">يرجى إختيار أقسام التطوع</string>
+    <string name="volunteer_add_succ">شكرا, سيتم الرد عليك سريعاً</string>
 </resources>

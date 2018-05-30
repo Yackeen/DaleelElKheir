@@ -153,5 +153,6 @@
     <string name="how_would">How would you prefer to volunteer?</string>
     <string name="submit">Submit</string>
     <string name="DaysAvailableRequired">please check your volunteering categories</string>
+    <string name="volunteer_add_succ">thanks, we will get back to you ASAP</string>
 
 </resources>
