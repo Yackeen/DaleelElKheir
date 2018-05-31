@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="yackeen.com.daleel"
-    android:versionCode="4"
-    android:versionName="2.2" >
+    android:versionCode="5"
+    android:versionName="2.3" >
 
     <uses-sdk
         android:minSdkVersion="17"
@@ -38,7 +38,6 @@
         android:roundIcon="@drawable/appicon"
         android:screenOrientation="portrait"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity android:name="yackeen.com.daleel.home.MainActivity" >
             <meta-data
