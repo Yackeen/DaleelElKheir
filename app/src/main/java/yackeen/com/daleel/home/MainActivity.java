@@ -557,7 +557,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     private void performLogout() {
+        String appLang = manager.getAppLanguage();
         manager.clearSession();
+        manager.setAppLanguage(appLang);
         Intent intent = new Intent(this, MainActivity.class);
         intent.putExtra("logout", true);
         startActivity(intent);

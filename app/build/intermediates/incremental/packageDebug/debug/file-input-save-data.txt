@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu May 31 17:22:52 EET 2018
+#Thu May 31 17:51:30 EET 2018
 4.path=font/CoconRegular.otf
 8.set=DEX
 6.path=classes.dex

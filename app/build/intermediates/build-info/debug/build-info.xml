@@ -6,22 +6,22 @@
     density="xhdpi"
     format="10"
     plugin-version="3.0.1"
-    timestamp="1527781228613"
+    timestamp="1527782419501"
     token="-3114424113949064713"
     verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="2427" />
+        duration="4176" />
     <task
         name="instant-run-dex"
-        duration="39" />
+        duration="347" />
     <task
         name="instant-run-transform"
-        duration="55" />
+        duration="134" />
     <task
         name="verifier"
-        duration="4" />
+        duration="50" />
 
     <artifact
         location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/reload-dex/debug/classes.dex"
@@ -29,7 +29,7 @@
 
     <build
         build-mode="FULL"
-        timestamp="1527778307488"
+        timestamp="1527782346476"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
@@ -69,30 +69,8 @@
             type="SPLIT" />
     </build>
     <build
-        build-mode="COLD"
-        timestamp="1527780154407"
-        verifier="R_CLASS_CHANGE" >
-        <artifact
-            location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
-            type="SPLIT" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1527781184181"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
-            type="SPLIT" />
-        <artifact
-            location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
-            type="SPLIT" />
-        <artifact
-            location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/outputs/apk/debug/app-debug.apk"
-            type="SPLIT_MAIN" />
-    </build>
-    <build
         build-mode="HOT_WARM"
-        timestamp="1527781228613"
+        timestamp="1527782419501"
         verifier="COMPATIBLE" >
         <artifact
             location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/reload-dex/debug/classes.dex"

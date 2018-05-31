@@ -207,7 +207,7 @@ public class NewsFeedFragment extends Fragment implements View.OnClickListener {
     }
 
     private void setPagerSwipeDirection() {
-        if (manager.getAppLanguage().equals("ar")) {
+        if (manager.getAppLanguage() != null && manager.getAppLanguage().equals("ar")) {
             indicator.setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
         }
     }
