@@ -168,9 +168,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         Intent i = getBaseContext().getPackageManager()
                 .getLaunchIntentForPackage(getBaseContext().getPackageName());
         i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-        startActivity(i);
         this.finish();
-
+        startActivity(i);
     }
 
     private void setReceiver() {

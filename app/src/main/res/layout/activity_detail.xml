@@ -65,7 +65,7 @@
                     android:id="@+id/thumbnail"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_90sdp"
-                    android:scaleType="fitXY"
+                    android:scaleType="centerCrop"
                     app:srcCompat="@drawable/header" />
 
                 <me.grantland.widget.AutofitTextView
@@ -312,10 +312,10 @@
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/_8sdp"
         android:background="@color/colorPrimaryDark"
-        app:backgroundTint="@color/colorPrimaryDark"
-        app:elevation="@dimen/_6sdp"
         android:tint="@color/white"
         android:visibility="gone"
+        app:backgroundTint="@color/colorPrimaryDark"
+        app:elevation="@dimen/_6sdp"
         app:srcCompat="@drawable/new_chat" />
 
 </FrameLayout>

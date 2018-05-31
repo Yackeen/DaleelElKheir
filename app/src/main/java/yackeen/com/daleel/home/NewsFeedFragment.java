@@ -151,6 +151,7 @@ public class NewsFeedFragment extends Fragment implements View.OnClickListener {
 
     private void setViewpager(final View view) {
         viewPager = view.findViewById(R.id.viewPager);
+        setPagerSwipeDirection();
         HashMap<String, String> params = new HashMap<>();
 
         if (manager.isLoggedIn())
@@ -203,6 +204,12 @@ public class NewsFeedFragment extends Fragment implements View.OnClickListener {
                 }
             }
         });
+    }
+
+    private void setPagerSwipeDirection() {
+        if (manager.getAppLanguage().equals("ar")) {
+            indicator.setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
+        }
     }
 
     @Override

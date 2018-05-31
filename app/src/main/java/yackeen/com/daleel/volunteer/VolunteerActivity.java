@@ -9,7 +9,6 @@ import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.text.TextUtils;
 import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
@@ -170,7 +169,7 @@ public class VolunteerActivity extends AppCompatActivity implements View.OnClick
         if (phone.getText().toString().trim().isEmpty()) {
             valid = false;
             phone.setError(getResources().getString(R.string.error_field_required));
-        } else if (isValidPhone(phone.getText().toString().trim())) {
+        } else if (phone.getText().toString().length() != 11 || !phone.getText().toString().startsWith("01")) {
             valid = false;
             phone.setError(getResources().getString(R.string.validate_inputs));
         }
@@ -224,15 +223,8 @@ public class VolunteerActivity extends AppCompatActivity implements View.OnClick
     }
 
     private boolean isValidEmail(CharSequence target) {
-        return (!TextUtils.isEmpty(target) && Patterns.EMAIL_ADDRESS.matcher(target).matches());
-    }
-
-    private boolean isValidPhone(CharSequence phone) {
-        if (TextUtils.isEmpty(phone)) {
-            return false;
-        } else {
-            return android.util.Patterns.PHONE.matcher(phone).matches();
-        }
+        Log.e("fawzy.volunteer", "validEmail returns " + Patterns.EMAIL_ADDRESS.matcher(target).matches());
+        return (!Patterns.EMAIL_ADDRESS.matcher(target).matches());
     }
 
     @Override

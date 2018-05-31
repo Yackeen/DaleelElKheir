@@ -549,7 +549,7 @@ public final class R {
         public static final int tagmanager_preview_dialog_button = 0x7f110126;
         public static final int tagmanager_preview_dialog_message = 0x7f110127;
         public static final int tagmanager_preview_dialog_title = 0x7f110128;
-        public static final int wallet_buy_button_place_holder = 0x7f11014f;
+        public static final int wallet_buy_button_place_holder = 0x7f110150;
     }
     public static final class style {
         public static final int CastExpandedController = 0x7f1200b1;

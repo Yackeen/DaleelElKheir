@@ -5850,6 +5850,7 @@ public final class R {
     public static final int tw__tweet_timestamp_padding_left=0x7f0703ea;
     public static final int tw__video_control_height=0x7f0703eb;
     public static final int tw__video_control_text_size=0x7f0703ec;
+    public static final int viewPagerRotation=0x7f0703ed;
   }
   public static final class drawable {
     public static final int abc_ab_share_pack_mtrl_alpha=0x7f080006;
@@ -6488,7 +6489,8 @@ public final class R {
     public static final int tw__video_seekbar=0x7f08027f;
     public static final int tw__vine_badge=0x7f080280;
     public static final int user=0x7f080281;
-    public static final int white_radius=0x7f080282;
+    public static final int volunteering=0x7f080282;
+    public static final int white_radius=0x7f080283;
   }
   public static final class id {
     public static final int ALT=0x7f090000;
@@ -7652,11 +7654,12 @@ public final class R {
     public static final int userName=0x7f110149;
     public static final int validate_inputs=0x7f11014a;
     public static final int volunteer=0x7f11014b;
-    public static final int volunteer_in=0x7f11014c;
-    public static final int volunteer_withUs=0x7f11014d;
-    public static final int w=0x7f11014e;
-    public static final int wallet_buy_button_place_holder=0x7f11014f;
-    public static final int welcome=0x7f110150;
+    public static final int volunteer_add_succ=0x7f11014c;
+    public static final int volunteer_in=0x7f11014d;
+    public static final int volunteer_withUs=0x7f11014e;
+    public static final int w=0x7f11014f;
+    public static final int wallet_buy_button_place_holder=0x7f110150;
+    public static final int welcome=0x7f110151;
   }
   public static final class style {
     public static final int AlertDialog_AppCompat=0x7f120000;

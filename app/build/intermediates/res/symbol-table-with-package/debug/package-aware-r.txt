@@ -1826,6 +1826,7 @@ int dimen tw__tweet_timestamp_margin_top 0x7f0703e9
 int dimen tw__tweet_timestamp_padding_left 0x7f0703ea
 int dimen tw__video_control_height 0x7f0703eb
 int dimen tw__video_control_text_size 0x7f0703ec
+int dimen viewPagerRotation 0x7f0703ed
 int drawable abc_ab_share_pack_mtrl_alpha 0x7f080006
 int drawable abc_action_bar_item_background_material 0x7f080007
 int drawable abc_btn_borderless_material 0x7f080008
@@ -2462,7 +2463,8 @@ int drawable tw__video_replay_btn 0x7f08027e
 int drawable tw__video_seekbar 0x7f08027f
 int drawable tw__vine_badge 0x7f080280
 int drawable user 0x7f080281
-int drawable white_radius 0x7f080282
+int drawable volunteering 0x7f080282
+int drawable white_radius 0x7f080283
 int id ALT 0x7f090000
 int id CTRL 0x7f090001
 int id FUNCTION 0x7f090002
@@ -3608,11 +3610,12 @@ int string urgent_cases 0x7f110148
 int string userName 0x7f110149
 int string validate_inputs 0x7f11014a
 int string volunteer 0x7f11014b
-int string volunteer_in 0x7f11014c
-int string volunteer_withUs 0x7f11014d
-int string w 0x7f11014e
-int string wallet_buy_button_place_holder 0x7f11014f
-int string welcome 0x7f110150
+int string volunteer_add_succ 0x7f11014c
+int string volunteer_in 0x7f11014d
+int string volunteer_withUs 0x7f11014e
+int string w 0x7f11014f
+int string wallet_buy_button_place_holder 0x7f110150
+int string welcome 0x7f110151
 int style AlertDialog_AppCompat 0x7f120000
 int style AlertDialog_AppCompat_Light 0x7f120001
 int style Animation_AppCompat_Dialog 0x7f120002

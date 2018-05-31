@@ -176,8 +176,8 @@ public class ChattingActivity extends AppCompatActivity {
     }
 
     private void updateRecycler() {
-        Log.d(TAG,"listSize= "+messagesList.size());
-        noDataFound.setVisibility(messagesList.size() > 0?View.GONE:View.VISIBLE);
+        Log.d(TAG, "listSize= " + messagesList.size());
+        noDataFound.setVisibility(messagesList.size() > 0 ? View.GONE : View.VISIBLE);
         adapter.setList(messagesList);
     }
 
@@ -219,6 +219,7 @@ public class ChattingActivity extends AppCompatActivity {
     }
 
     private void newMsgAdded(String mesg, boolean isAdmin, String caseName) {
+        noDataFound.setVisibility(View.GONE);
         ConversationModel model = new ConversationModel();
         model.setCaseName(caseName);
         model.setMessage(mesg);

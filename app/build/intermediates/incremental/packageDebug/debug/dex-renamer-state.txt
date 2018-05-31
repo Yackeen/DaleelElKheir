@@ -1,10 +1,19 @@
-#Tue May 29 20:30:15 EET 2018
-path.2=classes3.dex
-path.1=classes2.dex
+#Thu May 31 17:22:51 EET 2018
+path.1=classes.dex
 path.0=classes.dex
+renamed.5=classes6.dex
+renamed.4=classes5.dex
+renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
-base.2=/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/transforms/dexMerger/debug/75
-base.1=/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/transforms/dexMerger/debug/75
-base.0=/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/transforms/dexMerger/debug/75
+base.5=/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/transforms/dexMerger/debug/111
+base.4=/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/transforms/dexMerger/debug/107
+base.3=/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/transforms/dexMerger/debug/109
+base.2=/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/transforms/dexMerger/debug/106
+base.1=/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/transforms/dexMerger/debug/110
+base.0=/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/transforms/dexMerger/debug/108
+path.5=classes.dex
+path.4=classes.dex
+path.3=classes.dex
+path.2=classes.dex

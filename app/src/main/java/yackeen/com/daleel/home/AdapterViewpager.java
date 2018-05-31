@@ -3,6 +3,7 @@ package yackeen.com.daleel.home;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v4.view.PagerAdapter;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -61,13 +62,13 @@ public class AdapterViewpager extends PagerAdapter implements View.OnClickListen
         progress = view.findViewById(R.id.progressBar);
         thumbnail = view.findViewById(R.id.thumbnail);
         RelativeLayout parent = view.findViewById(R.id.layout);
-//        }
         final CaseModel model = list.get(position);
         caseName.setText(model.getName());
         requiredAmount.setText(model.getRequiredAmount());
-        double val = Double.valueOf(model.getCurrentAmount()) / Double.valueOf(model.getRequiredAmount()) * 100.0;
-        percentage.setText(String.valueOf(val));
+        double val = Double.valueOf(model.getCurrentAmount()) / Double.valueOf(model.getRequiredAmount()) * 100;
+//        setPrecentage(percentage,val);
         progress.setProgress((int) val);
+        percentage.setText(progress.getProgress() == 0 ? "0%" : progress.getProgress() + "%");
 //        byte[] decodedImg = Base64.decode(model.getImage(), Base64.DEFAULT);
         Glide.with(context).load(model.getImage()).into(thumbnail);
         parent.setOnClickListener(new View.OnClickListener() {
@@ -91,10 +92,15 @@ public class AdapterViewpager extends PagerAdapter implements View.OnClickListen
                 context.startActivity(intent);
             }
         });
-        notifyDataSetChanged();
+//        notifyDataSetChanged();
         container.addView(view);
 
         return view;
+    }
+
+    private void setPrecentage(TextView percentage, Double val) {
+        Log.d("fawzy.adptr", "double val= " + val + " , int val= " + Integer.valueOf(val.intValue()));
+        percentage.setText(Integer.valueOf(val.intValue()));
     }
 
 

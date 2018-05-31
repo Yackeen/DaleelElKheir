@@ -140,6 +140,10 @@
         "source": "/home/fawzy/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.20.0.aar/c1dab127f180ba833aa564d0d58ef9d6/res/layout/com_facebook_device_auth_dialog_fragment.xml"
     },
     {
+        "merged": "/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/res/merged/debug/drawable_volunteering.png.flat",
+        "source": "/media/fawzy/Files/Android/codes/DaleelElKheir/app/src/main/res/drawable/volunteering.png"
+    },
+    {
         "merged": "/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/res/merged/debug/drawable_cast_ic_notification_stop_live_stream.xml.flat",
         "source": "/home/fawzy/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-11.4.2.aar/779285414d37d33ffbbda88ebc6ee230/res/drawable/cast_ic_notification_stop_live_stream.xml"
     },
