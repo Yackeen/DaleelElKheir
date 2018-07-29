@@ -22,7 +22,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.Request;
-import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.rogalabs.lib.Callback;
 import com.rogalabs.lib.LoginView;
 import com.rogalabs.lib.SocialUser;
@@ -81,11 +80,6 @@ public class LoginActivity extends LoginView implements OnClickListener {
     }
 
     private void setSocial() {
-        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestIdToken(getString(R.string.default_web_client_id))
-                .requestEmail()
-                .build();
-
     }
 
 
