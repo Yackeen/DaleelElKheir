@@ -24,7 +24,6 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.google.firebase.crash.FirebaseCrash;
 
-import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import yackeen.com.daleel.R;

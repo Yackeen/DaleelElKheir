@@ -10,32 +10,22 @@ import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
-import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.Request;
-import com.facebook.FacebookSdk;
-import com.facebook.Profile;
-import com.google.android.gms.auth.api.Auth;
-import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
-import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.firebase.crash.FirebaseCrash;
-import com.mukeshsolanki.sociallogin.facebook.FacebookHelper;
-import com.mukeshsolanki.sociallogin.facebook.FacebookListener;
-import com.mukeshsolanki.sociallogin.google.GoogleHelper;
-import com.mukeshsolanki.sociallogin.google.GoogleListener;
+import com.rogalabs.lib.Callback;
+import com.rogalabs.lib.LoginView;
+import com.rogalabs.lib.SocialUser;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -51,7 +41,6 @@ import yackeen.com.daleel.connection.VolleyCallBack;
 import yackeen.com.daleel.home.MainActivity;
 import yackeen.com.daleel.manager.PrefManager;
 import yackeen.com.daleel.register.RegisterActivity;
-import yackeen.com.daleel.splash.SplashActivity;
 import yackeen.com.daleel.user.User;
 
 import static yackeen.com.daleel.constants.Constants.FORGET_PASSWORD;
@@ -65,13 +54,11 @@ import static yackeen.com.daleel.constants.Constants.USER_PROFILE;
 /**
  * A login screen that offers login via email/password.
  */
-public class LoginActivity extends AppCompatActivity implements OnClickListener, FacebookListener, GoogleListener {
+public class LoginActivity extends LoginView implements OnClickListener {
 
     private static final String TAG = "LoginActivity";
     private static int CURRENT_USER = NORMAL_USER;
     Button signUpWithFace, signUpWithGoogle;
-    FacebookHelper facebookHelper;
-    GoogleHelper googleHelper;
     private EditText mEmailView, mPasswordView;
     private View mLoginFormView;
     private ProgressBar mProgressView;
@@ -89,17 +76,20 @@ public class LoginActivity extends AppCompatActivity implements OnClickListener,
 //        FirebaseCrash.report(new Exception("oops!"));
         manager = new PrefManager(this);
         setViews();
+        setSocial();
 //        setLang(manager.getAppLanguage().equals("en") ? "ar" : "en");
+    }
+
+    private void setSocial() {
+        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                .requestIdToken(getString(R.string.default_web_client_id))
+                .requestEmail()
+                .build();
+
     }
 
 
     private void setViews() {
-
-        FacebookSdk.setApplicationId(getResources().getString(R.string.facebook_app_id));
-        FacebookSdk.sdkInitialize(this);
-        facebookHelper = new FacebookHelper(this);
-        googleHelper = new GoogleHelper(this, this, null);
-
         // Set up the login form.
         mEmailView = findViewById(R.id.email);
         login = findViewById(R.id.login);
@@ -129,6 +119,7 @@ public class LoginActivity extends AppCompatActivity implements OnClickListener,
             }
         });
     }
+
     private void updateLanguage(String language) {
         manager.setAppLanguage(language);
         final Locale locale = new Locale(language);
@@ -152,14 +143,6 @@ public class LoginActivity extends AppCompatActivity implements OnClickListener,
     public void onBackPressed() {
         startActivity(new Intent(LoginActivity.this, MainActivity.class));
         this.finish();
-    }
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-
-        facebookHelper.onActivityResult(requestCode, resultCode, data);
-        googleHelper.onActivityResult(requestCode, resultCode, data);
     }
 
     private void attemptLogin() {
@@ -323,15 +306,50 @@ public class LoginActivity extends AppCompatActivity implements OnClickListener,
                 attemptLogin();
                 break;
             case R.id.facebook:
-                facebookHelper.performSignIn(LoginActivity.this);
+                loginWithFB();
                 break;
             case R.id.google:
-                googleHelper.performSignIn(LoginActivity.this);
+                loginWithGl();
                 break;
             case R.id.forgetPassword:
                 resetPassDialog();
                 break;
         }
+    }
+
+    private void loginWithFB() {
+        loginWithFacebook(new Callback() {
+            @Override
+            public void onSuccess(SocialUser socialUser) {
+                CURRENT_USER = SOCIAL_MEDIA_USER;
+                isFaceBookUser = true;
+                register(socialUser.getEmail() + "@facebook.com", socialUser.getId());
+            }
+
+            @Override
+            public void onError(Throwable throwable) {
+                throwable.printStackTrace();
+                Toast.makeText(LoginActivity.this, throwable.getMessage(), Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+
+    private void loginWithGl() {
+        loginWithGoogle(new Callback() {
+            @Override
+            public void onSuccess(SocialUser socialUser) {
+                CURRENT_USER = SOCIAL_MEDIA_USER;
+                isGoogleUser = true;
+                register(socialUser.getEmail() + "@google.com", socialUser.getId());
+            }
+
+            @Override
+            public void onError(Throwable throwable) {
+                throwable.printStackTrace();
+                Toast.makeText(LoginActivity.this, throwable.getMessage(), Toast.LENGTH_SHORT).show();
+                Log.e("fawzy.fail with google", throwable.toString());
+            }
+        });
     }
 
     private void resetPassDialog() {
@@ -423,46 +441,6 @@ public class LoginActivity extends AppCompatActivity implements OnClickListener,
     @Override
     protected void attachBaseContext(Context newBase) {
         super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
-    }
-
-    @Override
-    public void onFbSignInFail(String errorMsg) {
-        Toast.makeText(this, errorMsg, Toast.LENGTH_SHORT).show();
-    }
-
-    @Override
-    public void onFbSignInSuccess(String authToken, String userID) {
-//        Toast.makeText(this, authToken, Toast.LENGTH_SHORT).show();
-//        Profile profile = Profile.getCurrentProfile();
-//        String Name = profile.getName();
-//        Toast.makeText(this, Name, Toast.LENGTH_SHORT).show();
-
-        CURRENT_USER = SOCIAL_MEDIA_USER;
-        isFaceBookUser = true;
-        register(userID + "@facebook.com", userID);
-    }
-
-    @Override
-    public void onFBSignOut() {
-        Toast.makeText(this, "Sign out", Toast.LENGTH_SHORT).show();
-    }
-
-    @Override
-    public void onGoogleAuthSignIn(String authToken, String userID) {
-//        Toast.makeText(this, authToken, Toast.LENGTH_SHORT).show();
-        isGoogleUser = true;
-        CURRENT_USER = SOCIAL_MEDIA_USER;
-        register(userID + "@google.com", userID);
-    }
-
-    @Override
-    public void onGoogleAuthSignInFailed(String errorMsg) {
-        Toast.makeText(this, errorMsg, Toast.LENGTH_SHORT).show();
-    }
-
-    @Override
-    public void onGoogleAuthSignOut() {
-        Toast.makeText(this, "Sign out", Toast.LENGTH_SHORT).show();
     }
 
     private void register(final String Email, final String ID) {

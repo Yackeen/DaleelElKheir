@@ -1,80 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
     abi="arm64-v8a,armeabi-v7a,armeabi"
-    api-level="21"
-    build-mode="HOT_WARM"
-    density="xhdpi"
+    api-level="27"
+    build-mode="FULL"
+    density="xxhdpi"
     format="10"
     plugin-version="3.0.1"
-    timestamp="1527782419501"
+    timestamp="1532824654538"
     token="-3114424113949064713"
-    verifier="COMPATIBLE" >
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="4176" />
+        duration="0" />
     <task
         name="instant-run-dex"
-        duration="347" />
+        duration="0" />
     <task
         name="instant-run-transform"
-        duration="134" />
+        duration="2566" />
     <task
         name="verifier"
-        duration="50" />
+        duration="3033" />
 
     <artifact
-        location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/reload-dex/debug/classes.dex"
-        type="RELOAD_DEX" />
+        location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
+        type="SPLIT" />
+    <artifact
+        location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+        type="SPLIT" />
+    <artifact
+        location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+        type="SPLIT" />
+    <artifact
+        location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+        type="SPLIT" />
+    <artifact
+        location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+        type="SPLIT" />
+    <artifact
+        location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+        type="SPLIT" />
+    <artifact
+        location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+        type="SPLIT" />
+    <artifact
+        location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+        type="SPLIT" />
+    <artifact
+        location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+        type="SPLIT" />
+    <artifact
+        location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+        type="SPLIT" />
+    <artifact
+        location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+        type="SPLIT" />
+    <artifact
+        location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/outputs/apk/debug/app-debug.apk"
+        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1527782346476"
+        timestamp="1532824654538"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
-            type="SPLIT" />
-        <artifact
-            location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/outputs/apk/debug/app-debug.apk"
-            type="SPLIT_MAIN" />
-        <artifact
-            location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
-            type="SPLIT" />
-        <artifact
             location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
-            type="SPLIT" />
-        <artifact
-            location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
             type="SPLIT" />
         <artifact
             location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
             type="SPLIT" />
         <artifact
-            location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
             type="SPLIT" />
         <artifact
-            location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
-            type="SPLIT" />
-        <artifact
-            location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
             type="SPLIT" />
         <artifact
             location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
             type="SPLIT" />
-    </build>
-    <build
-        build-mode="HOT_WARM"
-        timestamp="1527782419501"
-        verifier="COMPATIBLE" >
         <artifact
-            location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/reload-dex/debug/classes.dex"
-            type="RELOAD_DEX" />
+            location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            type="SPLIT" />
+        <artifact
+            location="/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/outputs/apk/debug/app-debug.apk"
+            type="SPLIT_MAIN" />
     </build>
 
 </instant-run>

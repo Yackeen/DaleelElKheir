@@ -16,7 +16,6 @@ import microsoft.aspnet.signalr.client.SignalRFuture;
 import microsoft.aspnet.signalr.client.http.Request;
 import microsoft.aspnet.signalr.client.hubs.HubConnection;
 import microsoft.aspnet.signalr.client.hubs.HubProxy;
-import microsoft.aspnet.signalr.client.hubs.SubscriptionHandler3;
 import microsoft.aspnet.signalr.client.hubs.SubscriptionHandler4;
 import microsoft.aspnet.signalr.client.transport.ClientTransport;
 import microsoft.aspnet.signalr.client.transport.ServerSentEventsTransport;

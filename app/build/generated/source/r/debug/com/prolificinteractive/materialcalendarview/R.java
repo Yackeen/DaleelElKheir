@@ -27,33 +27,33 @@ public final class R {
         public static final int mcv_weekDayTextAppearance = 0x7f040180;
     }
     public static final class color {
-        public static final int mcv_text_date_dark = 0x7f060083;
-        public static final int mcv_text_date_light = 0x7f060084;
+        public static final int mcv_text_date_dark = 0x7f060082;
+        public static final int mcv_text_date_light = 0x7f060083;
     }
     public static final class drawable {
         public static final int mcv_action_next = 0x7f08019a;
         public static final int mcv_action_previous = 0x7f08019b;
     }
     public static final class id {
-        public static final int all = 0x7f09002b;
-        public static final int decorated_disabled = 0x7f0900af;
-        public static final int defaults = 0x7f0900b1;
-        public static final int friday = 0x7f0900f1;
-        public static final int horizontal = 0x7f090105;
-        public static final int match_parent = 0x7f09013b;
-        public static final int mcv_pager = 0x7f09013c;
-        public static final int monday = 0x7f090143;
-        public static final int month = 0x7f090145;
-        public static final int none = 0x7f090175;
-        public static final int other_months = 0x7f090188;
-        public static final int out_of_range = 0x7f09018a;
-        public static final int saturday = 0x7f0901bd;
-        public static final int sunday = 0x7f0901fd;
-        public static final int thursday = 0x7f090214;
-        public static final int tuesday = 0x7f090225;
-        public static final int vertical = 0x7f090267;
-        public static final int wednesday = 0x7f090270;
-        public static final int week = 0x7f090271;
+        public static final int all = 0x7f09002c;
+        public static final int decorated_disabled = 0x7f0900b0;
+        public static final int defaults = 0x7f0900b2;
+        public static final int friday = 0x7f0900f2;
+        public static final int horizontal = 0x7f090106;
+        public static final int match_parent = 0x7f09013c;
+        public static final int mcv_pager = 0x7f09013d;
+        public static final int monday = 0x7f090144;
+        public static final int month = 0x7f090146;
+        public static final int none = 0x7f090176;
+        public static final int other_months = 0x7f090189;
+        public static final int out_of_range = 0x7f09018b;
+        public static final int saturday = 0x7f0901be;
+        public static final int sunday = 0x7f0901fe;
+        public static final int thursday = 0x7f090215;
+        public static final int tuesday = 0x7f090226;
+        public static final int vertical = 0x7f090268;
+        public static final int wednesday = 0x7f090271;
+        public static final int week = 0x7f090272;
     }
     public static final class string {
         public static final int calendar = 0x7f110032;

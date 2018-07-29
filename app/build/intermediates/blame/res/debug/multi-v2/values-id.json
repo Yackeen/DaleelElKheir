@@ -4,7 +4,7 @@
             "outputFile": "/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-id/values-id.xml",
             "map": [
                 {
-                    "source": "/home/fawzy/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.20.0.aar/c1dab127f180ba833aa564d0d58ef9d6/res/values-id/values-id.xml",
+                    "source": "/home/fawzy/.gradle/caches/transforms-1/files-1.1/facebook-common-4.35.0.aar/6b3b35dc13f1bc0e9b9e1d3adae716d6/res/values-id/values-id.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
