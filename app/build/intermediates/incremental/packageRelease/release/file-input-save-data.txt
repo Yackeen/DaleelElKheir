@@ -1,0 +1,23 @@
+#Internal package file, do not edit.
+#Tue Aug 14 16:23:19 EET 2018
+2.base=D\:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\transforms\\dex\\release\\0
+0.path=classes.dex
+2.baseType=DIRECTORY
+3.base=D\:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\assets\\release
+2.set=DEX
+1.path=font/Cocon® Next Arabic-Light.otf
+4.base=D\:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\assets\\release
+count=5
+2.path=classes2.dex
+4.set=ASSET
+3.path=font/Cocon® Next Arabic-Bold.otf
+3.baseType=DIRECTORY
+1.set=ASSET
+4.path=font/CoconRegular.otf
+1.baseType=DIRECTORY
+0.base=D\:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\transforms\\dex\\release\\0
+0.baseType=DIRECTORY
+3.set=ASSET
+1.base=D\:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\assets\\release
+4.baseType=DIRECTORY
+0.set=DEX

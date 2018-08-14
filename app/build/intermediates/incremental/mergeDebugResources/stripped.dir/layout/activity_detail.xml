@@ -1,0 +1,321 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                android:theme="@style/ToolbarColoredBackArrow"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/shareCase"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:paddingLeft="@dimen/_16sdp"
+                        android:paddingRight="@dimen/_16sdp"
+                        app:srcCompat="@drawable/share" />
+
+                    <!--<ImageView-->
+                    <!--android:id="@+id/detailBack"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:paddingLeft="@dimen/_16sdp"-->
+                    <!--android:paddingRight="@dimen/_16sdp"-->
+                    <!--android:tint="@color/offWhite"-->
+                    <!--app:srcCompat="@drawable/ic_arrow_back" />-->
+
+                </RelativeLayout>
+            </android.support.v7.widget.Toolbar>
+
+            <FrameLayout
+                android:id="@+id/imageLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_98sdp"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+                <ImageView
+                    android:id="@+id/thumbnail"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_90sdp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/header" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/caseStatue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/bage"
+                    android:padding="@dimen/_3sdp"
+                    android:text="Urgent"
+                    android:textColor="@color/offWhite"
+                    app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/caseName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|bottom"
+                    android:background="@color/colorPrimaryDark"
+                    android:padding="@dimen/_3sdp"
+                    android:text="The case title "
+                    android:textColor="@color/offWhite"
+                    android:textSize="@dimen/_14sdp" />
+            </FrameLayout>
+
+            <RelativeLayout
+                android:id="@+id/mainProgressLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintTop_toBottomOf="@id/imageLayout">
+
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/requiredAmountText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:text="@string/needed"
+                    android:textColor="@color/black" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/requiredAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_toRightOf="@+id/requiredAmountText"
+                    android:text="1234"
+                    android:textColor="@color/black" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/currentAmountText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:layout_marginTop="@dimen/_35sdp"
+                    android:text="@string/current"
+                    android:textColor="@color/black" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/currentAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_35sdp"
+                    android:layout_toRightOf="@id/currentAmountText"
+                    android:text="123"
+                    android:textColor="@color/black" />
+
+                <FrameLayout
+                    android:id="@+id/progressLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_toRightOf="@id/requiredAmount">
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="@dimen/_150sdp"
+                        android:indeterminate="false"
+                        android:max="100"
+                        android:progress="100"
+                        android:progressDrawable="@drawable/circular_progress_details" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical">
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/dateText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:text="@string/case_date"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/dateText"
+                            android:text="17 / 12 / 2012"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_15sdp" />
+                    </RelativeLayout>
+
+
+                </FrameLayout>
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/organizationText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/progressLayout"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:text="@string/organization"
+                    android:textColor="@color/black" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/organization"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/progressLayout"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:layout_toRightOf="@id/organizationText"
+                    android:text="@string/organization"
+                    android:textColor="@color/black" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/categoryText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/organizationText"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:text="@string/category"
+                    android:textColor="@color/black" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/organizationText"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_toRightOf="@id/categoryText"
+                    android:text="@string/category"
+                    android:textColor="@color/black" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/placeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/categoryText"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:text="@string/region"
+                    android:textColor="@color/black" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/region"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/categoryText"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_toRightOf="@id/placeText"
+                    android:text="@string/organization"
+                    android:textColor="@color/black" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/codeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/placeText"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:text="@string/case_code"
+                    android:textColor="@color/black" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/placeText"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_toRightOf="@id/codeText"
+                    android:text="888888888888"
+                    android:textColor="@color/black" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/descriptionText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/codeText"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:text="@string/description"
+                    android:textColor="@color/black" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/codeText"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_toRightOf="@id/descriptionText"
+                    android:text="desctiption description"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/addCase"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/_8sdp"
+        android:background="@drawable/circle_shape2"
+        android:text="@string/donate"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_13sdp"
+        android:textStyle="bold" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/addCase2"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/_8sdp"
+        android:background="@color/colorPrimaryDark"
+        android:tint="@color/white"
+        android:visibility="gone"
+        app:backgroundTint="@color/colorPrimaryDark"
+        app:elevation="@dimen/_6sdp"
+        app:srcCompat="@drawable/new_chat" />
+
+</FrameLayout>
