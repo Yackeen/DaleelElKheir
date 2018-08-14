@@ -1,10 +1,25 @@
 {
     "logs": [
         {
-            "outputFile": "/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-mk-rMK/values-mk-rMK.xml",
+            "outputFile": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-mk-rMK\\values-mk-rMK.xml",
             "map": [
                 {
-                    "source": "/home/fawzy/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-25.2.0.aar/44384749ccafcc458575c36ce6e82438/res/values-mk-rMK/values-mk-rMK.xml",
+                    "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\a72ac2665ad13090f9a18490fa5ca183\\res\\values-mk-rMK\\values-mk-rMK.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,159,266,377,487,580,666,764,870,968,1062,1153,1246,1361,1473,1560,1649,1747,1858,1944",
+                        "endColumns": "103,106,110,109,92,85,97,105,97,93,90,92,114,111,86,88,97,110,85,91",
+                        "endOffsets": "154,261,372,482,575,661,759,865,963,1057,1148,1241,1356,1468,1555,1644,1742,1853,1939,2031"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-mk-rMK\\values-mk-rMK.xml",
+            "map": [
+                {
+                    "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\44384749ccafcc458575c36ce6e82438\\res\\values-mk-rMK\\values-mk-rMK.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

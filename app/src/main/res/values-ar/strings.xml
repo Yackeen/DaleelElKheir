@@ -6,10 +6,6 @@
 
     <string name="action_settings">الإعدادات</string>
 
-    <string name="facebook_app_id">330476670775666</string>
-    <string name="fb_login_protocol_scheme">fb330476670775666</string>
-
-    <string name="title_activity_splash">SplashActivity</string>
     <string name="blod_bank">بنك الدم</string>
     <string name="contact_us">تواصل مع دليل الخير</string>
     <string name="logout">تسجيل الخروج</string>
@@ -148,4 +144,5 @@
     <string name="submit">إرسال</string>
     <string name="DaysAvailableRequired">يرجى إختيار أقسام التطوع</string>
     <string name="volunteer_add_succ">شكرا, سيتم الرد عليك سريعاً</string>
+    <string name="title_activity_login" translatable="false">تسجيل الدخول</string>
 </resources>
