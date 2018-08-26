@@ -1,10 +1,25 @@
-#Sun Jul 29 02:42:51 EET 2018
-path.2=classes3.dex
-path.1=classes2.dex
+#Sun Aug 26 15:49:43 EET 2018
+path.1=classes.dex
 path.0=classes.dex
+renamed.7=classes8.dex
+renamed.6=classes7.dex
+renamed.5=classes6.dex
+renamed.4=classes5.dex
+renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
-base.2=/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/transforms/dexMerger/debug/19
-base.1=/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/transforms/dexMerger/debug/19
-base.0=/media/fawzy/Files/Android/codes/DaleelElKheir/app/build/intermediates/transforms/dexMerger/debug/19
+base.7=D\:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\87
+base.6=D\:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\96
+base.5=D\:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\97
+base.4=D\:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\95
+base.3=D\:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\87
+base.2=D\:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\98
+base.1=D\:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\100
+base.0=D\:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\99
+path.7=classes2.dex
+path.6=classes.dex
+path.5=classes.dex
+path.4=classes.dex
+path.3=classes.dex
+path.2=classes.dex

@@ -82,7 +82,6 @@ public class LoginActivity extends LoginView implements OnClickListener {
     private void setSocial() {
     }
 
-
     private void setViews() {
         // Set up the login form.
         mEmailView = findViewById(R.id.email);
@@ -317,7 +316,7 @@ public class LoginActivity extends LoginView implements OnClickListener {
             public void onSuccess(SocialUser socialUser) {
                 CURRENT_USER = SOCIAL_MEDIA_USER;
                 isFaceBookUser = true;
-                register(socialUser.getEmail() + "@facebook.com", socialUser.getId());
+                register(socialUser.getName(), socialUser.getEmail(), socialUser.getId());
             }
 
             @Override
@@ -334,14 +333,13 @@ public class LoginActivity extends LoginView implements OnClickListener {
             public void onSuccess(SocialUser socialUser) {
                 CURRENT_USER = SOCIAL_MEDIA_USER;
                 isGoogleUser = true;
-                register(socialUser.getEmail() + "@google.com", socialUser.getId());
+                register(socialUser.getName(), socialUser.getEmail(), socialUser.getId());
             }
 
             @Override
             public void onError(Throwable throwable) {
                 throwable.printStackTrace();
                 Toast.makeText(LoginActivity.this, throwable.getMessage(), Toast.LENGTH_SHORT).show();
-                Log.e("fawzy.fail with google", throwable.toString());
             }
         });
     }
@@ -437,7 +435,7 @@ public class LoginActivity extends LoginView implements OnClickListener {
         super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
     }
 
-    private void register(final String Email, final String ID) {
+    private void register(final String Name, final String Email, final String ID) {
         try {
             final JSONObject jsonBody = new JSONObject();
             jsonBody.put("Email", Email);
@@ -450,7 +448,7 @@ public class LoginActivity extends LoginView implements OnClickListener {
                 jsonBody.put("Facebook_ID", "");
             }
             jsonBody.put("Mobile", "");
-            jsonBody.put("Name", "");
+            jsonBody.put("Name", Name);
             jsonBody.put("Password", "");
             jsonBody.put("Image", "");
 

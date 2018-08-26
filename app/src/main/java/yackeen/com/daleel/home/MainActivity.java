@@ -108,6 +108,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private boolean backTapped;
     private NavigationView navigationView;
     private Switch langSwitch;
+    private boolean checked = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -335,8 +336,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                                     orgId = organizationId;
                                 } else if (spinner.getId() == R.id.locationSpinner) {
                                     locationId = locId;
-                                    if (!"".equals(locationId))
+                                    if (!"".equals(locationId)) {
+                                        checked = true;
                                         setSpinner(locationPlaceSpinner, GET_REGION, getResources().getString(R.string.choose_region), 1);
+                                    } else
+                                        checked = false;
                                 } else if (spinner.getId() == R.id.locationPlaceSpinner) {
                                     placId = placeID;
                                 }
@@ -466,7 +470,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         int id = item.getItemId();
 
-
         switch (id) {
             case R.id.action_filter:
                 drawer.openDrawer(GravityCompat.END);
@@ -486,11 +489,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         if (id == R.id.nav_home) {
             showFragment(new NewsFeedFragment(), getResources().getString(R.string.news_feed), HOME_FRAGMENT);
+            bottomNav.setSelectedItemId(R.id.home);
         } else if (id == R.id.nav_blod_bank) {
             launchActivity(BloodBanksActivity.class);
         } else if (id == R.id.nav_contact) {
             launchActivity(ContactActivity.class);
-
         } else if (id == R.id.nav_setting) {
             launchActivity(SettingsActivity.class);
         } else if (id == R.id.nav_volunteer) {
@@ -511,7 +514,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 checkSigning();
                 break;
             case R.id.sort:
-                if (!"".equals(placId)) {
+                if (!checked || !"".equals(placId)) {
                     if (getFragmentManager().findFragmentByTag(HOME_FRAGMENT) != null &&
                             getFragmentManager().findFragmentByTag(HOME_FRAGMENT).isVisible()) {
                         sort(FILTERED_CASES, AllCasesActivity.class);

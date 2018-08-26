@@ -3,6 +3,7 @@ package yackeen.com.daleel.organization;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.Html;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -50,7 +51,7 @@ public class OrganizationDetailsActivity extends AppCompatActivity {
         Glide.with(this).load(Logo).into(thumbnail);
 
         organization.setText(Name);
-        description.setText(Description);
+        description.setText(Html.fromHtml(Description));
         address.setText(Address);
         gov.setText(Governorate);
         region.setText(Area);

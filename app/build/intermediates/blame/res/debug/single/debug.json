@@ -4,12 +4,12 @@
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\0d093faacc102d2124f4618f442e5931\\res\\drawable-xxhdpi-v4\\tw__ic_seekbar_secondary_bg.9.png"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
-        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\284d602bf3ccf0189371990d78f846cf\\res\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_quantum_ic_play_circle_filled_white_36.png.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\cb65f118a56f1c141969657aac9634e6\\res\\drawable-xxxhdpi-v4\\quantum_ic_play_circle_filled_white_36.png"
+    },
+    {
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
+        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\284d602bf3ccf0189371990d78f846cf\\res\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
     },
     {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\layout_com_facebook_smart_device_dialog_fragment.xml.flat",
@@ -36,20 +36,20 @@
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\twitter-core-2.3.1.aar\\53d92dec3351312839c25d7301c76fb1\\res\\raw\\tw__cacerts"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_star_black_36dp.png.flat",
-        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\284d602bf3ccf0189371990d78f846cf\\res\\drawable-hdpi-v4\\abc_ic_star_black_36dp.png"
-    },
-    {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_tw__ic_video_play.png.flat",
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\f15c0579b8f70e06597f53b10c05b961\\res\\drawable-xxhdpi-v4\\tw__ic_video_play.png"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\layout_tw__action_bar.xml.flat",
-        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\f15c0579b8f70e06597f53b10c05b961\\res\\layout\\tw__action_bar.xml"
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_star_black_36dp.png.flat",
+        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\284d602bf3ccf0189371990d78f846cf\\res\\drawable-hdpi-v4\\abc_ic_star_black_36dp.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\d0e9b2ae50d15c6a0db5383e8ba409d4\\res\\drawable-hdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\layout_tw__action_bar.xml.flat",
+        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\f15c0579b8f70e06597f53b10c05b961\\res\\layout\\tw__action_bar.xml"
     },
     {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_quantum_ic_play_arrow_grey600_48.png.flat",
@@ -60,12 +60,12 @@
         "source": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\src\\main\\res\\drawable-hdpi\\time.png"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_settings.xml.flat",
-        "source": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\src\\main\\res\\layout\\activity_settings.xml"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\d0e9b2ae50d15c6a0db5383e8ba409d4\\res\\drawable-ldrtl-xhdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_settings.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\src\\main\\res\\layout\\activity_settings.xml"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
@@ -80,12 +80,12 @@
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\5fb79b635dacfecaf71f666334fb490c\\res\\color\\common_google_signin_btn_text_dark.xml"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_language.xml.flat",
-        "source": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\src\\main\\res\\drawable\\ic_language.xml"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\d0e9b2ae50d15c6a0db5383e8ba409d4\\res\\drawable-mdpi-v4\\abc_text_select_handle_left_mtrl_dark.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_language.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\src\\main\\res\\drawable\\ic_language.xml"
     },
     {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_ic_group_expand_04.png.flat",
@@ -132,16 +132,16 @@
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.4.2.aar\\779285414d37d33ffbbda88ebc6ee230\\res\\drawable-hdpi-v4\\quantum_ic_clear_white_24.png"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
-        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\284d602bf3ccf0189371990d78f846cf\\res\\drawable-xxhdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
+        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_places_ic_clear.png.flat",
+        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-places-12.0.1.aar\\beba323df60ac69933ac63938e36e358\\res\\drawable-mdpi-v4\\places_ic_clear.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_quantum_ic_skip_next_white_24.png.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\cb65f118a56f1c141969657aac9634e6\\res\\drawable-hdpi-v4\\quantum_ic_skip_next_white_24.png"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_places_ic_clear.png.flat",
-        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-places-12.0.1.aar\\beba323df60ac69933ac63938e36e358\\res\\drawable-mdpi-v4\\places_ic_clear.png"
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
+        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\284d602bf3ccf0189371990d78f846cf\\res\\drawable-xxhdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_quantum_ic_volume_up_grey600_36.png.flat",
@@ -156,12 +156,12 @@
         "source": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\src\\main\\res\\drawable-mdpi\\time.png"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_big_media_custom.xml.flat",
-        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-27.0.2.aar\\99ec2d9892f00c779236b02f2630401b\\res\\layout\\notification_template_big_media_custom.xml"
-    },
-    {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable_com_facebook_favicon_blue.xml.flat",
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-common-4.35.0.aar\\6b3b35dc13f1bc0e9b9e1d3adae716d6\\res\\drawable\\com_facebook_favicon_blue.xml"
+    },
+    {
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_big_media_custom.xml.flat",
+        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-27.0.2.aar\\99ec2d9892f00c779236b02f2630401b\\res\\layout\\notification_template_big_media_custom.xml"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_ic_mr_button_disabled_dark.png.flat",
@@ -312,12 +312,12 @@
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\0e2e059bf47bcd90574daddd59a79387\\res\\drawable-xhdpi-v4\\ic_mr_button_connecting_07_dark.png"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_logout.png.flat",
-        "source": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\src\\main\\res\\drawable-xhdpi\\logout.png"
-    },
-    {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_mr_button_connected_00_light.png.flat",
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\44384749ccafcc458575c36ce6e82438\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_00_light.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_logout.png.flat",
+        "source": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\src\\main\\res\\drawable-xhdpi\\logout.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_com_facebook_button_send_icon_blue.png.flat",
@@ -364,12 +364,12 @@
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-login-4.35.0.aar\\2190dfe0d5994f18a0ac92c6f4a639c3\\res\\layout\\com_facebook_tooltip_bubble.xml"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_mr_button_connecting_09_dark.png.flat",
-        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\44384749ccafcc458575c36ce6e82438\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_09_dark.png"
-    },
-    {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
         "source": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_mr_button_connecting_09_dark.png.flat",
+        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\44384749ccafcc458575c36ce6e82438\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_09_dark.png"
     },
     {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_tw__heart_animation_detail_60fps_00016.png.flat",
@@ -480,12 +480,12 @@
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-plus-11.4.2.aar\\2d280b283655652e3546424c33521929\\res\\drawable-tvdpi-v4\\ic_plusone_tall_off_client.png"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_mr_button_disabled_dark.png.flat",
-        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\0e2e059bf47bcd90574daddd59a79387\\res\\drawable-xhdpi-v4\\ic_mr_button_disabled_dark.png"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_com_facebook_tooltip_blue_bottomnub.png.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-login-4.35.0.aar\\aa88710cd8aff9c051e4695f5c896d47\\res\\drawable-mdpi-v4\\com_facebook_tooltip_blue_bottomnub.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_mr_button_disabled_dark.png.flat",
+        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\0e2e059bf47bcd90574daddd59a79387\\res\\drawable-xhdpi-v4\\ic_mr_button_disabled_dark.png"
     },
     {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_tw__heart_animation_detail_60fps_00052.png.flat",
@@ -496,12 +496,12 @@
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\0e2e059bf47bcd90574daddd59a79387\\res\\drawable-hdpi-v4\\ic_vol_type_speaker_light.png"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_down_arrow.png.flat",
-        "source": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\src\\main\\res\\drawable-hdpi\\down_arrow.png"
-    },
-    {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_mr_button_connecting_14_light.png.flat",
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\44384749ccafcc458575c36ce6e82438\\res\\drawable-xhdpi-v4\\ic_mr_button_connecting_14_light.png"
+    },
+    {
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_down_arrow.png.flat",
+        "source": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\src\\main\\res\\drawable-hdpi\\down_arrow.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_longpressed_holo.9.png.flat",
@@ -516,12 +516,12 @@
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.4.2.aar\\779285414d37d33ffbbda88ebc6ee230\\res\\drawable-mdpi-v4\\quantum_ic_pause_white_24.png"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_media.xml.flat",
-        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-27.1.1.aar\\65e04fc03c902319635f47225403262b\\res\\layout\\notification_template_media.xml"
-    },
-    {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_tabs.png.flat",
         "source": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\src\\main\\res\\drawable-xhdpi\\tabs.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_media.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-27.1.1.aar\\65e04fc03c902319635f47225403262b\\res\\layout\\notification_template_media.xml"
     },
     {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_audiotrack_light.png.flat",
@@ -532,12 +532,12 @@
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\284d602bf3ccf0189371990d78f846cf\\res\\drawable-hdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_tw__ic_play_pressed.png.flat",
-        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\f15c0579b8f70e06597f53b10c05b961\\res\\drawable-hdpi-v4\\tw__ic_play_pressed.png"
-    },
-    {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_tw__heart_animation_detail_60fps_00043.png.flat",
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\f15c0579b8f70e06597f53b10c05b961\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00043.png"
+    },
+    {
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_tw__ic_play_pressed.png.flat",
+        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\f15c0579b8f70e06597f53b10c05b961\\res\\drawable-hdpi-v4\\tw__ic_play_pressed.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable_cast_ic_expanded_controller_rewind30.xml.flat",
@@ -584,12 +584,12 @@
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\0e2e059bf47bcd90574daddd59a79387\\res\\drawable-xhdpi-v4\\ic_mr_button_disabled_light.png"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\layout_tw__composer_view.xml.flat",
-        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-composer-2.3.1.aar\\d7f88f67c95669beb6a6bf93977b703b\\res\\layout\\tw__composer_view.xml"
-    },
-    {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_quantum_ic_replay_10_white_24.png.flat",
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.4.2.aar\\779285414d37d33ffbbda88ebc6ee230\\res\\drawable-mdpi-v4\\quantum_ic_replay_10_white_24.png"
+    },
+    {
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\layout_tw__composer_view.xml.flat",
+        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-composer-2.3.1.aar\\d7f88f67c95669beb6a6bf93977b703b\\res\\layout\\tw__composer_view.xml"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_facebook.png.flat",
@@ -620,12 +620,12 @@
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\d0e9b2ae50d15c6a0db5383e8ba409d4\\res\\drawable\\abc_vector_test.xml"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_ic_group_collapse_14.png.flat",
-        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\44384749ccafcc458575c36ce6e82438\\res\\drawable-xxxhdpi-v4\\ic_group_collapse_14.png"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\d0e9b2ae50d15c6a0db5383e8ba409d4\\res\\drawable-xxhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_ic_group_collapse_14.png.flat",
+        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\44384749ccafcc458575c36ce6e82438\\res\\drawable-xxxhdpi-v4\\ic_group_collapse_14.png"
     },
     {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_media_custom.xml.flat",
@@ -680,24 +680,24 @@
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\0e2e059bf47bcd90574daddd59a79387\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_01_dark.png"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\layout_nav_header_main.xml.flat",
-        "source": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\src\\main\\res\\layout\\nav_header_main.xml"
+        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_pressed_holo_light.9.png.flat",
+        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\d0e9b2ae50d15c6a0db5383e8ba409d4\\res\\drawable-xhdpi-v4\\abc_list_pressed_holo_light.9.png"
     },
     {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_mr_button_grey.png.flat",
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\44384749ccafcc458575c36ce6e82438\\res\\drawable-xhdpi-v4\\ic_mr_button_grey.png"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_pressed_holo_light.9.png.flat",
-        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\d0e9b2ae50d15c6a0db5383e8ba409d4\\res\\drawable-xhdpi-v4\\abc_list_pressed_holo_light.9.png"
-    },
-    {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_quantum_ic_pause_white_24.png.flat",
-        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.4.2.aar\\779285414d37d33ffbbda88ebc6ee230\\res\\drawable-xxxhdpi-v4\\quantum_ic_pause_white_24.png"
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\layout_nav_header_main.xml.flat",
+        "source": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\src\\main\\res\\layout\\nav_header_main.xml"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_quantum_ic_play_arrow_white_24.png.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\cb65f118a56f1c141969657aac9634e6\\res\\drawable-xxxhdpi-v4\\quantum_ic_play_arrow_white_24.png"
+    },
+    {
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_quantum_ic_pause_white_24.png.flat",
+        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.4.2.aar\\779285414d37d33ffbbda88ebc6ee230\\res\\drawable-xxxhdpi-v4\\quantum_ic_pause_white_24.png"
     },
     {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
@@ -724,12 +724,12 @@
         "source": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\src\\main\\res\\drawable\\curvy_newsfeed_bg.xml"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_tw__ic_logo_white.png.flat",
-        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\f15c0579b8f70e06597f53b10c05b961\\res\\drawable-xxhdpi-v4\\tw__ic_logo_white.png"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_events.png.flat",
         "source": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\src\\main\\res\\drawable-hdpi\\events.png"
+    },
+    {
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_tw__ic_logo_white.png.flat",
+        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\f15c0579b8f70e06597f53b10c05b961\\res\\drawable-xxhdpi-v4\\tw__ic_logo_white.png"
     },
     {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_text_select_handle_middle_mtrl_dark.png.flat",
@@ -848,12 +848,12 @@
         "source": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\src\\main\\res\\drawable\\curvy_offwhite_bg.xml"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
-        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\284d602bf3ccf0189371990d78f846cf\\res\\drawable-xxhdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
-    },
-    {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_cast_ic_stop_circle_filled_grey600.png.flat",
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.4.2.aar\\779285414d37d33ffbbda88ebc6ee230\\res\\drawable-xxhdpi-v4\\cast_ic_stop_circle_filled_grey600.png"
+    },
+    {
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
+        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\284d602bf3ccf0189371990d78f846cf\\res\\drawable-xxhdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_ic_vol_type_speaker_group_light.png.flat",
@@ -912,12 +912,12 @@
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\44384749ccafcc458575c36ce6e82438\\res\\drawable-mdpi-v4\\ic_vol_type_tv_dark.png"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_tw__heart_animation_detail_60fps_00015.png.flat",
-        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\f15c0579b8f70e06597f53b10c05b961\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00015.png"
-    },
-    {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_logo2.png.flat",
         "source": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\src\\main\\res\\drawable-mdpi\\logo2.png"
+    },
+    {
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_tw__heart_animation_detail_60fps_00015.png.flat",
+        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\f15c0579b8f70e06597f53b10c05b961\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00015.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\layout_contact_dialog.xml.flat",
@@ -948,12 +948,12 @@
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\0e2e059bf47bcd90574daddd59a79387\\res\\drawable-xhdpi-v4\\ic_mr_button_connected_11_dark.png"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable_cast_expanded_controller_seekbar_thumb.xml.flat",
-        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.4.2.aar\\779285414d37d33ffbbda88ebc6ee230\\res\\drawable\\cast_expanded_controller_seekbar_thumb.xml"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_icon_dark_normal.xml.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\5fb79b635dacfecaf71f666334fb490c\\res\\drawable\\common_google_signin_btn_icon_dark_normal.xml"
+    },
+    {
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable_cast_expanded_controller_seekbar_thumb.xml.flat",
+        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.4.2.aar\\779285414d37d33ffbbda88ebc6ee230\\res\\drawable\\cast_expanded_controller_seekbar_thumb.xml"
     },
     {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_mr_button_connecting_10_dark.png.flat",
@@ -980,12 +980,12 @@
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\5fb79b635dacfecaf71f666334fb490c\\res\\drawable-mdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_places_ic_search.png.flat",
-        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-places-11.4.2.aar\\d31e3802356745cec675cb27a4c61d85\\res\\drawable-xhdpi-v4\\places_ic_search.png"
-    },
-    {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_quantum_ic_skip_previous_white_36.png.flat",
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.4.2.aar\\779285414d37d33ffbbda88ebc6ee230\\res\\drawable-mdpi-v4\\quantum_ic_skip_previous_white_36.png"
+    },
+    {
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_places_ic_search.png.flat",
+        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-places-11.4.2.aar\\d31e3802356745cec675cb27a4c61d85\\res\\drawable-xhdpi-v4\\places_ic_search.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_primary_text_material_dark.xml.flat",
@@ -1000,12 +1000,12 @@
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.4.2.aar\\779285414d37d33ffbbda88ebc6ee230\\res\\drawable-xhdpi-v4\\quantum_ic_refresh_white_24.png"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_popup_enter.xml.flat",
-        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\d0e9b2ae50d15c6a0db5383e8ba409d4\\res\\anim\\abc_popup_enter.xml"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_mr_button_connected_05_dark.png.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\0e2e059bf47bcd90574daddd59a79387\\res\\drawable-xhdpi-v4\\ic_mr_button_connected_05_dark.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_popup_enter.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\d0e9b2ae50d15c6a0db5383e8ba409d4\\res\\anim\\abc_popup_enter.xml"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_mr_button_connecting_26_light.png.flat",
@@ -1096,28 +1096,28 @@
         "source": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\src\\main\\res\\drawable\\ic_phone.xml"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_powered_by_google_light.png.flat",
-        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-places-11.4.2.aar\\d31e3802356745cec675cb27a4c61d85\\res\\drawable-mdpi-v4\\powered_by_google_light.png"
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_quantum_ic_play_circle_filled_grey600_36.png.flat",
+        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.4.2.aar\\779285414d37d33ffbbda88ebc6ee230\\res\\drawable-mdpi-v4\\quantum_ic_play_circle_filled_grey600_36.png"
     },
     {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_tw__heart_animation_detail_60fps_00017.png.flat",
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\f15c0579b8f70e06597f53b10c05b961\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00017.png"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_quantum_ic_play_circle_filled_grey600_36.png.flat",
-        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.4.2.aar\\779285414d37d33ffbbda88ebc6ee230\\res\\drawable-mdpi-v4\\quantum_ic_play_circle_filled_grey600_36.png"
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_powered_by_google_light.png.flat",
+        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-places-11.4.2.aar\\d31e3802356745cec675cb27a4c61d85\\res\\drawable-mdpi-v4\\powered_by_google_light.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_conversation.xml.flat",
         "source": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\src\\main\\res\\layout\\fragment_conversation.xml"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_contact.png.flat",
-        "source": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\src\\main\\res\\drawable-xhdpi\\contact.png"
-    },
-    {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_media_action.xml.flat",
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-27.0.2.aar\\99ec2d9892f00c779236b02f2630401b\\res\\layout\\notification_media_action.xml"
+    },
+    {
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_contact.png.flat",
+        "source": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\src\\main\\res\\drawable-xhdpi\\contact.png"
     },
     {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable_curvy_offwhite_bg.xml.flat",
@@ -1132,24 +1132,24 @@
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\f15c0579b8f70e06597f53b10c05b961\\res\\layout\\tw__tweet_compact.xml"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_round.png.flat",
-        "source": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\src\\main\\res\\drawable-mdpi\\ic_launcher_round.png"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_ic_plusone_tall_off_client.png.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-plus-12.0.1.aar\\c190dd568dce63f339d6f16f3bb72e7e\\res\\drawable-mdpi-v4\\ic_plusone_tall_off_client.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_round.png.flat",
+        "source": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\src\\main\\res\\drawable-mdpi\\ic_launcher_round.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_ic_vol_type_speaker_group_light.png.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\0e2e059bf47bcd90574daddd59a79387\\res\\drawable-mdpi-v4\\ic_vol_type_speaker_group_light.png"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_tw__ic_seekbar_bg.9.png.flat",
-        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\f15c0579b8f70e06597f53b10c05b961\\res\\drawable-xxhdpi-v4\\tw__ic_seekbar_bg.9.png"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\color-v11_abc_background_cache_hint_selector_material_light.xml.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\de6804756944f63b6b8ca361acdadb97\\res\\color-v11\\abc_background_cache_hint_selector_material_light.xml"
+    },
+    {
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_tw__ic_seekbar_bg.9.png.flat",
+        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\f15c0579b8f70e06597f53b10c05b961\\res\\drawable-xxhdpi-v4\\tw__ic_seekbar_bg.9.png"
     },
     {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_tw__heart_animation_detail_60fps_00024.png.flat",
@@ -1164,12 +1164,12 @@
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.4.2.aar\\779285414d37d33ffbbda88ebc6ee230\\res\\drawable\\cast_ic_notification_disconnect.xml"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_phone_call.png.flat",
-        "source": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\src\\main\\res\\drawable-mdpi\\phone_call.png"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\layout_place_autocomplete_progress.xml.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-places-12.0.1.aar\\beba323df60ac69933ac63938e36e358\\res\\layout\\place_autocomplete_progress.xml"
+    },
+    {
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_phone_call.png.flat",
+        "source": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\src\\main\\res\\drawable-mdpi\\phone_call.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\color_mcv_text_date_light.xml.flat",
@@ -1192,12 +1192,12 @@
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.4.2.aar\\779285414d37d33ffbbda88ebc6ee230\\res\\drawable-hdpi-v4\\quantum_ic_volume_off_white_36.png"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_com_facebook_profile_picture_blank_portrait.png.flat",
-        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-login-4.35.0.aar\\aa88710cd8aff9c051e4695f5c896d47\\res\\drawable-mdpi-v4\\com_facebook_profile_picture_blank_portrait.png"
-    },
-    {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_mr_button_connecting_05_dark.png.flat",
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\44384749ccafcc458575c36ce6e82438\\res\\drawable-xhdpi-v4\\ic_mr_button_connecting_05_dark.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_com_facebook_profile_picture_blank_portrait.png.flat",
+        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-login-4.35.0.aar\\aa88710cd8aff9c051e4695f5c896d47\\res\\drawable-mdpi-v4\\com_facebook_profile_picture_blank_portrait.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_mr_button_connected_14_dark.png.flat",
@@ -1300,12 +1300,12 @@
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.0.2.aar\\0b448194544f07c4477bc4a98d77b5d5\\res\\color\\design_tint_password_toggle.xml"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_org.png.flat",
-        "source": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\src\\main\\res\\drawable-xhdpi\\org.png"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\animator-v21_design_appbar_state_list_animator.xml.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\bf40d642a7bb3a2930ca160ef1557635\\res\\animator-v21\\design_appbar_state_list_animator.xml"
+    },
+    {
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_org.png.flat",
+        "source": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\src\\main\\res\\drawable-xhdpi\\org.png"
     },
     {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-watch-v20_common_google_signin_btn_text_dark_normal.xml.flat",
@@ -1420,12 +1420,12 @@
         "source": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\src\\main\\res\\drawable-xxhdpi\\location.png"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\color-v21_abc_btn_colored_borderless_text_material.xml.flat",
-        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\d0e9b2ae50d15c6a0db5383e8ba409d4\\res\\color-v21\\abc_btn_colored_borderless_text_material.xml"
-    },
-    {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_tw__ic_seekbar_secondary_bg.9.png.flat",
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\f15c0579b8f70e06597f53b10c05b961\\res\\drawable-mdpi-v4\\tw__ic_seekbar_secondary_bg.9.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\color-v21_abc_btn_colored_borderless_text_material.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\d0e9b2ae50d15c6a0db5383e8ba409d4\\res\\color-v21\\abc_btn_colored_borderless_text_material.xml"
     },
     {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_tw__ic_gif_badge.png.flat",
@@ -1444,24 +1444,24 @@
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\0d093faacc102d2124f4618f442e5931\\res\\drawable-mdpi-v4\\tw__ic_play_pressed.png"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_quantum_ic_replay_30_grey600_36.png.flat",
-        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.4.2.aar\\779285414d37d33ffbbda88ebc6ee230\\res\\drawable-xhdpi-v4\\quantum_ic_replay_30_grey600_36.png"
-    },
-    {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_smart.png.flat",
         "source": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\src\\main\\res\\drawable-mdpi\\smart.png"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_mr_button_connecting_20_dark.png.flat",
-        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\44384749ccafcc458575c36ce6e82438\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_20_dark.png"
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_quantum_ic_replay_30_grey600_36.png.flat",
+        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.4.2.aar\\779285414d37d33ffbbda88ebc6ee230\\res\\drawable-xhdpi-v4\\quantum_ic_replay_30_grey600_36.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_mr_button_connecting_16_light.png.flat",
+        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\0e2e059bf47bcd90574daddd59a79387\\res\\drawable-xhdpi-v4\\ic_mr_button_connecting_16_light.png"
     },
     {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\layout_mr_volume_control.xml.flat",
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\44384749ccafcc458575c36ce6e82438\\res\\layout\\mr_volume_control.xml"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_mr_button_connecting_16_light.png.flat",
-        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\0e2e059bf47bcd90574daddd59a79387\\res\\drawable-xhdpi-v4\\ic_mr_button_connecting_16_light.png"
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_mr_button_connecting_20_dark.png.flat",
+        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\44384749ccafcc458575c36ce6e82438\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_20_dark.png"
     },
     {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
@@ -1580,12 +1580,12 @@
         "source": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\src\\main\\res\\drawable-hdpi\\logout.png"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_chat.png.flat",
-        "source": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\src\\main\\res\\drawable-xhdpi\\chat.png"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_tw__ic_seekbar_progress_bg.9.png.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\0d093faacc102d2124f4618f442e5931\\res\\drawable-hdpi-v4\\tw__ic_seekbar_progress_bg.9.png"
+    },
+    {
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_chat.png.flat",
+        "source": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\src\\main\\res\\drawable-xhdpi\\chat.png"
     },
     {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
@@ -1600,12 +1600,12 @@
         "source": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\src\\main\\res\\drawable-xxhdpi\\tog.png"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_quantum_ic_replay_30_white_24.png.flat",
-        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.4.2.aar\\779285414d37d33ffbbda88ebc6ee230\\res\\drawable-hdpi-v4\\quantum_ic_replay_30_white_24.png"
-    },
-    {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_google_plus.png.flat",
         "source": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\src\\main\\res\\drawable-xhdpi\\google_plus.png"
+    },
+    {
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_quantum_ic_replay_30_white_24.png.flat",
+        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.4.2.aar\\779285414d37d33ffbbda88ebc6ee230\\res\\drawable-hdpi-v4\\quantum_ic_replay_30_white_24.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_com_facebook_button_like_icon_selected.png.flat",
@@ -1640,12 +1640,12 @@
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\cb65f118a56f1c141969657aac9634e6\\res\\drawable-hdpi-v4\\quantum_ic_replay_10_white_24.png"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_design_ic_visibility.png.flat",
-        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.0.2.aar\\0b448194544f07c4477bc4a98d77b5d5\\res\\drawable-hdpi-v4\\design_ic_visibility.png"
-    },
-    {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_ic_mr_button_grey.png.flat",
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\44384749ccafcc458575c36ce6e82438\\res\\drawable-mdpi-v4\\ic_mr_button_grey.png"
+    },
+    {
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_design_ic_visibility.png.flat",
+        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.0.2.aar\\0b448194544f07c4477bc4a98d77b5d5\\res\\drawable-hdpi-v4\\design_ic_visibility.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_tw__ic_seekbar_bg.9.png.flat",
@@ -1672,12 +1672,12 @@
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\cb65f118a56f1c141969657aac9634e6\\res\\drawable-hdpi-v4\\quantum_ic_pause_circle_filled_white_36.png"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_tw__ic_seekbar_bg.9.png.flat",
-        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\f15c0579b8f70e06597f53b10c05b961\\res\\drawable-mdpi-v4\\tw__ic_seekbar_bg.9.png"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_quantum_ic_keyboard_arrow_down_white_36.png.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\cb65f118a56f1c141969657aac9634e6\\res\\drawable-hdpi-v4\\quantum_ic_keyboard_arrow_down_white_36.png"
+    },
+    {
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_tw__ic_seekbar_bg.9.png.flat",
+        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\f15c0579b8f70e06597f53b10c05b961\\res\\drawable-mdpi-v4\\tw__ic_seekbar_bg.9.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
@@ -1696,12 +1696,12 @@
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\cb65f118a56f1c141969657aac9634e6\\res\\drawable-xhdpi-v4\\quantum_ic_volume_off_white_36.png"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_tw__ic_video_replay_pressed.png.flat",
-        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\0d093faacc102d2124f4618f442e5931\\res\\drawable-hdpi-v4\\tw__ic_video_replay_pressed.png"
-    },
-    {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_tw__ic_video_replay.png.flat",
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\f15c0579b8f70e06597f53b10c05b961\\res\\drawable-xxhdpi-v4\\tw__ic_video_replay.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_tw__ic_video_replay_pressed.png.flat",
+        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\0d093faacc102d2124f4618f442e5931\\res\\drawable-hdpi-v4\\tw__ic_video_replay_pressed.png"
     },
     {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v23_abc_control_background_material.xml.flat",
@@ -1712,16 +1712,16 @@
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\twitter-core-2.3.1.aar\\53d92dec3351312839c25d7301c76fb1\\res\\drawable\\tw__transparent.xml"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\layout_favourite_cat_item.xml.flat",
-        "source": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\src\\main\\res\\layout\\favourite_cat_item.xml"
+        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
+        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\d0e9b2ae50d15c6a0db5383e8ba409d4\\res\\drawable-xxxhdpi-v4\\abc_text_select_handle_right_mtrl_dark.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_quantum_ic_pause_grey600_48.png.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\cb65f118a56f1c141969657aac9634e6\\res\\drawable-xhdpi-v4\\quantum_ic_pause_grey600_48.png"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
-        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\d0e9b2ae50d15c6a0db5383e8ba409d4\\res\\drawable-xxxhdpi-v4\\abc_text_select_handle_right_mtrl_dark.png"
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\layout_favourite_cat_item.xml.flat",
+        "source": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\src\\main\\res\\layout\\favourite_cat_item.xml"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
@@ -1804,12 +1804,12 @@
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\d0e9b2ae50d15c6a0db5383e8ba409d4\\res\\drawable-xxhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mr_media_play_light.xml.flat",
-        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\44384749ccafcc458575c36ce6e82438\\res\\drawable\\mr_media_play_light.xml"
-    },
-    {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-mdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\284d602bf3ccf0189371990d78f846cf\\res\\drawable-ldrtl-mdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mr_media_play_light.xml.flat",
+        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\44384749ccafcc458575c36ce6e82438\\res\\drawable\\mr_media_play_light.xml"
     },
     {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable_com_facebook_button_icon.xml.flat",
@@ -1836,12 +1836,12 @@
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\284d602bf3ccf0189371990d78f846cf\\res\\drawable-xhdpi-v4\\abc_ic_star_half_black_36dp.png"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_ic_mr_button_disconnected_light.png.flat",
-        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\44384749ccafcc458575c36ce6e82438\\res\\drawable-hdpi-v4\\ic_mr_button_disconnected_light.png"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_mr_button_connecting_20_dark.png.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\0e2e059bf47bcd90574daddd59a79387\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_20_dark.png"
+    },
+    {
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_ic_mr_button_disconnected_light.png.flat",
+        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\44384749ccafcc458575c36ce6e82438\\res\\drawable-hdpi-v4\\ic_mr_button_disconnected_light.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable_com_facebook_button_like_background.xml.flat",
@@ -1912,20 +1912,20 @@
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\cb65f118a56f1c141969657aac9634e6\\res\\drawable-hdpi-v4\\quantum_ic_skip_next_grey600_36.png"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
-        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\284d602bf3ccf0189371990d78f846cf\\res\\drawable-hdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
-    },
-    {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_ic_plusone_medium_off_client.png.flat",
-        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-plus-11.4.2.aar\\2d280b283655652e3546424c33521929\\res\\drawable-mdpi-v4\\ic_plusone_medium_off_client.png"
+        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_quantum_ic_replay_10_white_24.png.flat",
+        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\cb65f118a56f1c141969657aac9634e6\\res\\drawable-xxhdpi-v4\\quantum_ic_replay_10_white_24.png"
     },
     {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_mr_button_connected_11_dark.png.flat",
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\44384749ccafcc458575c36ce6e82438\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_11_dark.png"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_quantum_ic_replay_10_white_24.png.flat",
-        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\cb65f118a56f1c141969657aac9634e6\\res\\drawable-xxhdpi-v4\\quantum_ic_replay_10_white_24.png"
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_ic_plusone_medium_off_client.png.flat",
+        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-plus-11.4.2.aar\\2d280b283655652e3546424c33521929\\res\\drawable-mdpi-v4\\ic_plusone_medium_off_client.png"
+    },
+    {
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
+        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\284d602bf3ccf0189371990d78f846cf\\res\\drawable-hdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
     },
     {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_quantum_ic_forward_30_white_24.png.flat",
@@ -1960,12 +1960,12 @@
         "source": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\src\\main\\res\\layout\\fragment_all_cases.xml"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
-        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\284d602bf3ccf0189371990d78f846cf\\res\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_pressed_holo_light.9.png.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\d0e9b2ae50d15c6a0db5383e8ba409d4\\res\\drawable-hdpi-v4\\abc_list_pressed_holo_light.9.png"
+    },
+    {
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
+        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\284d602bf3ccf0189371990d78f846cf\\res\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_quantum_ic_skip_next_white_36.png.flat",
@@ -2092,36 +2092,36 @@
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\twitter-core-2.3.1.aar\\8316816bcfaeec69fbdf3a90ebe67c0e\\res\\drawable\\tw__login_btn.xml"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
-        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\284d602bf3ccf0189371990d78f846cf\\res\\drawable-mdpi-v4\\abc_popup_background_mtrl_mult.9.png"
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_mr_button_connecting_13_dark.png.flat",
+        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\44384749ccafcc458575c36ce6e82438\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_13_dark.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_com_facebook_button_send_icon_white.png.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-share-4.35.0.aar\\d29d43e2e9325af701c593421bf41cad\\res\\drawable-hdpi-v4\\com_facebook_button_send_icon_white.png"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_mr_button_connecting_13_dark.png.flat",
-        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\44384749ccafcc458575c36ce6e82438\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_13_dark.png"
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
+        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\284d602bf3ccf0189371990d78f846cf\\res\\drawable-mdpi-v4\\abc_popup_background_mtrl_mult.9.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_mr_button_connected_30_dark.png.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\0e2e059bf47bcd90574daddd59a79387\\res\\drawable-xhdpi-v4\\ic_mr_button_connected_30_dark.png"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_chat.xml.flat",
-        "source": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\src\\main\\res\\layout\\fragment_chat.xml"
-    },
-    {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_cast_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
-        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.4.2.aar\\779285414d37d33ffbbda88ebc6ee230\\res\\drawable-xxhdpi-v4\\cast_abc_scrubber_control_to_pressed_mtrl_005.png"
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_mr_button_connecting_12_light.png.flat",
+        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\44384749ccafcc458575c36ce6e82438\\res\\drawable-xhdpi-v4\\ic_mr_button_connecting_12_light.png"
     },
     {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\284d602bf3ccf0189371990d78f846cf\\res\\drawable-hdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_mr_button_connecting_12_light.png.flat",
-        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\44384749ccafcc458575c36ce6e82438\\res\\drawable-xhdpi-v4\\ic_mr_button_connecting_12_light.png"
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_cast_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
+        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.4.2.aar\\779285414d37d33ffbbda88ebc6ee230\\res\\drawable-xxhdpi-v4\\cast_abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_chat.xml.flat",
+        "source": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\src\\main\\res\\layout\\fragment_chat.xml"
     },
     {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_tw__heart_animation_detail_60fps_00023.png.flat",
@@ -2216,12 +2216,12 @@
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.0.2.aar\\0b448194544f07c4477bc4a98d77b5d5\\res\\drawable-v21\\design_bottom_navigation_item_background.xml"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_tw__ic_video_pause.png.flat",
-        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\0d093faacc102d2124f4618f442e5931\\res\\drawable-mdpi-v4\\tw__ic_video_pause.png"
-    },
-    {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_r_arrow.png.flat",
         "source": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\src\\main\\res\\drawable-mdpi\\r_arrow.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_tw__ic_video_pause.png.flat",
+        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\0d093faacc102d2124f4618f442e5931\\res\\drawable-mdpi-v4\\tw__ic_video_pause.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\layout_support_simple_spinner_dropdown_item.xml.flat",
@@ -2248,12 +2248,12 @@
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\0e2e059bf47bcd90574daddd59a79387\\res\\drawable-xxxhdpi-v4\\ic_group_expand_00.png"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_mcv_action_next.png.flat",
-        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\material-calendarview-1.4.3.aar\\a8078858712ac41de0a5c4be1267e6ee\\res\\drawable-xxxhdpi-v4\\mcv_action_next.png"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ratingbar_material.xml.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\d0e9b2ae50d15c6a0db5383e8ba409d4\\res\\drawable\\abc_ratingbar_material.xml"
+    },
+    {
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_mcv_action_next.png.flat",
+        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\material-calendarview-1.4.3.aar\\a8078858712ac41de0a5c4be1267e6ee\\res\\drawable-xxxhdpi-v4\\mcv_action_next.png"
     },
     {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ornament.png.flat",
@@ -2264,16 +2264,16 @@
         "source": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\src\\main\\res\\drawable-xxhdpi\\plus.png"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
-        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\d0e9b2ae50d15c6a0db5383e8ba409d4\\res\\drawable-xxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
+        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable_tw__login_btn_text_color_light.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\twitter-core-2.3.1.aar\\53d92dec3351312839c25d7301c76fb1\\res\\drawable\\tw__login_btn_text_color_light.xml"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_quantum_ic_pause_circle_filled_grey600_36.png.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\cb65f118a56f1c141969657aac9634e6\\res\\drawable-xxhdpi-v4\\quantum_ic_pause_circle_filled_grey600_36.png"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable_tw__login_btn_text_color_light.xml.flat",
-        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\twitter-core-2.3.1.aar\\53d92dec3351312839c25d7301c76fb1\\res\\drawable\\tw__login_btn_text_color_light.xml"
+        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
+        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\d0e9b2ae50d15c6a0db5383e8ba409d4\\res\\drawable-xxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\layout_dp_example.xml.flat",
@@ -2300,12 +2300,12 @@
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\284d602bf3ccf0189371990d78f846cf\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_quantum_ic_replay_10_white_24.png.flat",
-        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.4.2.aar\\779285414d37d33ffbbda88ebc6ee230\\res\\drawable-xxxhdpi-v4\\quantum_ic_replay_10_white_24.png"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_cast_ic_stop_circle_filled_white.png.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\cb65f118a56f1c141969657aac9634e6\\res\\drawable-xhdpi-v4\\cast_ic_stop_circle_filled_white.png"
+    },
+    {
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_quantum_ic_replay_10_white_24.png.flat",
+        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.4.2.aar\\779285414d37d33ffbbda88ebc6ee230\\res\\drawable-xxxhdpi-v4\\quantum_ic_replay_10_white_24.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_bar_up_container.xml.flat",
@@ -2336,20 +2336,20 @@
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\d0e9b2ae50d15c6a0db5383e8ba409d4\\res\\layout\\abc_search_view.xml"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_tw__ic_video_replay_pressed.png.flat",
-        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\0d093faacc102d2124f4618f442e5931\\res\\drawable-xxhdpi-v4\\tw__ic_video_replay_pressed.png"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_arrow_back.xml.flat",
         "source": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\src\\main\\res\\drawable\\ic_arrow_back.xml"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_quantum_ic_skip_previous_white_24.png.flat",
-        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.4.2.aar\\779285414d37d33ffbbda88ebc6ee230\\res\\drawable-xxhdpi-v4\\quantum_ic_skip_previous_white_24.png"
+        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_tw__ic_video_replay_pressed.png.flat",
+        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\0d093faacc102d2124f4618f442e5931\\res\\drawable-xxhdpi-v4\\tw__ic_video_replay_pressed.png"
     },
     {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_tw__heart_animation_detail_60fps_00027.png.flat",
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\f15c0579b8f70e06597f53b10c05b961\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00027.png"
+    },
+    {
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_quantum_ic_skip_previous_white_24.png.flat",
+        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.4.2.aar\\779285414d37d33ffbbda88ebc6ee230\\res\\drawable-xxhdpi-v4\\quantum_ic_skip_previous_white_24.png"
     },
     {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_messenger_bubble_large_white.png.flat",
@@ -2364,12 +2364,12 @@
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\44384749ccafcc458575c36ce6e82438\\res\\drawable-hdpi-v4\\ic_audiotrack_dark.png"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_action_tombstone.xml.flat",
-        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\19dd9be953174e3a769dcfbcb07ff3d6\\res\\layout\\notification_action_tombstone.xml"
-    },
-    {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_quantum_ic_keyboard_arrow_down_white_36.png.flat",
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.4.2.aar\\779285414d37d33ffbbda88ebc6ee230\\res\\drawable-mdpi-v4\\quantum_ic_keyboard_arrow_down_white_36.png"
+    },
+    {
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_action_tombstone.xml.flat",
+        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\19dd9be953174e3a769dcfbcb07ff3d6\\res\\layout\\notification_action_tombstone.xml"
     },
     {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13_design_layout_snackbar.xml.flat",
@@ -2424,12 +2424,12 @@
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-messenger-4.35.0.aar\\6eb68ca7230dceff41c2fc1b5c9f245a\\res\\drawable-xxhdpi-v4\\messenger_bubble_large_white.png"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\layout_select_dialog_item_material.xml.flat",
-        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\d0e9b2ae50d15c6a0db5383e8ba409d4\\res\\layout\\select_dialog_item_material.xml"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21_notification_action_tombstone.xml.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\c2ee13bfd564130b28c7979e33cdcc70\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\layout_select_dialog_item_material.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\d0e9b2ae50d15c6a0db5383e8ba409d4\\res\\layout\\select_dialog_item_material.xml"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
@@ -2508,12 +2508,12 @@
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.4.2.aar\\781a72140314aba7057f3f788240abdf\\res\\drawable-xhdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable_messenger_button_white_bg_selector.xml.flat",
-        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-messenger-4.35.0.aar\\e0b9e97f3b407017f3335c3c94fcd039\\res\\drawable\\messenger_button_white_bg_selector.xml"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_big_media_narrow.xml.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-27.1.1.aar\\65e04fc03c902319635f47225403262b\\res\\layout\\notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable_messenger_button_white_bg_selector.xml.flat",
+        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-messenger-4.35.0.aar\\e0b9e97f3b407017f3335c3c94fcd039\\res\\drawable\\messenger_button_white_bg_selector.xml"
     },
     {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
@@ -2536,12 +2536,12 @@
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\f15c0579b8f70e06597f53b10c05b961\\res\\layout\\tw__media_badge.xml"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\layout_messenger_button_send_blue_small.xml.flat",
-        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-messenger-4.35.0.aar\\e0b9e97f3b407017f3335c3c94fcd039\\res\\layout\\messenger_button_send_blue_small.xml"
-    },
-    {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mr_vol_type_audiotrack_light.xml.flat",
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\44384749ccafcc458575c36ce6e82438\\res\\drawable\\mr_vol_type_audiotrack_light.xml"
+    },
+    {
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\layout_messenger_button_send_blue_small.xml.flat",
+        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-messenger-4.35.0.aar\\e0b9e97f3b407017f3335c3c94fcd039\\res\\layout\\messenger_button_send_blue_small.xml"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_followed_cases.xml.flat",
@@ -2636,12 +2636,12 @@
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.4.2.aar\\779285414d37d33ffbbda88ebc6ee230\\res\\drawable-mdpi-v4\\quantum_ic_volume_up_grey600_36.png"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_tw__heart_animation_detail_60fps_00054.png.flat",
-        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\f15c0579b8f70e06597f53b10c05b961\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00054.png"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\color_wallet_primary_text_holo_light.xml.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-wallet-12.0.1.aar\\a70877dab96c29daeb1a0bfeb02b8f0a\\res\\color\\wallet_primary_text_holo_light.xml"
+    },
+    {
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_tw__heart_animation_detail_60fps_00054.png.flat",
+        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\f15c0579b8f70e06597f53b10c05b961\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00054.png"
     },
     {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
@@ -2668,12 +2668,12 @@
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.4.2.aar\\779285414d37d33ffbbda88ebc6ee230\\res\\drawable-xxhdpi-v4\\quantum_ic_volume_off_white_36.png"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\d0e9b2ae50d15c6a0db5383e8ba409d4\\res\\drawable-xhdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
-    },
-    {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_ic_group_expand_15.png.flat",
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\44384749ccafcc458575c36ce6e82438\\res\\drawable-xxxhdpi-v4\\ic_group_expand_15.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\d0e9b2ae50d15c6a0db5383e8ba409d4\\res\\drawable-xhdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
     },
     {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_mr_button_connecting_15_dark.png.flat",
@@ -2688,12 +2688,12 @@
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\f15c0579b8f70e06597f53b10c05b961\\res\\drawable-xhdpi-v4\\tw__ic_play_default.png"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\d0e9b2ae50d15c6a0db5383e8ba409d4\\res\\drawable-xhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
-    },
-    {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_avd_hide_password.xml.flat",
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.0.2.aar\\0b448194544f07c4477bc4a98d77b5d5\\res\\drawable-v21\\avd_hide_password.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\d0e9b2ae50d15c6a0db5383e8ba409d4\\res\\drawable-xhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
     },
     {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_mr_button_connecting_05_light.png.flat",
@@ -2732,12 +2732,12 @@
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\284d602bf3ccf0189371990d78f846cf\\res\\drawable\\abc_ic_ab_back_material.xml"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_longpressed_holo.9.png.flat",
-        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\284d602bf3ccf0189371990d78f846cf\\res\\drawable-hdpi-v4\\abc_list_longpressed_holo.9.png"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_smart.png.flat",
         "source": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\src\\main\\res\\drawable-xxhdpi\\smart.png"
+    },
+    {
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_longpressed_holo.9.png.flat",
+        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\284d602bf3ccf0189371990d78f846cf\\res\\drawable-hdpi-v4\\abc_list_longpressed_holo.9.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_tw__action_heart_off_default.png.flat",
@@ -2800,20 +2800,20 @@
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\cb65f118a56f1c141969657aac9634e6\\res\\drawable\\cast_ic_notification_pause.xml"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_ic_vol_type_tv_dark.png.flat",
-        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\0e2e059bf47bcd90574daddd59a79387\\res\\drawable-hdpi-v4\\ic_vol_type_tv_dark.png"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_mr_button_connecting_14_light.png.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\0e2e059bf47bcd90574daddd59a79387\\res\\drawable-xhdpi-v4\\ic_mr_button_connecting_14_light.png"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher.png.flat",
-        "source": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
+        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_ic_vol_type_tv_dark.png.flat",
+        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\0e2e059bf47bcd90574daddd59a79387\\res\\drawable-hdpi-v4\\ic_vol_type_tv_dark.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_quantum_ic_clear_white_24.png.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\cb65f118a56f1c141969657aac9634e6\\res\\drawable-hdpi-v4\\quantum_ic_clear_white_24.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher.png.flat",
+        "source": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
@@ -2852,20 +2852,20 @@
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-plus-11.4.2.aar\\2d280b283655652e3546424c33521929\\res\\drawable-xhdpi-v4\\ic_plusone_tall_off_client.png"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_spinner_textfield_background_material.xml.flat",
-        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\d0e9b2ae50d15c6a0db5383e8ba409d4\\res\\drawable\\abc_spinner_textfield_background_material.xml"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable_cast_ic_expanded_controller_play.xml.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\cb65f118a56f1c141969657aac9634e6\\res\\drawable\\cast_ic_expanded_controller_play.xml"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_tw__ic_video_pause.png.flat",
-        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\0d093faacc102d2124f4618f442e5931\\res\\drawable-xhdpi-v4\\tw__ic_video_pause.png"
+        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_spinner_textfield_background_material.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\d0e9b2ae50d15c6a0db5383e8ba409d4\\res\\drawable\\abc_spinner_textfield_background_material.xml"
     },
     {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable_cast_ic_mini_controller_skip_next.xml.flat",
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.4.2.aar\\779285414d37d33ffbbda88ebc6ee230\\res\\drawable\\cast_ic_mini_controller_skip_next.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_tw__ic_video_pause.png.flat",
+        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\0d093faacc102d2124f4618f442e5931\\res\\drawable-xhdpi-v4\\tw__ic_video_pause.png"
     },
     {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_longpressed_holo.9.png.flat",
@@ -2896,12 +2896,12 @@
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\0e2e059bf47bcd90574daddd59a79387\\res\\drawable-mdpi-v4\\ic_media_pause_light.png"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_tw__heart_animation_detail_60fps_00004.png.flat",
-        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\f15c0579b8f70e06597f53b10c05b961\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00004.png"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\d0e9b2ae50d15c6a0db5383e8ba409d4\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_36dp.png"
+    },
+    {
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_tw__heart_animation_detail_60fps_00004.png.flat",
+        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\f15c0579b8f70e06597f53b10c05b961\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00004.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_tw__ic_gif_badge.png.flat",
@@ -2912,12 +2912,12 @@
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\284d602bf3ccf0189371990d78f846cf\\res\\color\\abc_tint_seek_thumb.xml"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_quantum_ic_pause_circle_filled_white_36.png.flat",
-        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.4.2.aar\\779285414d37d33ffbbda88ebc6ee230\\res\\drawable-mdpi-v4\\quantum_ic_pause_circle_filled_white_36.png"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_mr_button_connecting_29_light.png.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\0e2e059bf47bcd90574daddd59a79387\\res\\drawable-xhdpi-v4\\ic_mr_button_connecting_29_light.png"
+    },
+    {
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_quantum_ic_pause_circle_filled_white_36.png.flat",
+        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.4.2.aar\\779285414d37d33ffbbda88ebc6ee230\\res\\drawable-mdpi-v4\\quantum_ic_pause_circle_filled_white_36.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_ic_plusone_tall_off_client.png.flat",
@@ -3056,12 +3056,12 @@
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\44384749ccafcc458575c36ce6e82438\\res\\drawable-hdpi-v4\\ic_media_play_dark.png"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_mr_button_connected_00_dark.png.flat",
-        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\44384749ccafcc458575c36ce6e82438\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_00_dark.png"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_mr_button_connected_07_dark.png.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\0e2e059bf47bcd90574daddd59a79387\\res\\drawable-xhdpi-v4\\ic_mr_button_connected_07_dark.png"
+    },
+    {
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_mr_button_connected_00_dark.png.flat",
+        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\44384749ccafcc458575c36ce6e82438\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_00_dark.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable_tw__login_btn_default_light.xml.flat",
@@ -3104,12 +3104,12 @@
         "source": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_bg.png.flat",
-        "source": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\src\\main\\res\\drawable-xxhdpi\\bg.png"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_mr_button_connected_23_light.png.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\0e2e059bf47bcd90574daddd59a79387\\res\\drawable-xhdpi-v4\\ic_mr_button_connected_23_light.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_bg.png.flat",
+        "source": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\src\\main\\res\\drawable-xxhdpi\\bg.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_mr_button_connected_15_light.png.flat",
@@ -3280,12 +3280,12 @@
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\284d602bf3ccf0189371990d78f846cf\\res\\drawable-ldrtl-xhdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_dialog_material_background.xml.flat",
-        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\d0e9b2ae50d15c6a0db5383e8ba409d4\\res\\drawable\\abc_dialog_material_background.xml"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_quantum_ic_forward_30_white_24.png.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\cb65f118a56f1c141969657aac9634e6\\res\\drawable-hdpi-v4\\quantum_ic_forward_30_white_24.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_dialog_material_background.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\d0e9b2ae50d15c6a0db5383e8ba409d4\\res\\drawable\\abc_dialog_material_background.xml"
     },
     {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\layout_conversation_item.xml.flat",
@@ -3388,24 +3388,24 @@
         "source": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\src\\main\\res\\drawable\\side_nav_bar.xml"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_mr_button_connecting_18_dark.png.flat",
-        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\0e2e059bf47bcd90574daddd59a79387\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_18_dark.png"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4_ic_plusone_small_off_client.png.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-plus-12.0.1.aar\\c190dd568dce63f339d6f16f3bb72e7e\\res\\drawable-tvdpi-v4\\ic_plusone_small_off_client.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_mr_button_connecting_18_dark.png.flat",
+        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\0e2e059bf47bcd90574daddd59a79387\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_18_dark.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_eye.png.flat",
         "source": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\src\\main\\res\\drawable-xhdpi\\eye.png"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
-        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\d0e9b2ae50d15c6a0db5383e8ba409d4\\res\\drawable-xhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_messenger_bubble_large_white.png.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-messenger-4.35.0.aar\\6eb68ca7230dceff41c2fc1b5c9f245a\\res\\drawable-mdpi-v4\\messenger_bubble_large_white.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
+        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\d0e9b2ae50d15c6a0db5383e8ba409d4\\res\\drawable-xhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\anim_design_snackbar_in.xml.flat",
@@ -3584,12 +3584,12 @@
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\f15c0579b8f70e06597f53b10c05b961\\res\\drawable-hdpi-v4\\tw__ic_seekbar_bg.9.png"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_com_facebook_close.png.flat",
-        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-common-4.35.0.aar\\9411c1e4faf4f5a5846e741e12607794\\res\\drawable-hdpi-v4\\com_facebook_close.png"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\layout_nav_filter_main.xml.flat",
         "source": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\src\\main\\res\\layout\\nav_filter_main.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_com_facebook_close.png.flat",
+        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-common-4.35.0.aar\\9411c1e4faf4f5a5846e741e12607794\\res\\drawable-hdpi-v4\\com_facebook_close.png"
     },
     {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_events.png.flat",
@@ -3632,12 +3632,12 @@
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\0e2e059bf47bcd90574daddd59a79387\\res\\drawable-xhdpi-v4\\ic_mr_button_connected_17_dark.png"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\layout_favourite_cat_item.xml.flat",
-        "source": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\src\\main\\res\\layout\\favourite_cat_item.xml"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_quantum_ic_skip_next_grey600_36.png.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\cb65f118a56f1c141969657aac9634e6\\res\\drawable-xxhdpi-v4\\quantum_ic_skip_next_grey600_36.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\layout_favourite_cat_item.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\src\\main\\res\\layout\\favourite_cat_item.xml"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable_com_facebook_button_background.xml.flat",
@@ -3668,12 +3668,12 @@
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.4.2.aar\\781a72140314aba7057f3f788240abdf\\res\\drawable\\common_google_signin_btn_icon_disabled.xml"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\layout_com_facebook_smart_device_dialog_fragment.xml.flat",
-        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-common-4.35.0.aar\\9411c1e4faf4f5a5846e741e12607794\\res\\layout\\com_facebook_smart_device_dialog_fragment.xml"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\d0e9b2ae50d15c6a0db5383e8ba409d4\\res\\drawable-mdpi-v4\\abc_text_select_handle_middle_mtrl_light.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\layout_com_facebook_smart_device_dialog_fragment.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-common-4.35.0.aar\\9411c1e4faf4f5a5846e741e12607794\\res\\layout\\com_facebook_smart_device_dialog_fragment.xml"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_tw__heart_animation_detail_60fps_00040.png.flat",
@@ -3704,16 +3704,16 @@
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.4.2.aar\\779285414d37d33ffbbda88ebc6ee230\\res\\drawable-xxxhdpi-v4\\quantum_ic_skip_previous_grey600_36.png"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_ic_audiotrack_light.png.flat",
-        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\44384749ccafcc458575c36ce6e82438\\res\\drawable-hdpi-v4\\ic_audiotrack_light.png"
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable_cast_skip_ad_label_border.xml.flat",
+        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.4.2.aar\\779285414d37d33ffbbda88ebc6ee230\\res\\drawable\\cast_skip_ad_label_border.xml"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_star.png.flat",
         "source": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\src\\main\\res\\drawable-xxhdpi\\star.png"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable_cast_skip_ad_label_border.xml.flat",
-        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.4.2.aar\\779285414d37d33ffbbda88ebc6ee230\\res\\drawable\\cast_skip_ad_label_border.xml"
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_ic_audiotrack_light.png.flat",
+        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\44384749ccafcc458575c36ce6e82438\\res\\drawable-hdpi-v4\\ic_audiotrack_light.png"
     },
     {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_quantum_ic_play_arrow_grey600_36.png.flat",
@@ -3728,12 +3728,12 @@
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-plus-11.4.2.aar\\2d280b283655652e3546424c33521929\\res\\drawable-hdpi-v4\\ic_plusone_standard_off_client.png"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_common_full_open_on_phone.png.flat",
-        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.4.2.aar\\781a72140314aba7057f3f788240abdf\\res\\drawable-hdpi-v4\\common_full_open_on_phone.png"
-    },
-    {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\284d602bf3ccf0189371990d78f846cf\\res\\drawable-mdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_common_full_open_on_phone.png.flat",
+        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.4.2.aar\\781a72140314aba7057f3f788240abdf\\res\\drawable-hdpi-v4\\common_full_open_on_phone.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13_design_layout_snackbar.xml.flat",
@@ -3756,12 +3756,12 @@
         "source": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\src\\main\\res\\drawable-xxhdpi\\tabs.png"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_smart.png.flat",
-        "source": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\src\\main\\res\\drawable-xxhdpi\\smart.png"
-    },
-    {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_tw__ic_tweet_verified.png.flat",
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\f15c0579b8f70e06597f53b10c05b961\\res\\drawable-hdpi-v4\\tw__ic_tweet_verified.png"
+    },
+    {
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_smart.png.flat",
+        "source": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\src\\main\\res\\drawable-xxhdpi\\smart.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_menu_item_layout.xml.flat",
@@ -3904,12 +3904,12 @@
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\cb65f118a56f1c141969657aac9634e6\\res\\drawable-hdpi-v4\\cast_abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_mr_button_connecting_14_dark.png.flat",
-        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\0e2e059bf47bcd90574daddd59a79387\\res\\drawable-xhdpi-v4\\ic_mr_button_connecting_14_dark.png"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_messenger_button_send_round_shadow.png.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-messenger-4.35.0.aar\\6eb68ca7230dceff41c2fc1b5c9f245a\\res\\drawable-hdpi-v4\\messenger_button_send_round_shadow.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_mr_button_connecting_14_dark.png.flat",
+        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\0e2e059bf47bcd90574daddd59a79387\\res\\drawable-xhdpi-v4\\ic_mr_button_connecting_14_dark.png"
     },
     {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_message_admin.xml.flat",
@@ -3948,12 +3948,12 @@
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\44384749ccafcc458575c36ce6e82438\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_13_light.png"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_tw__ic_video_pause_pressed.png.flat",
-        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\0d093faacc102d2124f4618f442e5931\\res\\drawable-xhdpi-v4\\tw__ic_video_pause_pressed.png"
-    },
-    {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_ic_group_expand_00.png.flat",
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\44384749ccafcc458575c36ce6e82438\\res\\drawable-xxxhdpi-v4\\ic_group_expand_00.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_tw__ic_video_pause_pressed.png.flat",
+        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\0d093faacc102d2124f4618f442e5931\\res\\drawable-xhdpi-v4\\tw__ic_video_pause_pressed.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_quantum_ic_play_arrow_grey600_48.png.flat",
@@ -4052,12 +4052,12 @@
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\0e2e059bf47bcd90574daddd59a79387\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_02_light.png"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
-        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\d0e9b2ae50d15c6a0db5383e8ba409d4\\res\\drawable-mdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_quantum_ic_keyboard_arrow_down_white_36.png.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\cb65f118a56f1c141969657aac9634e6\\res\\drawable-xhdpi-v4\\quantum_ic_keyboard_arrow_down_white_36.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
+        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\d0e9b2ae50d15c6a0db5383e8ba409d4\\res\\drawable-mdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ratingbar_material.xml.flat",
@@ -4148,12 +4148,12 @@
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\0e2e059bf47bcd90574daddd59a79387\\res\\drawable-hdpi-v4\\ic_dialog_close_dark.png"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_curvy_signup_bg.xml.flat",
-        "source": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\src\\main\\res\\drawable-xxhdpi\\curvy_signup_bg.xml"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_quantum_ic_replay_30_white_24.png.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\cb65f118a56f1c141969657aac9634e6\\res\\drawable-xhdpi-v4\\quantum_ic_replay_30_white_24.png"
+    },
+    {
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_curvy_signup_bg.xml.flat",
+        "source": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\src\\main\\res\\drawable-xxhdpi\\curvy_signup_bg.xml"
     },
     {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_mr_button_connected_01_dark.png.flat",
@@ -4164,12 +4164,12 @@
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-places-12.0.1.aar\\beba323df60ac69933ac63938e36e358\\res\\drawable-hdpi-v4\\places_ic_clear.png"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_arrow_back.xml.flat",
-        "source": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\src\\main\\res\\drawable\\ic_arrow_back.xml"
-    },
-    {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_ic_plusone_medium_off_client.png.flat",
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-plus-11.4.2.aar\\2d280b283655652e3546424c33521929\\res\\drawable-hdpi-v4\\ic_plusone_medium_off_client.png"
+    },
+    {
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_arrow_back.xml.flat",
+        "source": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\src\\main\\res\\drawable\\ic_arrow_back.xml"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\layout_edit_category_list.xml.flat",
@@ -4260,16 +4260,16 @@
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.0.2.aar\\0b448194544f07c4477bc4a98d77b5d5\\res\\color\\design_error.xml"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_donation.png.flat",
-        "source": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\src\\main\\res\\drawable-xhdpi\\donation.png"
+        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_messenger_button_send_round_shadow.png.flat",
+        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-messenger-4.35.0.aar\\6eb68ca7230dceff41c2fc1b5c9f245a\\res\\drawable-mdpi-v4\\messenger_button_send_round_shadow.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_mr_button_disabled_dark.png.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\0e2e059bf47bcd90574daddd59a79387\\res\\drawable-xxhdpi-v4\\ic_mr_button_disabled_dark.png"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_messenger_button_send_round_shadow.png.flat",
-        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-messenger-4.35.0.aar\\6eb68ca7230dceff41c2fc1b5c9f245a\\res\\drawable-mdpi-v4\\messenger_button_send_round_shadow.png"
+        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_donation.png.flat",
+        "source": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\src\\main\\res\\drawable-xhdpi\\donation.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_com_facebook_close.png.flat",
@@ -4312,12 +4312,12 @@
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\44384749ccafcc458575c36ce6e82438\\res\\drawable-xhdpi-v4\\ic_mr_button_connected_20_dark.png"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_mr_button_connecting_20_light.png.flat",
-        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\44384749ccafcc458575c36ce6e82438\\res\\drawable-xhdpi-v4\\ic_mr_button_connecting_20_light.png"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_profile.xml.flat",
         "source": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\src\\main\\res\\layout\\activity_profile.xml"
+    },
+    {
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_mr_button_connecting_20_light.png.flat",
+        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\44384749ccafcc458575c36ce6e82438\\res\\drawable-xhdpi-v4\\ic_mr_button_connecting_20_light.png"
     },
     {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_quantum_ic_pause_circle_filled_grey600_36.png.flat",
@@ -4400,12 +4400,12 @@
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-common-4.35.0.aar\\6b3b35dc13f1bc0e9b9e1d3adae716d6\\res\\drawable-hdpi-v4\\com_facebook_button_like_icon_selected.png"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_mr_button_connected_09_dark.png.flat",
-        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\44384749ccafcc458575c36ce6e82438\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_09_dark.png"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_calender_bg.png.flat",
         "source": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\src\\main\\res\\drawable-xxhdpi\\calender_bg.png"
+    },
+    {
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_mr_button_connected_09_dark.png.flat",
+        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\44384749ccafcc458575c36ce6e82438\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_09_dark.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_com_facebook_tooltip_black_topnub.png.flat",
@@ -4472,12 +4472,12 @@
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-wallet-12.0.1.aar\\a70877dab96c29daeb1a0bfeb02b8f0a\\res\\layout\\wallet_test_layout.xml"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_ic_group_expand_09.png.flat",
-        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\0e2e059bf47bcd90574daddd59a79387\\res\\drawable-xxxhdpi-v4\\ic_group_expand_09.png"
-    },
-    {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_notification_action_background.xml.flat",
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\19dd9be953174e3a769dcfbcb07ff3d6\\res\\drawable-v21\\notification_action_background.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_ic_group_expand_09.png.flat",
+        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\0e2e059bf47bcd90574daddd59a79387\\res\\drawable-xxxhdpi-v4\\ic_group_expand_09.png"
     },
     {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_media_pause_dark.png.flat",
@@ -4724,12 +4724,12 @@
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\cb65f118a56f1c141969657aac9634e6\\res\\drawable-hdpi-v4\\quantum_ic_closed_caption_white_36.png"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_quantum_ic_play_circle_filled_white_36.png.flat",
-        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.4.2.aar\\779285414d37d33ffbbda88ebc6ee230\\res\\drawable-mdpi-v4\\quantum_ic_play_circle_filled_white_36.png"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_mr_button_connected_21_dark.png.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\0e2e059bf47bcd90574daddd59a79387\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_21_dark.png"
+    },
+    {
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_quantum_ic_play_circle_filled_white_36.png.flat",
+        "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.4.2.aar\\779285414d37d33ffbbda88ebc6ee230\\res\\drawable-mdpi-v4\\quantum_ic_play_circle_filled_white_36.png"
     },
     {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
@@ -4752,12 +4752,12 @@
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\0e2e059bf47bcd90574daddd59a79387\\res\\drawable-xxxhdpi-v4\\ic_group_collapse_09.png"
     },
     {
-        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_rounded_delete.png.flat",
-        "source": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\src\\main\\res\\drawable-hdpi\\rounded_delete.png"
-    },
-    {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_seek_thumb.xml.flat",
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\284d602bf3ccf0189371990d78f846cf\\res\\color-v23\\abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_rounded_delete.png.flat",
+        "source": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\src\\main\\res\\drawable-hdpi\\rounded_delete.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_quantum_ic_art_track_grey600_48.png.flat",
@@ -4880,12 +4880,12 @@
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\f15c0579b8f70e06597f53b10c05b961\\res\\drawable-mdpi-v4\\tw__ic_video_replay.png"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_quantum_ic_replay_30_grey600_36.png.flat",
-        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\cb65f118a56f1c141969657aac9634e6\\res\\drawable-xhdpi-v4\\quantum_ic_replay_30_grey600_36.png"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable_tw__vine_badge.xml.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\0d093faacc102d2124f4618f442e5931\\res\\drawable\\tw__vine_badge.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_quantum_ic_replay_30_grey600_36.png.flat",
+        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\cb65f118a56f1c141969657aac9634e6\\res\\drawable-xhdpi-v4\\quantum_ic_replay_30_grey600_36.png"
     },
     {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_tw__ic_video_pause.png.flat",
@@ -4916,12 +4916,12 @@
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\d0e9b2ae50d15c6a0db5383e8ba409d4\\res\\color-v23\\abc_tint_seek_thumb.xml"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable_cast_ic_mini_controller_play_large.xml.flat",
-        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\cb65f118a56f1c141969657aac9634e6\\res\\drawable\\cast_ic_mini_controller_play_large.xml"
-    },
-    {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\layout_tw__tweet_quote.xml.flat",
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\f15c0579b8f70e06597f53b10c05b961\\res\\layout\\tw__tweet_quote.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable_cast_ic_mini_controller_play_large.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\cb65f118a56f1c141969657aac9634e6\\res\\drawable\\cast_ic_mini_controller_play_large.xml"
     },
     {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
@@ -8022,10 +8022,6 @@
     {
         "merged": "D:\\media\\fawzy\\Files\\Android\\codes\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_tw__ic_logo_white.png.flat",
         "source": "D:\\home\\fawzy\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\f15c0579b8f70e06597f53b10c05b961\\res\\drawable-xhdpi-v4\\tw__ic_logo_white.png"
-    },
-    {
-        "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\layout-ar_activity_organization_details.xml.flat",
-        "source": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\src\\main\\res\\layout-ar\\activity_organization_details.xml"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\DaleelElKheir\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_quantum_ic_pause_white_24.png.flat",

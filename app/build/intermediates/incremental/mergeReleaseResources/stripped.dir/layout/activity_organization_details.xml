@@ -37,8 +37,8 @@
                 android:id="@+id/imageLayout"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_100sdp"
-                android:layout_marginLeft="@dimen/_30sdp"
-                android:layout_marginRight="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_30sdp"
                 android:layout_marginTop="@dimen/_15sdp"
                 app:layout_constraintTop_toBottomOf="@+id/appBar">
 
@@ -51,137 +51,158 @@
 
             </FrameLayout>
 
-            <RelativeLayout
-                android:id="@+id/mainProgressLayout"
-                android:layout_width="match_parent"
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/organizationText"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_7sdp"
                 android:layout_marginTop="@dimen/_10sdp"
-                app:layout_constraintTop_toBottomOf="@id/imageLayout">
+                android:text="@string/organization"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imageLayout" />
 
-                <me.grantland.widget.AutofitTextView
-                    android:id="@+id/organizationText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/progressLayout"
-                    android:layout_marginLeft="@dimen/_7sdp"
-                    android:text="@string/organization"
-                    android:textColor="@color/black" />
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/organization"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/progressLayout"
+                android:layout_marginEnd="@dimen/_7sdp"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/organization"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/organizationText"
+                app:layout_constraintTop_toBottomOf="@+id/imageLayout" />
 
-                <me.grantland.widget.AutofitTextView
-                    android:id="@+id/organization"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/progressLayout"
-                    android:layout_marginLeft="@dimen/_7sdp"
-                    android:layout_toRightOf="@id/organizationText"
-                    android:text="@string/organization"
-                    android:textColor="@color/black" />
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/categoryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/category"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/organization" />
 
-                <me.grantland.widget.AutofitTextView
-                    android:id="@+id/categoryText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/organizationText"
-                    android:layout_marginLeft="@dimen/_7sdp"
-                    android:layout_marginTop="@dimen/_3sdp"
-                    android:text="@string/category"
-                    android:textColor="@color/black" />
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/category"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/progressLayout"
+                android:layout_marginEnd="@dimen/_7sdp"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/category"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/categoryText"
+                app:layout_constraintTop_toBottomOf="@+id/organization" />
 
-                <me.grantland.widget.AutofitTextView
-                    android:id="@+id/category"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/organizationText"
-                    android:layout_marginLeft="@dimen/_7sdp"
-                    android:layout_marginTop="@dimen/_3sdp"
-                    android:layout_toRightOf="@id/categoryText"
-                    android:text="@string/category"
-                    android:textColor="@color/black" />
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/govText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/governorate"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/category" />
 
-                <me.grantland.widget.AutofitTextView
-                    android:id="@+id/govText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/categoryText"
-                    android:layout_marginLeft="@dimen/_7sdp"
-                    android:layout_marginTop="@dimen/_3sdp"
-                    android:text="@string/governorate"
-                    android:textColor="@color/black" />
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/gov"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/progressLayout"
+                android:layout_marginEnd="@dimen/_7sdp"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/governorate"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/govText"
+                app:layout_constraintTop_toBottomOf="@+id/category" />
 
-                <me.grantland.widget.AutofitTextView
-                    android:id="@+id/gov"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/categoryText"
-                    android:layout_marginLeft="@dimen/_7sdp"
-                    android:layout_marginTop="@dimen/_3sdp"
-                    android:layout_toRightOf="@id/govText"
-                    android:text="88888888"
-                    android:textColor="@color/black" />
 
-                <me.grantland.widget.AutofitTextView
-                    android:id="@+id/addressText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/govText"
-                    android:layout_marginLeft="@dimen/_7sdp"
-                    android:layout_marginTop="@dimen/_3sdp"
-                    android:text="@string/address"
-                    android:textColor="@color/black" />
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/addressText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/address"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/gov" />
 
-                <me.grantland.widget.AutofitTextView
-                    android:id="@+id/address"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/govText"
-                    android:layout_marginLeft="@dimen/_7sdp"
-                    android:layout_marginTop="@dimen/_3sdp"
-                    android:layout_toRightOf="@id/addressText"
-                    android:text="88888888"
-                    android:textColor="@color/black" />
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/progressLayout"
+                android:layout_marginEnd="@dimen/_7sdp"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/address"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/addressText"
+                app:layout_constraintTop_toBottomOf="@+id/gov" />
 
-                <me.grantland.widget.AutofitTextView
-                    android:id="@+id/placeText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/addressText"
-                    android:layout_marginLeft="@dimen/_7sdp"
-                    android:layout_marginTop="@dimen/_3sdp"
-                    android:text="@string/region"
-                    android:textColor="@color/black" />
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/placeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/region"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/address" />
 
-                <me.grantland.widget.AutofitTextView
-                    android:id="@+id/region"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/addressText"
-                    android:layout_marginLeft="@dimen/_7sdp"
-                    android:layout_marginTop="@dimen/_3sdp"
-                    android:layout_toRightOf="@id/placeText"
-                    android:text="@string/region"
-                    android:textColor="@color/black" />
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/region"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/progressLayout"
+                android:layout_marginEnd="@dimen/_7sdp"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/region"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/placeText"
+                app:layout_constraintTop_toBottomOf="@+id/address" />
 
-                <me.grantland.widget.AutofitTextView
-                    android:id="@+id/descriptionText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/placeText"
-                    android:layout_marginLeft="@dimen/_7sdp"
-                    android:layout_marginTop="@dimen/_3sdp"
-                    android:text="@string/description"
-                    android:textColor="@color/black" />
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/descriptionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/description"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/region" />
 
-                <me.grantland.widget.AutofitTextView
-                    android:id="@+id/description"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/placeText"
-                    android:layout_marginLeft="@dimen/_7sdp"
-                    android:layout_marginTop="@dimen/_3sdp"
-                    android:layout_toRightOf="@id/descriptionText"
-                    android:text="desctiption description"
-                    android:textColor="@color/black" />
-            </RelativeLayout>
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/progressLayout"
+                android:layout_marginEnd="@dimen/_7sdp"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/description"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/descriptionText"
+                app:layout_constraintTop_toBottomOf="@+id/region" />
 
         </android.support.constraint.ConstraintLayout>
     </ScrollView>
